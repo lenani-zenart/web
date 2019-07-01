@@ -1,7 +1,7 @@
 /** Custom Style **/
 html {scroll-behavior: smooth;}
 .header{overflow:hidden;}
-.header{background-color:#f1f1f1;height:300px;padding:5%;margin:0 auto; background-image:url('../imagini/header3.jpg'); background-size: cover; background-repeat:no-repeat; background-position:center center; background-attachment:fixed;}
+.header{background-color:#f1f1f1;height:300px;padding:5%;margin:0 auto; background-image:url('https://raw.githubusercontent.com/lenani-zenart/web/master/header3.jpg'); background-size: cover; background-repeat:no-repeat; background-position:center center; background-attachment:fixed;}
 .masthead {margin-bottom: 2rem;}
 
 .masthead-brand {margin-bottom: 0;}
