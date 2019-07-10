@@ -1,0 +1,862 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS</title>
+<style>
+html{scroll-behavior: smooth;}
+a:link,a:visited{color:#09C;}a:hover {color:#F39;}
+body{width:100%;margin:0 auto;background-color:#f1f1f1;font-family:sans-serif;}
+
+
+html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cgcbox-"] {float: left;padding: 15px;border: 0px solid red;}.cgcbox-1 {width: 8.33%;}.cgcbox-2 {width: 16.66%;}.cgcbox-3 {width: 25%;}.cgcbox-4 {width: 33.33%;}.cgcbox-5 {width: 41.66%;}.cgcbox-6 {width: 50%;}.cgcbox-7 {width: 58.33%;}.cgcbox-8 {width: 66.66%;}.cgcbox-9 {width: 75%;}.cgcbox-10 {width: 83.33%;}.cgcbox-11 {width: 91.66%;}.cgcbox-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}.divider{opacity:0;}
+
+
+.lenaniheader{background: #8e008e;
+background: -moz-linear-gradient(-45deg,  #8e008e 0%, #f200e2 54%, #1881dd 100%);
+background: -webkit-linear-gradient(-45deg,  #8e008e 0%,#f200e2 54%,#1881dd 100%);
+background: linear-gradient(135deg,  #8e008e 0%,#f200e2 54%,#1881dd 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e008e', endColorstr='#1881dd',GradientType=1 );}
+.lenaniheader h2{line-height:150px;color:#fff;font-size:3.33rem;text-shadow:0 1px 2px #999;}
+#lenani_m{display:block;width:90%;height:auto;margin:0 auto;float:none;clear:left;box-sizing:border-box;background-color:#fff;padding:15px 15px 30px;}
+table,tbody{display:block;width:100%;margin:10px auto 22px auto;}
+#lenani_m tr:nth-child(odd){background-color:#f1f1f1;padding:5px 0 5px;text-indent:4px;}
+#lenani_m tr:nth-child(even){padding:5px 0 5px;text-indent:4px;}
+th,td,tr{padding:5px 0 5px;}
+
+.notsupported{color:#F99;}
+.footer{background-color:#222;border-top:4px solid #F96;margin-top:10px;}
+.credits p{color:#777;font-size:14px;}
+.credits a,.credits a:visited{color:#F93;text-decoration:none;}
+.credits a:hover{color:#0CC;text-decoration:none;}
+.lenaninota{margin:37px auto 12px auto;position:relative;background-color:#F3FCFE;-webkit-border-radius:5px;border-radius:5px;border:1px solid #CFE7E7;color:#666;}
+.lenaninota p{padding:10px;}
+.letterheadings p{font-size:19px;color:#fff;text-indent:18px;}
+.bgcolor{background-color:#09C!important;}
+
+.printbtn a,.printbtn a:visited{padding:5px 22px;text-align:center;background-color:#09F;color:#fff;text-decoration:none;-webkit-border-radius:5px;border-radius:5px;}
+.printbtn a:hover,.printbtn a:focus{color:#fff;background-color:#09C;}
+.forprint{display:none;}
+.lenanipadd{padding-bottom:30px;}
+@media print {
+	@page {size: A4 landscape;margin: 0mm;font-size:1.33vw;}
+* {box-sizing: border-box;}
+ html, body{height:100%;margin:0;padding:0;font-size:1.33vw;}
+ body{width:90%;margin:0 auto;background-color:#fff;}
+	.noprint{display:none;}
+	.printit{display:none;}
+	#lenani_m{display:block;width:100%;height:auto;margin:0 auto;float:none;clear:left;box-sizing:border-box;background-color:#fff;padding:15px 0 15px;}
+	[class*="cgcbox-"]{width:100%;padding:0;}
+#lenani_m > h1,h2,h3,h4,h5,h6{font-size:2.33vw;font-weight:lighter;}
+.lenaniheader{background: #8e008e;}
+.lenaniheader h2{line-height:normal;color:#fff;font-size:1.33vw;text-shadow:0 1px 2px #999;}
+table,tbody,tr,td,th{font-size:1vw!important;font-weight:lighter;}.forprint{display:block;}
+ a:link,a:visited{color:#09C;}a:hover {color:#F39;}
+ a, a:link, a:visited, a:hover, a:focus{cursor:pointer;}
+	}
+	
+@media only screen and (max-width: 768px)
+{
+	body{font-size:14px;color:#666;font-family:Verdana, Geneva, sans-serif;}
+	[class*="cgcbox-"]{width:100%;}
+#lenani_m > h1,h2,h3,h4,h5,h6{font-size:20px;font-weight:lighter;}
+.lenaniheader{background: #8e008e;}
+.lenaniheader h2{line-height:normal;color:#fff;font-size:20px;text-shadow:0 1px 2px #999;}
+table,tbody,tr,td,th{font-size:17px;font-weight:lighter;}
+.noprint{display:none;visibility:hidden;}.forprint{display:none;}
+}
+
+* html .line {height:1%;}
+
+</style>
+</head>
+
+<body>
+
+<div id="lenani_m" class="cgcbox-12 no">
+
+
+<div class="cgcbox-12 tcenter lenaniheader"><h2>CSS</h2></div>
+
+<div id="prop" class="cgcbox-12">
+<p>CSS este marcajul care descrie stilul unui document HTML.<br/>
+CSS descrie modul în care ar trebui afișate elementele HTML.<br/>
+Acest material vă va învăța CSS de bază și celele mai populare proprietăți</p>
+</div>
+
+<div class="lenanipadd line">
+<div class="cgcbox-6 tcenter printbtn printit"><a href="#prop">Proprietati CSS</a></div>
+<div class="cgcbox-6 tcenter printbtn printit"><a href="#selectori">Selectori CSS</a></div>
+</div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <th width="29%">Proprietati</th>
+      <th width="71%">Descriere</th>
+    </tr>
+     <tr class="bgcolor">
+      <td class="letterheadings"><p>A</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>animation</code></td>
+      <td>Proprietate CSS atribuita pentru toate derivatele de animație<br/><code>animation-*</code></td>
+    </tr>
+    <tr>
+      <td><code>animation-delay</code> </td>
+      <td>Specifică o întârziere pentru începerea unei animații<br/><code>animation-delay: 2s;</code></td>
+    </tr>
+    <tr>
+      <td><code>animation-direction</code></td>
+      <td>Specifică dacă o animație trebuie redată înainte, înapoi sau în cicluri alternative<br/><code>animation-direction: alternate;</code></td>
+    </tr>
+    <tr>
+      <td><code>animation-duration</code></td>
+      <td>Specifică cât timp va dura o animație pentru a finaliza un ciclu<br/><code>animation-duration: 3s;</code></td>
+    </tr>
+    <tr>
+      <td><code>animation-fill-mode</code></td>
+      <td>Specifică un stil pentru element atunci când animația nu se redă (înainte de a începe, după ce se termină sau ambele)<br/><code>animation-fill-mode: forwards;</code></td>
+    </tr>
+    <tr>
+      <td><code>animation-iteration-count</code></td>
+      <td>Specifică numărul de repetări ale unei animații<br/><code>animation-iteration-count: 2;</code></td>
+    </tr>
+    <tr>
+      <td><code>animation-name</code></td>
+      <td>Specifică un nume pentru animația @keyframes<br/><code>animation-name: shimbaculoare;</code></td>
+    </tr>
+    <tr>
+      <td><code>animation-play-state</code></td>
+      <td>Specifică dacă animația rulează sau este întreruptă<br><code>animation-play-state: paused;</code></td>
+    </tr>
+    <tr>
+      <td><code>animation-timing-function</code></td>
+      <td>Specifică curba de viteză a unei animații<br/><code>animation-timing-function: linear;</code></td>
+    </tr>
+    <tr class="bgcolor">
+      <td class="letterheadings"><p>B</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><code>background</code></td>
+      <td>Proprietate globala atribuita pentru toate derivatele de fundal<br/><code>background-*</code></td>
+    </tr>
+    <tr>
+      <td><code>background-attachment</code></td>
+      <td>Setează dacă o imagine de fundal se derulează cu restul paginii sau este fixată<br/><code>background-image: url("logo.gif"); background-repeat: no-repeat; background-attachment: fixed;</code></td>
+    </tr>
+    <tr>
+      <td><code>background-blend-mode</code></td>
+      <td>Specifică modul de redare pentru fiecare layer de fundal (culoare / imagine)<br><code> background-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity;</code></td>
+    </tr>
+    <tr>
+      <td><code>background-clip</code></td>
+      <td>Definește cât de mult ar trebui să se extindă fundalul (culoarea sau imaginea) într-un element<br/><code>background-clip: border-box|padding-box|content-box|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>background-color</code></td>
+      <td>Specifică culoarea de fundal a unui element<br><code>background-color: color|transparent|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>background-image</code></td>
+      <td>Specifică una sau mai multe imagini de fundal pentru un element<br><code>background-image: url|none|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>background-origin</code></td>
+      <td>Specifică poziția de origine a unei imagini de fundal<br><code>background-origin: padding-box|border-box|content-box|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>background-position</code></td>
+      <td>Specifică poziția unei imagini de fundal<br><code>background-position: top center;</code></td>
+    </tr>
+    <tr>
+      <td><code>background-repeat</code></td>
+      <td>Setează dacă / cum va fi repetată o imagine de fundal<br><code>background-repeat: repeat|repeat-x|repeat-y|no-repeat|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>background-size</code></td>
+      <td>Specifică dimensiunea imaginilor de fundal<br><code>background-size: auto|100%|cover|contain|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>border</code></td>
+      <td>Proprietate pentru lățimea bordurii, stilul bordura și culoarea<br><code>border: 2px solid #000;</code></td>
+    </tr>
+    <tr>
+      <td><code>border-radius</code></td>
+      <td>Proptietate ce rotunjeste colturile unui element -*-border-radius<br><code>border-radius: 8px;</code></td>
+    </tr>
+    <tr>
+      <td><code>bottom</code></td>
+      <td>Setează poziția elementelor in partea inferioară a elementului părinte<br><code>bottom: auto|20px|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>box-decoration-break</code></td>
+      <td>Setează comportamentul fundalului și marginii unui element la întreruperea paginii sau, în cazul elementelor în linie, la ruperea liniei.<br><code>box-decoration-break: slice|clone|initial|inherit|unset;</code></td>
+    </tr>
+    <tr>
+      <td><code>box-shadow</code></td>
+      <td>Adaugă una sau mai multe umbre la un element<br><code>box-shadow: 5px 10px #888888;</code></td>
+    </tr>
+    <tr>
+      <td><code>box-sizing</code></td>
+      <td>Definește modul în care se calculează lățimea și înălțimea unui element: ar trebui să includă padding și margins sau nu<br><code>box-sizing: content-box|border-box|initial|inherit;</code></td>
+    </tr>
+    
+    <tr class="bgcolor">
+      <td class="letterheadings"><p>C</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+    <tr>
+      <td><code>caption-side</code></td>
+      <td>Specifică plasarea unei legende de tabel<br><code>caption-side: top|bottom|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>caret-color</code></td>
+      <td>Specifică culoarea cursorului (caret) în intrări, textare sau orice element care poate fi editabil<br><code>caret-color: auto|color;</code></td>
+    </tr>
+    <tr>
+      <td><code>@charset</code></td>
+      <td>Specifică codificarea caracterelor utilizate în foaia de stil<br><code>@charset "UTF-8";</code></td>
+    </tr>
+    <tr>
+      <td><code>clear</code></td>
+      <td>Specifică pe care laturi ale unui element elementele plutitoare nu au voie să plutească<br><code>clear: none|left|right|both|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>clip</code></td>
+      <td>Decupeaza/taie un element absolut pozitionat<br><code>clip: auto|shape|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>color</code></td>
+      <td>Specifică culoarea textului<br><code>color: #000;</code></td>
+    </tr>
+    <tr>
+      <td><code>column-count</code></td>
+      <td>Specifică numărul de coloane in care un element trebuie împărțit<br><code>column-count: 4|auto|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>column-fill</code></td>
+      <td>Specifică modul de umplere a coloanelor, echilibrat sau nu<br><code>column-fill: balance|auto|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>column-gap</code></td>
+      <td>Specifică distanta dintre coloane<br><code>column-gap: 22px|normal|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>column-rule</code></td>
+      <td>Proprietate globala pentru column-rule-*<br><code>column-rule: 4px double #ff00ff;</code></td>
+    </tr>
+    <tr>
+      <td><code>content</code></td>
+      <td>Folosit cu <mark>:before</mark> și <mark>:after</mark> pseudo-elemente, pentru a insera conținutul generat<br><code>content: normal|none|counter|attr|string|open-quote|close-quote|no-open-quote|no-close-quote|url|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>cursor</code></td>
+      <td>Specifică cursorul mouse-ului care va fi afișat când interactioneaza cu un element specific<br><code>cursor: pointer;</code></td>
+    </tr>
+    
+    <tr class="bgcolor">
+      <td class="letterheadings"><p>D</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+    <tr>
+  <td><code>direction</code></td>
+      <td>Defineste directia de scriere (ltr = left to right/ dela stanga la dreapta)<br><code>direction: ltr|rtl|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>display</code></td>
+      <td>Specifică modul în care trebuie afișat un anumit element HTML<br><code>display: none|inline|block|inline-block;</code></td>
+    </tr>
+    
+    
+    <tr class="bgcolor">
+      <td class="letterheadings"><p>E</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+    <tr>
+      <td><code>empty-cells</code></td>
+      <td>Specifică dacă doriți sau nu să afișați bordura sau culoarea de fundal intr-un tabel<br><code>empty-cells: show|hide|initial|inherit;</code> </td>
+    </tr>
+    
+    <tr class="bgcolor">
+      <td class="letterheadings"><p>F</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+    <tr>
+      <td><code>filter</code></td>
+      <td>Definește efectele (de exemplu, estomparea sau schimbarea culorii) pe un element înainte ca elementul să fie afișat<br><code>filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();</code></td>
+    </tr>
+    <tr>
+      <td><code>float</code></td>
+      <td>Specifică dacă un element trebuie sau nu să fie pozitionat spre...<br><code>float: none|left|right|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>font</code></td>
+      <td>Defineste proprietăți pentru stilul fontului, varianta font-ului, greutatea fontului, mărimea fontului / înălțimea liniei și proprietățile font-familie<br><code>font: italic bold 12px/30px Verdana, sans-serif;</code></td>
+    </tr>
+    <tr>
+      <td><code>@font-face</code></td>
+      <td>Specifică regula care permite site-urilor web să descarce și să utilizeze alte fonturi decât fonturile "web-safe"<br><code>font-family: Lato; src: url(lato.woff);</code></td>
+    </tr>
+    <tr>
+      <td><code>font-style</code></td>
+      <td>Specifică stilul fontului pentru text<br><code>font-style: normal|italic|oblique|initial|inherit;</code></td>
+    </tr>
+    
+    
+        <tr class="bgcolor">
+      <td class="letterheadings"><p>G</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+    <tr>
+      <td><code>grid</code></td>
+      <td>Defineste sectiunea de subsol a paginii web<br><code>column-gap: 22px|normal|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>grid-area</code></td>
+      <td>Fie specifică un nume pentru elementul grilă, fie această proprietate este o proprietate prescurtată pentru proprietățile grid-row-start, grid-column-start, grid-row-end și grid-column-end<br><code>grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end | itemname;</code></td>
+    </tr>
+    <tr>
+      <td><code>grid-auto-columns</code></td>
+      <td>Specifică o dimensiune implicită a coloanei<br><code>.grid-container {display: grid; grid-auto-columns: 50px;}</code></td>
+    </tr>
+    
+    
+         <tr class="bgcolor">
+      <td class="letterheadings"><p>H</p></td>
+      <td>&nbsp;</td>
+    </tr>   
+    
+    
+    <tr>
+      <td><code>height</code></td>
+      <td>Setează înălțimea unui element<br><code>height: auto| 100%</code></td>
+    </tr>
+    <tr>
+      <td><code>hyphens</code></td>
+      <td>Setează modul de împărțire a cuvintelor pentru a îmbunătăți aspectul paragrafelor<br><code>hyphens: none|manual|auto|initial|inherit;</code></td>
+    </tr>
+    
+    
+             <tr class="bgcolor">
+      <td class="letterheadings"><p>I</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+    
+    
+    <tr>
+      <td><code>image-rendering</code></td>
+      <td>Oferă un indiciu browserului despre ce aspecte ale unei imagini sunt cele mai importante pentru a fi păstrate atunci când imaginea este scalată<br><code>image-rendering: auto| crisp-edges| pixelated;</code></td>
+    </tr>
+    <tr>
+      <td><code>@import</code></td>
+      <td>Vă permite să importați o foaie de stil într-o altă foaie de stil<br><code>@import url|string list-of-mediaqueries;</code></td>
+    </tr>
+    <tr>
+      <td><code>isolation</code></td>
+      <td>Definește dacă un element trebuie să creeze un nou conținut de stivuire<br><code>isolation: auto|isolate|initial|inherit;</code></td>
+    </tr>
+    
+    
+    <tr class="bgcolor">
+      <td class="letterheadings"><p>J</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+    <tr>
+      <td><code>justify-content</code></td>
+      <td>Specifică alinierea dintre elementele din interiorul unui container flexibil atunci când elementele nu utilizează tot spațiul disponibil<br><code>justify-content: flex-start|flex-end|center|space-between|space-around|initial|inherit;</code></td>
+    </tr>
+    
+    <tr class="bgcolor">
+      <td class="letterheadings"><p>K</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+    <tr>
+      <td><code>@keyframes</code></td>
+      <td>Specifică codul css de animație<br><code>@keyframes numeanimatie {keyframes-selector {css-styles;}}</code></td>
+    </tr>
+    <tr>
+    
+    
+       <tr class="bgcolor">
+      <td class="letterheadings"><p>L</p></td>
+      <td>&nbsp;</td>
+    </tr> 
+    
+    
+    
+      <td><code>left</code></td>
+      <td>Specifică poziția stângă a unui element<br><code>left: auto|length|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>letter-spacing</code></td>
+      <td>Modifica spatiul dintre caractere dintr-un text<br><code>letter-spacing: normal|3px|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>line-height</code></td>
+      <td>Setează înălțimea liniei (spatiul de deasupra si de desubtul unuei linii text)<br><code>line-height: normal|1.6|100%|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>list-style</code></td>
+      <td>Setează toate proprietățile unei liste într-o singură declarație<br><code>list-style: list-style-type list-style-position list-style-image|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>list-style-position</code></td>
+      <td>Specifică poziția marcatorilor pentru elementele listate (marcatori in sau inafara elementului parinte)<br><code>list-style-position: inside|outside|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>list-style-type</code></td>
+      <td>Specifică tipul marcatorului de liste<br><code>list-style-type: circle|square|upper-roman|lower-alpha;</code></td>
+    </tr>
+    
+        <tr class="bgcolor">
+      <td class="letterheadings"><p>M</p></td>
+      <td>&nbsp;</td>
+    </tr>    
+    
+    
+    
+    <tr>
+      <td><code>margin</code></td>
+      <td>Setează toate proprietățile de margină într-o singură declarație<br><code>margin: 33px|auto|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>max-height</code></td>
+      <td>Setează înălțimea maximă a unui element<br><code>max-height: none|50px|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>max-width</code></td>
+      <td>Setează lățimea maximă a unui element<br><code>max-width: none|300px|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>@media</code></td>
+      <td>Setează regulile de stil pentru diferite tipuri / dispozitive / dimensiuni media<br><code>@media not|only mediatype and (mediafeature and|or|not mediafeature) {CSS-Code;}</code></td>
+    </tr>
+    <tr>
+      <td><code>min-height</code></td>
+      <td>Setează înălțimea mminimă a unui element<br><code>min-height: none|50px|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>min-width</code></td>
+      <td>Setează lățimea minimă a unui element<br><code>min-width: none|300px|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>mix-blend-mode</code></td>
+      <td>Specifică modul în care conținutul unui element trebuie să se "amestece" cu elementul parinte<br><code>mix-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|color-burn|difference|exclusion|hue|saturation|color|luminosity;</code></td>
+    </tr>
+    
+    
+    <tr class="bgcolor">
+      <td class="letterheadings"><p>O</p></td>
+      <td>&nbsp;</td>
+    </tr> 
+    
+    <tr>
+      <td><code>object-fit</code></td>
+      <td>Specifică modul în care conținutul unui element înlocuit trebuie adaptat la elementul parinte stabilită de înălțimea și lățimea utilizată<br><code>object-fit: fill|contain|cover|scale-down|none|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>object-position</code></td>
+      <td>Specifică alinierea elementului înlocuit în interiorul casetei<br><code>object-fit: left(right, center, 120px, 20%)|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>opacity</code></td>
+      <td>Setează nivelul de opacitate pentru un element<br><code>opacity: 1(0,.5)|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>overflow</code></td>
+      <td>Specifică ce se întâmplă dacă conținutul depășește caseta unui element<br><code>overflow: visible|hidden|scroll|auto|initial|inherit;</code></td>
+    </tr>
+    
+    
+    <tr class="bgcolor">
+      <td class="letterheadings"><p>P</p></td>
+      <td>&nbsp;</td>
+    </tr> 
+    
+    
+    
+    
+    <tr>
+      <td><code>padding</code></td>
+      <td>Proprietate pentru toate proprietatile de padding-*<br><code>padding: length|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>perspective</code></td>
+      <td>Oferă o perspectivă 3D un element<br><code>perspective: 250px|none;</code></td>
+    </tr>
+    <tr>
+      <td><code>pointer-events</code></td>
+      <td>Definește dacă un element reacționează sau nu la evenimentele sagetii mouse-ului<br><code>pointer-events: auto|none;</code></td>
+    </tr>
+    <tr>
+      <td><code>position</code></td>
+      <td>Specifică tipul de metodă de poziționare utilizat pentru un element (static, relativ, absolut sau fix)<br><code>position: static|absolute|fixed|relative|sticky|initial|inherit;</code></td>
+    </tr>
+    
+    <tr class="bgcolor">
+      <td class="letterheadings"><p>Q</p></td>
+      <td>&nbsp;</td>
+    </tr> 
+    
+    
+    
+    <tr>
+      <td><code>quotes</code></td>
+      <td>Setează tipul de ghilimele pentru cotațiile încorporate<br><code>quotes: "'" "'";</code></td>
+    </tr>
+    
+    
+    <tr class="bgcolor">
+      <td class="letterheadings"><p>R</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+    <tr>
+      <td><code>resize</code></td>
+      <td>Definește dacă (și cum) un element este redimensionabil de către utilizator<br><code>resize: none|both|horizontal|vertical|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>right</code></td>
+      <td>Specifică poziția "dreapa" a unui element poziționat<br><code>right: auto|60px|initial|inherit;</code></td>
+    </tr>
+    
+    
+    
+    <tr class="bgcolor">
+      <td class="letterheadings"><p>S</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+    
+    <tr>
+      <td><code>scroll-behavior</code></td>
+      <td>Specifică dacă doriți să animați cu ușurință poziția de defilare într acelasi document în loc să faceți salt (jump)<br><code>scroll-behavior: auto|smooth|initial|inherit;</code></td>
+    </tr>
+    <tr>
+    
+    
+    <tr class="bgcolor">
+      <td class="letterheadings"><p>T</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+      <td><code>text-align</code></td>
+      <td>Defineste optiunea de aliniere a textului<br><code>text-align: left|right|center;</code></td>
+    </tr>
+    <tr>
+      <td><code>text-decoration</code></td>
+      <td>Specifică decorarea adăugată textului<br><code>text-decoration: text-decoration-line text-decoration-color text-decoration-style|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>text-shadow</code></td>
+      <td>Adaugă umbră la text<br><code>text-shadow: 2px 2px #ccc;</code></td>
+    </tr>
+    <tr>
+      <td><code>text-transform</code></td>
+      <td>Controlează capitalizarea textului<br><code>text-transform: none|capitalize|uppercase|lowercase|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>top</code></td>
+      <td>Specifică poziția "sus" a unui element<br><code>top: auto|20px|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>transform</code></td>
+      <td>Aplică o transformare 2D sau 3D unui element<br><code>transform: none|transform-functions|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>transition</code></td>
+      <td>Setare globala pentru toate proprietățile de transition-*<br><code>transition: property duration timing-function delay|initial|inherit;</code> - <code>transition: width .4s;</code></td>
+    </tr>
+    
+    
+    
+    <tr class="bgcolor">
+      <td class="letterheadings"><p>U</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+    <tr>
+      <td><code>user-select</code></td>
+      <td>Specifică dacă textul unui element poate fi selectat<br><code>user-select: auto|none|text|all;</code></td>
+    </tr>
+    
+      <tr class="bgcolor">
+      <td class="letterheadings"><p>V</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+    <tr>
+      <td><code>vertical-align</code></td>
+      <td>Setează alinierea verticală a unui element<br><code>vertical-align: baseline|length|sub|super|top|text-top|middle|bottom|text-bottom|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>visibility</code></td>
+      <td>Specifică dacă un element este vizibil sau nu<br><code>visibility: visible|hidden|collapse|initial|inherit;</code></td>
+    </tr>
+    
+     <tr class="bgcolor">
+      <td class="letterheadings"><p>W</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+    
+    <tr>
+      <td><code>white-space</code></td>
+      <td>Specifică modul în care este manipulat spațiul alb din interiorul unui element<br><code>white-space: normal|nowrap|pre|pre-line|pre-wrap|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>width</code></td>
+      <td>Setează lățimea unui element<br><code>width: auto|300px|90%|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>word-break</code></td>
+      <td>Specifică modul în care vor fi "rupte" cuvintele când se ajunge la sfârșitul liniei<br><code>word-break: normal|break-all|keep-all|break-word|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>word-spacing</code></td>
+      <td>Creste sau scade spatiul dintre cuvintele existente intr-un text<br><code>word-spacing: normal|30px|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>word-wrap</code></td>
+      <td>Permite cuvintelor lungi (cuvant intreg), să fie rupte și să se "mute" în linia următoare<br><code>word-wrap: normal|break-word|initial|inherit;</code></td>
+    </tr>
+    <tr>
+      <td><code>writing-mode</code></td>
+      <td>Specifică dacă liniile de text sunt așezate orizontal sau vertical<br><code>writing-mode: horizontal-tb|vertical-rl|vertical-lr;</code></td>
+    </tr>
+    
+    
+         <tr class="bgcolor">
+      <td class="letterheadings"><p>Z</p></td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+    
+    <tr>
+      <td><code>z-index</code></td>
+      <td>Setează ordinea de afisare "on top off" a unui element<br><code>z-index: auto|99 (-1, 1, 100)|initial|inherit;</code></td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+<div class="lenanipadd line">
+<div class="cgcbox-6 tcenter printbtn printit"><a href="#prop">Proprietati CSS</a></div>
+<div class="cgcbox-6 tcenter printbtn printit"><a href="#selectori">Selectori CSS</a></div>
+</div>
+
+
+
+<div id="selectori" class="cgcbox-12">
+<h2>Selectori</h2>
+<p>În CSS, selectorii sunt modelele folosite pentru a selecta elementul (elementele) pe care doriți să le aplicati atribute CSS.</p>
+</div>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+  <tbody>
+    <tr>
+      <th width="29%">Selector</th>
+      <th width="29%">Exemplu</th>
+      <th width="42%">Descriere</th>
+    </tr>
+     
+    <tr>
+      <td><code>.class</code></td>
+      <td><code>.info</code></td>
+      <td>Selecteaza toate elementele ce folosesc <code>class="info"</code></td>
+    </tr>
+    
+    <tr>
+      <td><code>.nume1.nume2</code></td>
+      <td><code>&lt;div class="nume1 nume2"&gt;...&lt;/div&gt;</code></td>
+      <td>Selectează toate elementele cu nume1 și nume2 atribuind proprietatile css </td>
+    </tr>
+    
+    <tr>
+      <td><code>#id</code></td>
+      <td><code>&lt;div id="caseta"&gt;...&lt;/div&gt;</code></td>
+      <td>Selectează elementul cu <mark>#caseta</mark> atribuind proprietatile css </td>
+    </tr>
+    
+    
+    <tr>
+      <td><code>*</code></td>
+      <td><code>*</code></td>
+      <td>Selectează toate elementele atribuind proprietatile css </td>
+    </tr>
+    
+    <tr>
+      <td><code>element</code></td>
+      <td><code>&lt;p&gt;</code></td>
+      <td>Selectează toate elementele <strong>&lt;p&gt;</strong> atribuind proprietatile css </td>
+    </tr>
+    
+ <tr>
+      <td><code>element, element</code></td>
+      <td><code>&lt;div&gt;, &lt;p&gt;</code></td>
+      <td>Selectează toate elementele <strong>&lt;div&gt;</strong> si <strong>&lt;p&gt;</strong> atribuind proprietatile css </td>
+    </tr>
+    
+    <tr>
+      <td><code>element element</code></td>
+      <td><code>&lt;div&gt; &lt;p&gt;</code></td>
+      <td>Selectează toate elementele <strong>&lt;p&gt;</strong> din <strong>&lt;div&gt;</strong> atribuind proprietatile css </td>
+    </tr>
+    
+    <tr>
+      <td><code>element > element</code></td>
+      <td><code>&lt;div&gt; > &lt;p&gt;</code></td>
+      <td>Selectează toate elementele <strong>&lt;p&gt;</strong> a caror element-parinte este <strong>&lt;div&gt;</strong> atribuind proprietatile css </td>
+    </tr>
+    
+    <tr>
+      <td><code>element + element</code></td>
+      <td><code>&lt;div&gt; + &lt;p&gt;</code></td>
+      <td>Selectează toate elementele <strong>&lt;p&gt;</strong> daca sunt plasate imediat dupa elementul <strong>&lt;div&gt;</strong> atribuind proprietatile css </td>
+    </tr>
+    
+    <tr>
+      <td><code>element1 ~ element2</code></td>
+      <td><code>&lt;p&gt; ~ &lt;ul&gt;</code></td>
+      <td>Selectează toate elementele <strong>&lt;ul&gt;</strong> care sunt precedate de elementul <strong>&lt;p&gt;</strong> atribuind proprietatile css </td>
+    </tr>
+    
+    <tr>
+      <td><code>[atribut]</code></td>
+      <td><code>a[target] {  background-color: green;}</code></td>
+      <td>Selectează toate elementele ce contin atributul <strong>target</strong> (link-urile) </td>
+    </tr>
+    
+    <tr>
+      <td><code>[atribut=valoare]</code></td>
+      <td><code>[title~=produs]</code></td>
+      <td>Selectează toate elementele cu atributul de titlu care conține cuvântul <strong>produs</strong></td>
+    </tr>
+    
+     <tr>
+      <td><code>[atribut^=valoare]</code></td>
+      <td><code>a[href^="https"]</code></td>
+      <td>Selectează fiecare element <code>&lt;a&gt;</code> a cărui valoare a atributului href  începe cu <strong>https</strong></td>
+    </tr>
+    
+    <tr>
+      <td><code>[atribut$=valoare]</code></td>
+      <td><code>a[href$=".pdf"]</code></td>
+      <td>Selectează fiecare element <code>&lt;a&gt;</code> a cărui valoare a atributului href se termina cu extensia <strong>.pdf</strong></td>
+    </tr>
+    
+    <tr>
+      <td><code>[atribut*=valoare]</code></td>
+      <td><code>a[href*="lenani"]</code></td>
+      <td>Selectează toate elementele <code>&lt;a&gt;</code> a cărui valoare a atributului href contine segmentul <strong>lenani</strong></td>
+    </tr>
+    
+    
+    <tr>
+      <td><code>:active</code></td>
+      <td><code>a:active</code></td>
+      <td>Selectează link-ul activ</td>
+    </tr>
+    
+    <tr>
+      <td><code>::after</code></td>
+      <td><code>p::after</code></td>
+      <td>Inserați ceva după conținutul fiecărui element <code>&lt;p&gt;</code>. Exemplu: <code>p::after{content:'+';margin-left: 5px;margin-right: 8px;}</code>. Adauga semnul plus dupa elementul <code>&lt;p&gt;</code></td>
+    </tr>
+    
+    <tr>
+      <td><code>::before</code></td>
+      <td><code>p::before</code></td>
+      <td>Inserați ceva in fata conținutul fiecărui element <code>&lt;p&gt;</code>. Exemplu: <code>p::before{content:'+';margin-left: 5px;margin-right: 8px;}</code>. Adauga semnul plus in fata elementului <code>&lt;p&gt;</code></td>
+    </tr>
+    
+    <tr>
+      <td><code>:hover</code></td>
+      <td><code>a:hover</code></td>
+      <td>Aplică atributele CSS setate pentru acțiunea mouse deasupra unui link</td>
+    </tr>
+    
+     <tr>
+      <td><code>:target</code></td>
+      <td><code>#zenart:target</code></td>
+      <td>Selectează elementul curent <code>#zenart</code> activ (clic pe o adresă URL care conține numele ancorei respective). Folosit cel mai des pentru navigarea in aceeasi pagina.</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<div class="lenanipadd line">
+<div class="cgcbox-6 tcenter printbtn printit"><a href="#prop">Proprietati CSS</a></div>
+<div class="cgcbox-6 tcenter printbtn printit"><a href="#selectori">Selectori CSS</a></div>
+</div>
+
+<div class="cgcbox-12 lenaninota">
+<p>Nota: Unora dintre proprietatile CSS atribuite elementelor trebuiesc sa fie precedate de prefixul browserului pentru compatibilitate.<br/>In acest context, <code>-webkit-*</code> / <code>-moz-*</code> / <code>-o-*</code> sunt prefixele browser-eleor cele mai utilizate</p>
+<p>Exemplu:<br/>
+<code>
+img{ -webkit-border-radius: 6px;<br/>
+border-radius: 6px;
+}
+</code>
+</p>
+</div>
+
+
+
+<div class="cgcbox-12 forprint tcenter">
+<h3>Subsol</h3>
+<p>Material realizat de Dan N pentru <a href="https://lenani.ro/" target="_blank" title="Lenani ZenArt">www.lenani.ro</a>. &copy; 2019 Lenani ZenArt Romania </p>
+</div>
+
+<div class="cgcbox-12 noprint">
+<h3>Info</h3>
+<p>Poti descarca acest material in format PDF (print) apansand butonul albastru <span class="printbtn printit"><a href="javascript:print()">Salveaza PDF - Print</a></span></p>
+<p>In materialul urmator vom adauga exemple de utilizare a tagurilor HTML si relatiile legacy-parent intre elementele HTML<br> Acestea din urma ne ajuta sa cream pagina web respectand normele standard</p>
+</div>
+
+</div>
+
+
+<div class="cgcbox-12 footer no noprint">
+  
+  <div class="cgcbox-8 credits"><p>Material realizat de Dan N pentru <a href="https://lenani.ro/" target="_blank" title="Lenani ZenArt">www.lenani.ro</a></p></div>
+  <div class="cgcbox-4 forprint printbtn"><a href="javascript:print()">Salveaza PDF - Print</a></div>
+  
+</div>
+
+
+
+
+
+</body>
+</html>
