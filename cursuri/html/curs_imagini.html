@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lenani - Optimizare imagini</title>
+<style>
+html{scroll-behavior: smooth;}
+a:link,a:visited{color:#09C;}a:hover {color:#F39;}
+body{width:90%;margin:0 auto;background-color:#f1f1f1;font-family:sans-serif;}
+
+.scr::-webkit-scrollbar {width:8px;}.scr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.1);-webkit-border-radius:10px;border-radius:10px;}.scr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background-color:#0CC;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);}.scr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #333;}
+html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cgcbox-"] {float: left;padding: 15px;border: 0px solid red;}.cgcbox-1 {width: 8.33%;}.cgcbox-2 {width: 16.66%;}.cgcbox-3 {width: 25%;}.cgcbox-4 {width: 33.33%;}.cgcbox-5 {width: 41.66%;}.cgcbox-6 {width: 50%;}.cgcbox-7 {width: 58.33%;}.cgcbox-8 {width: 66.66%;}.cgcbox-9 {width: 75%;}.cgcbox-10 {width: 83.33%;}.cgcbox-11 {width: 91.66%;}.cgcbox-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}.divider{opacity:0;}
+
+textarea{display:block;width:99%;height:200px;background-color:#f1f1f1;font-size:16px;border:0; outline:none;-webkit-box-shadow:0 1px 3px #999;margin:5px 1px 7px 1px;-webkit-transition:linear .3s;transition:linear .3s;overlow:auto;}
+textarea:focus, textarea:hover{display:block;width:99%;height:200px;border:0; outline:none;-webkit-box-shadow:0 1px 3px #09C;margin:5px 1px 7px 1px;overlow:auto;}
+code{font-size:15px;background-color:#f1f1f1;color:#F96;padding-left:5px;padding-right:5px;}
+.sectiuni{margin-bottom:30px;border-top:1px solid #ccc;}
+.lenani-m{background-color:#fff;}
+.coded {background-color:rgba(153,102,153,.10);font-family:"Lucida Console", Monaco, monospace;}
+
+
+.noimage{background-color:#f1f1f1;}
+#zenart{padding-top:15%;padding-bottom:16%;}
+.bgimage{background-color:#000;background-image: url("imagini/3slider.jpg");background-repeat:no-repeat;background-size:cover;background-position:center center;background-attachment:fixed;}
+h3.titlu_lenani{display:block;width:80%;height:auto;margin:0 auto;padding:20px 0 3px;font-size:3.33rem;color:#f1f1f1;font-weight:lighter;text-align:right;}
+p.subtitlu_lenani{display:block;width:80%;height:auto;margin:0 auto;padding:4px 0 3px;font-size:1.33rem;color:#f1f1f1;font-weight:lighter;text-align:right;}
+
+.mica_lenani{background-color:#930;background-image:url("imagini/tile.png");background-repeat:repeat-x;background-position:0 0;background-size:100px 100px;}
+
+@media only screen and (max-width: 768px)
+{
+	body{font-size:14px;color:#666;font-family:Verdana, Geneva, sans-serif;}
+	[class*="cgcbox-"]{width:100%;}
+
+}
+
+* html .line {height:1%;}
+</style>
+</head>
+
+<body>
+
+
+
+<div class="cgcbox-12 lenani-m">
+
+
+<div class="cgcbox-12 sectiuni">
+<h3>Exemplu imagine si cod markup</h3>
+<div class="line">
+   <div class="cgcbox-5 imgresp tcenter"><img src="imagini/avatar.jpg" alt="Descriere imagine"/></div>
+   <div class="cgcbox-7">
+   <p><strong>Imagine folosind atributul</strong> <code>alt</code></p>
+<textarea spellcheck="false">&lt;img src=&quot;imagini/avatar.jpg&quot; alt=&quot;Descriere imagine&quot;/&gt;</textarea>
+   </div>
+</div>
+</div>
+
+<div class="cgcbox-12 sectiuni">
+<h3>Exemplu imagine si cod markup</h3>
+<div class="line">
+   <div class="cgcbox-5 imgresp tcenter noimage"><img src="imagini/1avatar.jpg" alt="Descriere imagine"/></div>
+   <div class="cgcbox-7">
+   <p><strong>Imagine folosind atributul</strong> <code>alt</code> dar imaginea nu se incarca corect</p>
+<textarea spellcheck="false">&lt;img src=&quot;imagini/1avatar.jpg&quot; alt=&quot;Descriere imagine&quot;/&gt;</textarea>
+   </div>
+</div>
+</div>
+
+
+<div class="cgcbox-12 sectiuni">
+<h3>Exemplu element grafic si cod markup</h3>
+<div class="line">
+   <div id="zenart" class="cgcbox-12 imgresp tcenter bgimage"><h3 class="titlu_lenani">Imagine de fundal mare</h3>
+   <p class="subtitlu_lenani">Elementele text sunt deasupra fundalului</p></div>
+   <div class="cgcbox-12">
+   <p><strong>Folosind imaginea ca element de fundal. Imagine mare</strong></p>
+   <p>HTML</p>
+<textarea spellcheck="false">&lt;div id=&quot;zenart&quot; class=&quot;cgcbox-12 imgresp tcenter bgimage&quot;&gt;&lt;h3 class=&quot;titlu_lenani&quot;&gt;Imagine de fundal mare&lt;/h3&gt;
+&lt;p class=&quot;subtitlu_lenani&quot;&gt;Elementele text sunt deasupra fundalului&lt;/p&gt;&lt;/div&gt;</textarea>
+<p>CSS</p>
+<textarea spellcheck="false">#zenart{padding-top:15%;padding-bottom:16%;}
+.bgimage{background-color:#000;background-image: url("imagini/3slider.jpg");background-repeat:no-repeat;background-size:cover;background-position:center center;background-attachment:fixed;}
+h3.titlu_lenani{display:block;width:80%;height:auto;margin:0 auto;padding:20px 0 3px;font-size:3.33rem;color:#f1f1f1;font-weight:lighter;text-align:right;}
+p.subtitlu_lenani{display:block;width:80%;height:auto;margin:0 auto;padding:4px 0 3px;font-size:1.33rem;color:#f1f1f1;font-weight:lighter;text-align:right;}</textarea>
+</div>
+</div>
+</div>
+
+
+<div class="cgcbox-12 sectiuni">
+<h3>Exemplu element grafic si cod markup</h3>
+<div class="line">
+   <div class="cgcbox-12 imgresp tcenter">
+      <div class="mica_lenani">
+         <h3 class="titlu_lenani">Imagine de fundal mica</h3>
+      </div>
+   </div>
+   
+<div class="cgcbox-12">
+   <p><strong>Folosind imaginea ca element de fundal. Imagine mica</strong></p>
+ <p>HTML</p>
+<textarea spellcheck="false">&lt;div class=&quot;mica_lenani&quot;&gt;
+&lt;h3 class=&quot;titlu_lenani&quot;&gt;Imagine de fundal mica&lt;/h3&gt;
+&lt;/div&gt;</textarea>
+<p>CSS</p>
+<textarea spellcheck="false">h3.titlu_lenani{display:block;width:80%;height:auto;margin:0 auto;padding:20px 0 3px;font-size:3.33rem;color:#f1f1f1;font-weight:lighter;text-align:right;}
+.mica_lenani{background-color:#930;background-image:url("imagini/tile.png");background-repeat:repeat-x;background-position:0 0;background-size:100px 100px;}</textarea>
+   </div>
+   
+</div>
+</div>
+
+
+
+<div class="cgcbox-12 sectiuni">
+<h3>CSS</h3>
+<p>CSS folosit pentru a seta imaginile de fundal mari cu anumite proprietati</p>
+<p><strong>Imagini mari de fundal</strong></p>
+<p><code>background-image: url();</code> - sursa imaginii</p>
+<p><code>background-size: cover;</code> - afiseaza imaginea de fundal acoperind tot spatiul elementului HTML</p>
+<p><code>background-repeat: no-repeat;</code> - nu permite imaginii sa se repete</p>
+<p><code>background-position: center center;</code> - seteaza imaginea pe centrul orizontal si centrul vertical in spatiul elementului HTML</p>
+<p><code>background-attachment: fixed;</code> - seteaza priprietatea imaginii de fundal sa ramana intr-un punct fix fata de pozitia elementului HTML in pagina</p>
+<hr/>
+<p>CSS folosit pentru a seta imaginile de fundal mici cu anumite proprietati</p>
+<p><strong>Imagini mici setate ca fundal</strong></p>
+<p><code>background-image: url();</code> - sursa imaginii</p>
+<p><code>background-size: auto;</code> - afiseaza imaginea de fundal folosind dimensiunea reala a imaginii</p>
+<p><code>background-repeat: repeat-x;</code> - permite imaginii sa se repete pe orizontala</p>
+<p><code>background-position: 0 0;</code> - seteaza imaginea in interiorul elementului HTML afisando de la <strong>stanga</strong> sus (primul 0) si de sus in jos (al doilea 0) / left top  </p>
+<p><a href="curs_test_posizie_imagine_fundal.html" target="_blank">Testeaza proprietatile CSS</a></p>
+</div>
+
+
+
+
+
+
+</div>
+
+
+</body>
+</html>

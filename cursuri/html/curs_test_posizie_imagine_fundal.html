@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+
+ <head>
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Testeaza</title>
+ <script type="text/javascript">
+ <!--
+ function test_onload()
+ {
+ var preval=""
+ preval=document.getElementById("preselectedValue").value
+ if (preval!="")
+  {
+  change_position(preval)
+  var x=document.getElementsByTagName("input")
+  var l=x.length
+  for (i=0;i<l;i++)
+   {
+   if (x[i].value==preval)
+    {
+    x[i].checked=true
+    }
+   }
+   document.getElementById("container").style.display="block";
+   }
+ }
+ 
+ function click_position(obj)
+ {
+ change_position(obj.value)
+ }
+ 
+ function change_position(val)
+ {
+ 
+  var s="demoDIV";
+  
+  document.getElementById(s).style.backgroundPosition=val;
+  
+ var x="background-position:<span id='enlargecssprop'>" + val + "</span>";
+ var y="background-image:url('/imagini/ro.png');<br>    background-repeat:no-repeat;<br>    ###CSSPROP###;<br>";
+ var z=y.replace("###CSSPROP###",x);
+ 
+  document.getElementById("styleDIV").innerHTML="div {\n&nbsp;&nbsp;&nbsp;&nbsp;" + z + "}";
+ 
+ }
+if (!String.prototype.trim) {
+   String.prototype.trim=function(){return this.replace(/^\s+|\s+$/g, '');};
+} 
+ //-->
+ </script>
+<style> 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    color:#000000;
+    margin:0px;
+    font-size:100%;
+}
+
+.container {
+    background-color:#f1f1f1;
+    width:100%;
+    overflow:auto;
+    position:absolute;
+    top:100px;
+    bottom:0;
+    height:auto;
+    min-height:250px;
+    min-width:550px;
+}
+.textareacontainer, .iframecontainer {
+    float:left;
+    height:100%;
+    width:50%;
+}
+.textarea, .iframe {
+    height:100%;
+    width:100%;
+    padding:10px 15px;
+}
+.textarea {
+    padding-right:7px;
+}
+.iframe {
+    padding-left:7px;
+}
+.headerText {
+    width:auto;
+    float:left;
+    font-family:verdana;
+    font-size:1em;
+    line-height:2;
+}
+.seeResult,.stacked {
+    float:right;
+    font-size:15px;
+    background-color:#555555;
+    color:#ffffff;
+    border:1px solid #555555;
+    padding:0 15px;
+    line-height:1.45;
+    width:auto;
+	cursor:pointer;  
+    box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);  
+}
+.seeResult:hover,.stacked:hover {
+    background-color:#ffffff;
+    color:#000000;
+}
+.seeResult:active,.stacked:active {
+    background-color:#f1f1f1;
+}
+.textareawrapper {
+    width:100%;
+    height:92%;
+    background-color: #ffffff;
+    box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.iframewrapper {
+    width:100%;
+    height:92%;
+    -webkit-overflow-scrolling: touch;
+    background-color: #ffffff;
+    box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#textareaCode {
+    background-color: #ffffff;
+    font-family: consolas,"courier new",monospace;
+    font-size:15px;
+    height:100%;
+    width:100%;
+    padding:8px;
+    resize: none;
+    border:none;
+}
+#iframeResult, #iframeSource {
+    background-color: #ffffff;
+    height:100%;
+    width:100%;  
+}
+.footerText {
+	position:absolute;
+	bottom:0;
+	font-family:verdana;
+	font-size:0.8em;
+	width:100%;
+	padding-right:15px;
+	text-align:right;
+    height:20px;
+    overflow:hidden;
+}
+.footerText a {
+	color:#000000;
+}
+.footerText a:hover {
+	text-decoration:none;
+}
+#testcon {
+    overflow:hidden;
+    text-align:center;
+    margin-top:5px;
+}
+.stackcontainer img,.stackcontainer input {
+    float:right;
+}
+@media screen and (max-width: 768px) {
+    .container {
+	    top:100px;    
+    }
+    .footerText {
+	    display:none;
+    }
+}
+@media screen and (max-width: 728px) {
+    #testcon {
+        margin-top:0;
+    }
+    .container {
+	    top:60px;
+    }
+}
+@media screen and (max-width: 467px) {
+    .container {
+	    top:50px;
+    }
+}
+@media only screen and (max-device-width: 768px) {
+    .stackcontainer {
+        display:none;
+    }
+    #textareaCode {
+        padding:5px;
+    }
+    .iframewrapper {
+        overflow: auto;
+    }
+    .container {
+	    min-width:320px;
+    }
+    .textarea, .iframe {
+        height:97%;
+    }
+    @media screen and (orientation:portrait) {
+        .textareacontainer, .iframecontainer {
+            height:50%;
+            float:none;
+            width:98%;
+        }
+        .textarea, .iframe {
+            height:97%;
+            padding:15px;            
+        }
+    }
+}
+@media screen and (max-height: 800px) {
+    .footerText {
+	    display:none;
+    }
+}
+
+body {
+ font-family:verdana;
+ font-size:14px;
+}
+.container {
+ width:100%;
+ max-width:974px;
+ min-width:0;
+ background-color:#f1f1f1;
+    box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin:auto;
+    left:0;
+    right:0;
+    height:auto;
+    bottom:auto;
+ 
+}
+.codecontainer {
+    width:50%;
+    float:left;
+}
+.codecontainer .radio {
+ line-height:2;
+}
+.resultcontainer {
+    width:48%;
+    float:left;
+}
+.test {
+    background-color:#ffffff;
+    padding:15px;
+    margin:15px;
+    margin-top:0;
+    font-family:Consolas,'Courier New', Courier, monospace;
+    font-size:16px;
+}
+#enlargecssprop {
+ font-weight:bold;
+ color:#000000;
+}
+#demoDIV {
+ margin-left:10px;
+ margin-top:3px;
+ margin-right:15px;
+ background-color:#ffffff;
+ border:1px solid #c3c3c3;
+ height:280px;
+ background-image:url('imagini/ro.png');
+    background-repeat:no-repeat;
+    background-position:left top;
+}
+     
+#styleDIV {
+ font-family:consolas,Courier new;
+ font-size:14px;
+ margin-left:10px;
+ margin-right:15px;
+ background-color:#ffffff;
+ padding:10px;
+ color:#222222;
+ text-align:left;
+ }
+div.demoHeader {
+ font-size:24px;
+ margin-top:15px;
+ margin-left:15px;
+ margin-bottom:15px;
+ color:#555555;
+}
+div.testFooter {
+ font-size:14px;
+ color:#555555;
+ padding:15px;
+}
+#pfooter {
+ margin:15px;
+}
+@media screen and (max-width: 728px) {
+    .codecontainer {
+        width:100%;
+        text-align:center;
+    }
+    .resultcontainer {
+        width:100%;
+        text-align:center;
+    }
+    .testFooter {
+     display:none;
+    }
+    .container {
+     top:60px;
+    }
+}
+ 
+ 
+ </style>
+ 
+<script type="text/javascript">
+(function(){function e(){if(!window.frames.__cmpLocator)if(document.body){var c=document.body,b=document.createElement("iframe");"undefined"!==typeof b.style.setAttribute?b.style.setAttribute("display","none"):b.style="display:none";b.name="__cmpLocator";c.appendChild(b)}else setTimeout(e,5)}function d(c){var b="string"===typeof c.data,a={};if(b)try{a=JSON.parse(c.data)}catch(f){}else a=c.data;if(a.__cmpCall){var d=a.__cmpCall;window.__cmp(d.command,d.parameter,function(a,e){a={__cmpReturn:{returnValue:a,
+success:e,callId:d.callId}};c.source.postMessage(b?JSON.stringify(a):a,"*")})}}e();"function"!==typeof __cmp&&(window.__cmp=function(c,b,a){"ping"===c?a&&a({gdprAppliesGlobally:!1,cmpLoaded:!1}):__cmp.commandQueue.push({command:c,parameter:b,callback:a})},__cmp.commandQueue=[],__cmp.msgHandler=d,window.addEventListener?window.addEventListener("message",d,!1):window.attachEvent("onmessage",d))})();
+</script>
+
+
+
+</head>
+<body>
+<div id='testcon' style="background-color:#ffffff">
+
+ 
+</div>
+
+ <div id="container" class="container">
+ 
+  <div class="codecontainer">
+    <div class="demoHeader">Proprietati CSS:</div>
+    <form class="test" action="javascript:return false;">
+                background-position:<br><br>
+    <input type="hidden" id="preselectedValue" value="" />
+    
+        <div class="radio"><input autocomplete="off" type="radio" name="radio_position" onclick="click_position(this)" id="value_1" value="left top" checked='checked' /><label for="value_1">left top sau 0 0</label></div>
+    
+        <div class="radio"><input autocomplete="off" type="radio" name="radio_position" onclick="click_position(this)" id="value_2" value="left center" /><label for="value_2">left center</label></div>
+    
+        <div class="radio"><input autocomplete="off" type="radio" name="radio_position" onclick="click_position(this)" id="value_3" value="left bottom" /><label for="value_3">left bottom</label></div>
+    
+        <div class="radio"><input autocomplete="off" type="radio" name="radio_position" onclick="click_position(this)" id="value_4" value="right top" /><label for="value_4">right top</label></div>
+    
+        <div class="radio"><input autocomplete="off" type="radio" name="radio_position" onclick="click_position(this)" id="value_5" value="right center" /><label for="value_5">right center</label></div>
+    
+        <div class="radio"><input autocomplete="off" type="radio" name="radio_position" onclick="click_position(this)" id="value_6" value="right bottom" /><label for="value_6">right bottom</label></div>
+    
+        <div class="radio"><input autocomplete="off" type="radio" name="radio_position" onclick="click_position(this)" id="value_7" value="center top" /><label for="value_7">center top</label></div>
+    
+        <div class="radio"><input autocomplete="off" type="radio" name="radio_position" onclick="click_position(this)" id="value_8" value="center center" /><label for="value_8">center center</label></div>
+    
+        <div class="radio"><input autocomplete="off" type="radio" name="radio_position" onclick="click_position(this)" id="value_9" value="center bottom" /><label for="value_9">center bottom</label></div>
+    
+        <div class="radio"><input autocomplete="off" type="radio" name="radio_position" onclick="click_position(this)" id="value_10" value="50% 50%" /><label for="value_10">50% 50%</label></div>
+    
+        <div class="radio"><input autocomplete="off" type="radio" name="radio_position" onclick="click_position(this)" id="value_11" value="25% 75%" /><label for="value_11">25% 75%</label></div>
+    
+        <div class="radio"><input autocomplete="off" type="radio" name="radio_position" onclick="click_position(this)" id="value_12" value="10px 200px" /><label for="value_12">10px 200px</label></div>
+    
+        <div class="radio"><input autocomplete="off" type="radio" name="radio_position" onclick="click_position(this)" id="value_13" value="50px 50px" /><label for="value_13">50px 50px</label></div>
+    
+        <div class="radio"><input autocomplete="off" type="radio" name="radio_position" onclick="click_position(this)" id="value_14" value="initial" /><label for="value_14">initial</label></div>
+       
+    </form>
+    <div id="pfooter"></div>
+  </div>
+  <div class="resultcontainer">
+   <div class="demoHeader">Rezultat:</div>
+ 
+   <div id="demoParent">
+    <div id="demoDIV"></div>
+   </div>
+   <div class="demoHeader">Cod CSS:</div>
+   <pre id="styleDIV">
+div {
+    background-image:url('imagini/ro.png');<br>    background-repeat:no-repeat;<br>    background-position:<span id='enlargecssprop'>left top</span>;<br>}</pre>
+  </div>
+  <div style="clear:both;"></div>
+ 
+  <div class="testFooter" style="float:left;">Faceți clic pe valorile de proprietăților de mai sus pentru a vedea rezultatul</div>
+  <div class="testFooter" style="text-align:right;">
+   <a style="color:#555555" href="curs_imagini.html">Curs</a> - Test
+  </div>
+  <div style="clear:both;"></div>
+ </div>
+<script type="text/javascript">test_onload()</script>
+ </body>
+
+</html>
