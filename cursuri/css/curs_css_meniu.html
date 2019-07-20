@@ -1,0 +1,566 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS - Navigare - Pop Up - CSS</title>
+<style>
+html{scroll-behavior: smooth;}
+a:link,a:visited{color:#09C;}a:hover {color:#F39;}
+body{width:90%;margin:0 auto;background-color:#f1f1f1;font-family:sans-serif;}
+.scr::-webkit-scrollbar {width:8px;}.scr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.1);-webkit-border-radius:10px;border-radius:10px;}.scr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background-color:#0CC;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);}.scr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #333;}
+
+html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cgcbox-"] {float: left;padding: 15px;border: 0px solid red;}.cgcbox-1 {width: 8.33%;}.cgcbox-2 {width: 16.66%;}.cgcbox-3 {width: 25%;}.cgcbox-4 {width: 33.33%;}.cgcbox-5 {width: 41.66%;}.cgcbox-6 {width: 50%;}.cgcbox-7 {width: 58.33%;}.cgcbox-8 {width: 66.66%;}.cgcbox-9 {width: 75%;}.cgcbox-10 {width: 83.33%;}.cgcbox-11 {width: 91.66%;}.cgcbox-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}.divider{opacity:0;}
+
+
+.lenaniheader{background: #8e008e;
+background: -moz-linear-gradient(-45deg,  #8e008e 0%, #f200e2 54%, #1881dd 100%);
+background: -webkit-linear-gradient(-45deg,  #8e008e 0%,#f200e2 54%,#1881dd 100%);
+background: linear-gradient(135deg,  #8e008e 0%,#f200e2 54%,#1881dd 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e008e', endColorstr='#1881dd',GradientType=1 );}
+.lenaniheader h2{line-height:150px;color:#fff;font-size:3.33rem;text-shadow:0 1px 2px #999;}
+#lenani_m{display:block;height:auto;box-sizing:border-box;background-color:#fff;padding:0;margin:0 auto!important;}
+table,tbody{display:block;width:100%;margin:10px auto 22px auto;}
+#lenani_m tr:nth-child(odd){background-color:#f1f1f1;padding:5px 0 5px;text-indent:4px;}
+#lenani_m tr:nth-child(even){padding:5px 0 5px;text-indent:4px;}
+th,td,tr{padding:5px 0 5px;}
+
+.notsupported{color:#F99;}
+.footer{background-color:#222;border-top:4px solid #F96;margin-top:10px;}
+.credits p{color:#777;font-size:14px;}
+.credits a,.credits a:visited{color:#F93;text-decoration:none;}
+.credits a:hover{color:#0CC;text-decoration:none;}
+.lenaninota{margin:37px auto 12px auto;position:relative;background-color:#F3FCFE;-webkit-border-radius:5px;border-radius:5px;border:1px solid #CFE7E7;color:#666;}
+.lenaninota p{padding:10px;}
+.letterheadings p{font-size:19px;color:#fff;text-indent:18px;}
+.bgcolor{background-color:#09C!important;}
+
+.printbtn a,.printbtn a:visited{padding:5px 22px;text-align:center;background-color:#09F;color:#fff;text-decoration:none;-webkit-border-radius:5px;border-radius:5px;}
+.printbtn a:hover,.printbtn a:focus{color:#fff;background-color:#09C;}
+.forprint{display:none;}
+.lenanipadd{padding-bottom:30px;}
+
+section{display:block;float:none;clear:left;padding-bottom:20px;margin:10px auto 13px auto;}
+section h1,section h2, section h3{color:#777;font-weight:100;font-family:Tahoma, Geneva, sans-serif;}
+section p{color:#444;font-family:sans-serif;font-size:16px;}
+section code{font-size:14px;padding-left:3px;padding-right:3px;background-color:#CFE7E7;}
+section mark {font-size:14px;padding-left:3px;padding-right:3px;background-color:#627284;color:#E2E2E2;}
+textarea{display:block;width:99%;height:200px;background-color:#f1f1f1;font-size:16px;border:0; outline:none;-webkit-box-shadow:0 1px 3px #999;margin:5px 1px 7px 1px;-webkit-transition:linear .3s;transition:linear .3s;overlow:auto;}
+textarea:focus, textarea:hover{display:block;width:99%;height:200px;border:0; outline:none;-webkit-box-shadow:0 1px 3px #09C;margin:5px 1px 7px 1px;overlow:auto;}
+
+.mixsec{border-top:1px solid #ccc;margin:10px auto 12px auto;}
+.mixsec:hover{background-color:#F3FCFE;}
+h3.titles{display:block;width:100%;height:auto;margin:0 auto;text-indent:12px;background-color:#0CC;color:#fff;padding:5px 0 6px;}
+/** Meniu Demo **/
+.meniu ul {list-style-type: none;}
+.orizontal li {float: left;}
+.linkuri li a {display: block;background-color:#222;color:#f1f1f1;text-align: center;padding: 14px 16px;text-decoration: none;font-family:Verdana, Geneva,sans-serif;}
+.linkuri li a:hover:not(.active) {color:#fff;background-color:#09F;}
+.linkuri .active {background-color:#000;color:#fff;}
+.linkuri .active:hover{background-color:#09C;color:#fff;}
+.linkuri .flright{float:right;color:#fff;}
+
+
+
+
+.clmenu ul {list-style-type: none;margin:0 auto;padding: 0;overflow: hidden;background-color:#222;}
+.clmenu li {float: left;}
+.clmenu li a {display: block;background-color:#222;color:#f1f1f1;text-align: center;padding: 14px 16px;text-decoration: none;font-family:Verdana, Geneva,sans-serif;}
+.clmenu li a:hover:not(.active) {color:#fff;background-color:#09F;}
+.clmenu .active {background-color:#000;color:#fff;}
+.clmenu .active:hover{background-color:#09C;color:#fff;}
+.clmenu .flright{float:right;color:#fff;}
+
+
+.mdemo ul {list-style-type: none;margin:0 auto;padding: 0;overflow: hidden;background-color:#222;}
+.mdemo li {float: left;}
+.mdemo li a {display: block;background-color:#222;color:#f1f1f1;text-align: center;padding: 14px 16px;text-decoration: none;font-family:Verdana, Geneva,sans-serif;}
+.mdemo li a:hover:not(.active) {color:#fff;background-color:#09F;}
+.mdemo .active {background-color:#09C;color:#fff;}
+.mdemo .active:hover{background-color:#069;color:#fff;}
+.mdemo .flright{float:right;color:#fff;}
+
+
+
+
+.tab #arata{display:block;width:90%;height:1px;overflow:hidden;margin:30px auto 22px auto;background-color:#455C76;color:#ACB5BF;border-radius:5px;padding:20px;opacity:0;-webkit-transition: all .4s;transition: all .4s;}
+.tab #arata p{color:#ACB5BF;}
+.tab #arata:target{display:block;width:90%;height:170px;overflow:hidden;opacity:1;}
+.inchide{display:block;width:40px;height:auto;float:right;position:relative;top:-30px;right:-24px;}
+.inchide a,.inchide a:visited{color:#f1f1f1;text-decoration:none;}
+.inchide a:hover{color:#fff;text-decoration:none;}
+.inchide a span{display:block;width:20px;height:auto;-webkit-transform:rotate(45deg);transform:rotate(45deg);font-size:19px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** PopUp **/.tb #pop{display:none;width:100%;height:100%;position:fixed;top:0;left:0;z-index:10000!important;background-color:rgba(0,0,0,0.90);-webkit-animation:fadeInScale 1.2s ease-in-out;-moz-animation:fadeInScale 1.2s ease-in-out;-o-animation:fadeInScale 1.2s ease-in-out;-ms-animation:fadeInScale 1.2s ease-in-out;animation:fadeInScale 1.2s ease-in-out;}.tb #pop:target{display:block;}.wrapping{display:block;width:80%;height:auto;padding:0;margin:10% auto;background-color:#f1f1f1;}.dvider{opacity:0;font-size:1px;}.ttle{color:#06C;font-size:22px;font-weight:normal;}.close{text-align:right;}.close a, .close a:visited{display:block;overflow:hidden;width:32px;height:42px;padding:5px 7px 11px;margin:-8px 6px auto 2px;color:#fff;background-color:#09C;font-size:20px;-webkit-clip-path: polygon(100% 0, 100% 100%, 49% 89%, 0 100%, 0 0);clip-path: polygon(100% 0, 100% 100%, 49% 89%, 0 100%, 0 0);text-decoration:none;}.close a:hover{background-color:#e12965;color:#fff;overflow:hidden;text-decoration:none;}.close span.led:before{content:'+';display:block;width:20px;height:20px;transform:rotate(45deg);text-align:center;}.wrapping p{display:block;text-align:left;font-size:16px;margin:0 auto;line-height:normal;color:#555;}#pop p,.ttle{color:#555;}.cntnt a,.cntnt a:visited{color:#09C!important;}.cntnt a:hover{color:#F63!important;}
+.divider{opacity:0;overflow:hidden;}@-webkit-keyframes fadeInScale {0% {-webkit-transform:scale(0.6);}100% { -webkit-transform: scale(1);}}
+@-moz-keyframes fadeInScale {0% { -moz-transform: scale(0.6);}100% { -moz-transform: scale(1);}}
+@-o-keyframes fadeInScale {0% { -o-transform: scale(0.6);}100% { -o-transform: scale(1);}}
+@-ms-keyframes fadeInScale {0% { -ms-transform: scale(0.6);}100% { -ms-transform: scale(1);}}
+
+@media print {
+	@page {size: A4 landscape;margin: 0mm;font-size:1.33vw;}
+* {box-sizing: border-box;}
+ html, body{height:100%;margin:0;padding:0;font-size:1.33vw;}
+ body{width:90%;margin:0 auto;background-color:#fff;}
+	.noprint{display:none;}
+	.printit{display:none;}
+	#lenani_m{display:block;width:100%;height:auto;margin:0 auto;float:none;clear:left;box-sizing:border-box;background-color:#fff;padding:15px 0 15px;}
+	[class*="cgcbox-"]{width:100%;padding:0;}
+#lenani_m > h1,h2,h3,h4,h5,h6{font-size:2.33vw;font-weight:lighter;}
+.lenaniheader{background: #8e008e;}
+.lenaniheader h2{line-height:normal;color:#fff;font-size:1.33vw;text-shadow:0 1px 2px #999;}
+table,tbody,tr,td,th{font-size:1vw!important;font-weight:lighter;}.forprint{display:block;}
+ a:link,a:visited{color:#09C;}a:hover {color:#F39;}
+ a, a:link, a:visited, a:hover, a:focus{cursor:pointer;}
+	}
+	
+@media only screen and (max-width: 768px)
+{
+	body{font-size:14px;color:#666;font-family:Verdana, Geneva, sans-serif;}
+	[class*="cgcbox-"]{width:100%;}
+#lenani_m > h1,h2,h3,h4,h5,h6{font-size:20px;font-weight:lighter;}
+.lenaniheader{background: #8e008e;}
+.lenaniheader h2{line-height:normal;color:#fff;font-size:20px;text-shadow:0 1px 2px #999;}
+table,tbody,tr,td,th{font-size:17px;font-weight:lighter;}
+.noprint{display:none;visibility:hidden;}.forprint{display:none;}
+}
+
+* html .line {height:1%;}
+
+</style>
+</head>
+
+<body>
+
+<div id="lenani_m" class="cgcbox-12 no line">
+
+
+<div class="cgcbox-12 tcenter lenaniheader"><h2>Meniu - Pop-up CSS - :target</h2></div>
+
+
+
+<div class="cgcbox-12 line corp">
+
+
+
+<section id="demo" class="cgcbox-12 no">
+
+<h2>Meniu - Navigare</h2>
+<div><p>Meniul este elementul HTML care afiseaza link-uri interne sau externe. Ajuta la navigarea in pagina (intr-o sectiune din aceasi pagina) sau link-uri catre pagini externe</p>
+
+<p>Sunt folosite multiple modalitati de a afisa o bara de navigare folosind diferite elemente HTML</p>
+<p>Cea mai des utilizata metoda este folosind elemenul <code>ul</code></p>
+</div>
+
+
+<div class="cgcbox-12 mixsec no">
+<h3 class="titles">1. Scrierea codului HTML de baza pentru navigare</h3>
+<div class="cgcbox-6">
+<p><strong>Cod HTML:</strong></p>
+<textarea spellcheck="false" class="scr">
+&lt;div&gt; 
+    &lt;ul&gt; 
+      &lt;li&gt;Link 1&lt;/li&gt;
+      &lt;li&gt;Link 2&lt;/li&gt;
+      &lt;li&gt;Link 3&lt;/li&gt;
+      &lt;li&gt;Link 4&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</textarea>
+</div>
+
+<div class="cgcbox-6">
+<p><strong>Afiseaza:</strong></p>
+<div>
+   <ul>
+      <li>Link 1</li>
+      <li>Link 2</li>
+      <li>Link 3</li>
+      <li>Link 4</li>
+</ul>
+</div>
+
+
+<div class="cgcbox-12">
+<p>Asa cum se poate observa, nu arata a bara de navigare si nici nu sunt adaugate URL-urile</p>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="cgcbox-12 mixsec no">
+<h3 class="titles">2. Adauga link-urile</h3>
+<div class="cgcbox-6">
+<p><strong>Cod HTML:</strong></p>
+<textarea spellcheck="false" class="scr">
+&lt;div class=&quot;meniu&quot;&gt;
+    &lt;ul&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</textarea>
+</div>
+
+<div class="cgcbox-6">
+<p><strong>Afiseaza:</strong></p>
+    
+    <div>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+     </ul>
+</div>
+
+</div>
+
+<div class="cgcbox-12">
+   <p><mark>#</mark> este semnul care inlocuieste un URL in acest caz</p>
+</div>
+
+</div>
+
+
+
+<div class="cgcbox-12 mixsec no">
+<h3 class="titles">3. Adauga atributele CSS</h3>
+
+<div class="cgcbox-6">
+<p>Va trebui sa inlaturam marcajele "bullet style" din elementele <code>li</code>. Vom crea o clasa care sa le elimine.</p>
+<p><strong>Cod HTML:</strong></p>
+<textarea spellcheck="false" class="scr">
+&lt;div class=&quot;meniu&quot;&gt;
+    &lt;ul&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</textarea>
+
+<p><strong>Cod CSS:</strong></p>
+<textarea spellcheck="false" class="scr">
+.meniu ul {list-style: none;}
+</textarea>
+</div>
+
+<div class="cgcbox-6">
+<p><strong>Afiseaza:</strong></p>
+   
+   <div class="meniu">
+        <ul>
+         <li><a href="#">Link 1</a></li>
+         <li><a href="#">Link 2</a></li>
+         <li><a href="#">Link 3</a></li>
+         <li><a href="#">Link 4</a></li>
+   </ul>
+</div>
+
+
+</div>
+
+<div class="cgcbox-12">
+<p><mark>.meniu ul</mark> fiind elementul parinte urmat de elementul <code>ul</code> caruia ii sunt atribuite proprietatile <code>{list-style: none;}</code></p>
+</div>
+</div>
+
+
+<div class="cgcbox-12 mixsec no">
+<h3 class="titles">4. Pozitionare orizontala</h3>
+<div class="cgcbox-6">
+<p>Transformam din lista verticala in bara de navigare orizontala</p>
+<p><strong>Cod HTML:</strong></p>
+<textarea spellcheck="false" class="scr">
+&lt;div class=&quot;meniu&quot;&gt; 
+   &lt;ul class=&quot;orizontal&quot;&gt; 
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;  
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt; 
+   &lt;/ul&gt; 
+&lt;/div&gt;
+</textarea>
+
+<p><strong>Cod CSS:</strong></p>
+<textarea spellcheck="false" class="scr">
+.meniu li {list-style: none;}
+ul.orizontal {display: block;float: left;}
+</textarea>
+</div>
+
+<div class="cgcbox-6">
+<p><strong>Afiseaza:</strong></p>
+<div class="meniu">
+  <ul class="orizontal">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+</ul>
+</div>
+
+</div>
+
+<div class="cgcbox-12">
+<p><mark>ul.orizontal</mark> clasa css cu proprietatile aferente pentru a afisa elementele <mark>li</mark> pe orizontala - <code>{display: block;float: left;}</code></p>
+</div>
+</div>
+
+
+
+
+<div class="cgcbox-12 mixsec no">
+<h3 class="titles">5. CSS pentru a modifica link-urile </h3>
+<div class="cgcbox-6">
+<p>Folosind <mark>padding</mark> pentru a mari spatiul dintre link-urile afisate, culoare de fundal, culoare text afisat can cursorul nu este deasupra linkului si efectul hover</p>
+<p><strong>Cod HTML:</strong></p>
+<textarea spellcheck="false" class="scr">
+&lt;div class=&quot;meniu&quot;&gt; 
+   &lt;ul class=&quot;orizontal linkuri&quot;&gt; 
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;  
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt; 
+   &lt;/ul&gt; 
+&lt;/div&gt;
+</textarea>
+
+<p><strong>Cod CSS:</strong></p>
+<textarea spellcheck="false" class="scr">
+.meniu li {list-style: none;}
+ul.orizontal {display: block;float: left;}
+.linkuri li a {display: block;background-color:#222;color:#f1f1f1;text-align: center;padding: 14px 16px;text-decoration: none;font-family:Verdana, Geneva,sans-serif;}
+.linkuri li a:hover{color:#fff;background-color:#09F;}
+</textarea>
+</div>
+
+<div class="cgcbox-6">
+<p><strong>Afiseaza:</strong></p>
+<div class="meniu">
+  <ul class="orizontal linkuri">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+</ul>
+</div>
+
+</div>
+
+
+</div>
+
+<div class="cgcbox-12 line">
+<p>Alte proprietati class se pot adauga oferind mai multe elemente de stil</p>
+
+
+<div class="cgcbox-12 clmenu no">
+<ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+</ul>
+   </div>
+
+<p><code>.meniu{display:block; width: 100%; height: auto;}</code></p>
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="cgcbox-12 no">
+<h3>Bara de navigare orizontala - Exemple</h3>
+<div>
+<p><strong>Exemple</strong><br/>
+Plecand de la baza codului folosit mai sus putem sa facem cateva modificari. Vezi exemplele de mai jos.
+</p>
+</div>
+<div class="cgcbox-12 clmenu no">
+<ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+</ul>
+   </div>
+
+<div class="cgcbox-6">
+<p>Cod HTML</p>
+<textarea spellcheck="false" class="scr">
+&lt;div class=&quot;meniu&quot;&gt; 
+   &lt;ul class=&quot;orizontal linkuri&quot;&gt; 
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;  
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt; 
+   &lt;/ul&gt; 
+&lt;/div&gt;
+</textarea>
+</div>
+
+<div class="cgcbox-6">
+<p>Cod CSS</p>
+<textarea spellcheck="false" class="scr">.meniu li {list-style: none;}
+ul.orizontal {display: block;float: left;}
+.linkuri li a {display: block;background-color:#222;color:#f1f1f1;text-align: center;padding: 14px 16px;text-decoration: none;font-family:Verdana, Geneva,sans-serif;}
+.linkuri li a:hover{color:#fff;background-color:#09F;}
+</textarea>
+</div>
+
+
+
+
+
+<div id="meniul-test" class="cgcbox-12 clmenu no">
+<ul>
+    <li><a href="#arata">Arata element</a></li>
+    <li><a href="#link-in-pagina">Link in pagina</a></li>
+    <li><a href="https://lenani.ro">Link extern</a></li>
+    <li><a href="#">Link 4</a></li>
+    <li class="flright"><a href="#pop" class="active">Pop Up</a></li>
+    <li class="flright"><a href="#" class="active">Link 6</a></li>
+</ul>
+   </div>
+
+<div class="cgcbox-6">
+<p>Cod HTML</p>
+<textarea spellcheck="false" class="scr">
+&lt;div class=&quot;mdemo&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#arata&quot;&gt;Arata element&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#link-in-pagina&quot;&gt;Link in pagina&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://lenani.ro&quot;&gt;Link extern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;flright&quot;&gt;&lt;a href=&quot;#pop&quot; class=&quot;active&quot;&gt;Pop Up&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;flright&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;active&quot;&gt;Link 6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</textarea>
+</div>
+
+<div class="cgcbox-6">
+<p>Cod CSS</p>
+<textarea spellcheck="false" class="scr">.mdemo ul {list-style-type: none;margin:0 auto;padding: 0;overflow: hidden;background-color:#222;}
+.mdemo li {float: left;}
+.mdemo li a {display: block;background-color:#222;color:#f1f1f1;text-align: center;padding: 14px 16px;text-decoration: none;font-family:Verdana, Geneva,sans-serif;}
+.mdemo li a:hover:not(.active) {color:#fff;background-color:#09F;}
+.mdemo .active {background-color:#09C;color:#fff;}
+.mdemo .active:hover{background-color:#069;color:#fff;}
+.mdemo .flright{float:right;color:#fff;}</textarea>
+</div>
+
+<div class="tab">
+<div id="arata">
+   <div class="boxed">
+   <div class="inchide"><a href="#!"><span>+</span></a></div>
+     <p>Acest segment nu a fost vizibil decat dupa ce ai apasat link-ul din bara de navigare <strong>Arata element</strong></p>
+     <p>Markup-ul link-ului in pagina are ca tinta un id<br>
+     <code>&lt;a href=&quot;#arata&quot;&gt;Arata element&lt;/a&gt;</code></p>
+   </div>
+</div>
+</div>
+
+<p>Tipuri link:<br/>
+<ul>
+  <li>deschide pop-up pe tot ecranul - foloseste selectorul <code>:target</code> - <a href="#pop">Demo</a></li>
+  <li>afiseaza un element ascuns - foloseste selectorul <code>:target</code> - <a href="#arata">Demo</a></li>
+  <li>navigare in pagina - foloseste selectorul <code>#</code> - <a href="#demo">Demo</a></li>
+  <li>navigare catre alta pagina - foloseste URL-ul <code>https://lenani.ro</code> - <a href="https://lenani.ro">Demo</a></li>
+</ul>
+</p>
+
+
+
+</section>
+
+
+
+
+
+<section id="link-in-pagina" class="cgcbox-12 no">
+<h3>Bara de navigare orizontala - Exemplu de ancora</h3>
+<div>
+<p>Aceasta sectiune foloseste id-ul <code>id="link-in-pagina"</code> pentru a naviga in pagina. Testeaza. Apasa acest <a href="#meniul-test">link</a> ca sa mergi la meniul test si apasa butonul <strong>Link in pagina</strong> ca sa ajungi din nou aici.</p>
+<p><code>on-page anchor link</code> metoda folosita pentru a naviga in aceeasi pagina</p>
+<p><code>&lt;a href=&quot;#meniul-test&quot;&gt;link&lt;/a&gt;</code> markup link</p>
+</div>
+</section>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="cgcbox-12 footer no noprint">
+  
+  <div class="cgcbox-8 credits"><p>Material realizat de Dan N pentru <a href="https://lenani.ro/" target="_blank" title="Lenani ZenArt">www.lenani.ro</a></p></div>
+  
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="tb">
+<div id="pop">
+<div class="cgcbox-1 divider"><p>lenani.ro</p></div>
+   <div class="cgcbox-8 wrapping">
+   <div class="cgcbox-11 ttle">Lenani ZenArt</div>
+   <div class="cgcbox-1 close no tright"><a href="#!" title="Close"><span class="led"></span></a></div>
+   <div class="cgcbox-12">
+     <p>Continut Pop-Up pagina intreaga</p>
+       <p>Va multumim pentru interesul acodat acestui material. <br/> Dan N</p>
+   </div>
+   </div>
+<div class="cgcbox-1 divider"><p>lenani.ror</p></div>
+</div>
+</div>
+
+
+
+<style>
+#meniul-test:target{position:fixed;top:0;left:0;z-index:10000;}
+</style>
+
+</body>
+</html>

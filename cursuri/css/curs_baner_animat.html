@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS - Baner animat</title>
+<style>
+html{scroll-behavior: smooth;}
+a:link,a:visited{color:#09C;}a:hover {color:#F39;}
+body{width:90%;margin:0 auto;background-color:#f1f1f1;font-family:sans-serif;}
+.scr::-webkit-scrollbar {width:8px;}.scr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.1);-webkit-border-radius:10px;border-radius:10px;}.scr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background-color:#0CC;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);}.scr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #333;}
+
+html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cgcbox-"] {float: left;padding: 15px;border: 0px solid red;}.cgcbox-1 {width: 8.33%;}.cgcbox-2 {width: 16.66%;}.cgcbox-3 {width: 25%;}.cgcbox-4 {width: 33.33%;}.cgcbox-5 {width: 41.66%;}.cgcbox-6 {width: 50%;}.cgcbox-7 {width: 58.33%;}.cgcbox-8 {width: 66.66%;}.cgcbox-9 {width: 75%;}.cgcbox-10 {width: 83.33%;}.cgcbox-11 {width: 91.66%;}.cgcbox-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}.divider{opacity:0;}
+
+
+#title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+#title span {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.lenaniheader{background: #8e008e;
+background: -moz-linear-gradient(-45deg,  #8e008e 0%, #f200e2 54%, #1881dd 100%);
+background: -webkit-linear-gradient(-45deg,  #8e008e 0%,#f200e2 54%,#1881dd 100%);
+background: linear-gradient(135deg,  #8e008e 0%,#f200e2 54%,#1881dd 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e008e', endColorstr='#1881dd',GradientType=1 );}
+.lenaniheader h2{line-height:150px;color:#fff;font-size:3.33rem;text-shadow:0 1px 2px #999;}
+#lenani_m{display:block;height:auto;box-sizing:border-box;background-color:#fff;padding:0;margin:0 auto!important;}
+table,tbody{display:block;width:100%;margin:10px auto 22px auto;}
+#lenani_m tr:nth-child(odd){background-color:#f1f1f1;padding:5px 0 5px;text-indent:4px;}
+#lenani_m tr:nth-child(even){padding:5px 0 5px;text-indent:4px;}
+th,td,tr{padding:5px 0 5px;}
+
+.notsupported{color:#F99;}
+.footer{background-color:#222;border-top:4px solid #F96;margin-top:10px;}
+.credits p{color:#777;font-size:14px;}
+.credits a,.credits a:visited{color:#F93;text-decoration:none;}
+.credits a:hover{color:#0CC;text-decoration:none;}
+.lenaninota{margin:37px auto 12px auto;position:relative;background-color:#F3FCFE;-webkit-border-radius:5px;border-radius:5px;border:1px solid #CFE7E7;color:#666;}
+.lenaninota p{padding:10px;}
+.letterheadings p{font-size:19px;color:#fff;text-indent:18px;}
+.bgcolor{background-color:#09C!important;}
+
+.printbtn a,.printbtn a:visited{padding:5px 22px;text-align:center;background-color:#09F;color:#fff;text-decoration:none;-webkit-border-radius:5px;border-radius:5px;}
+.printbtn a:hover,.printbtn a:focus{color:#fff;background-color:#09C;}
+.forprint{display:none;}
+.lenanipadd{padding-bottom:30px;}
+
+section{display:block;float:none;clear:left;padding-bottom:20px;margin:10px auto 13px auto;}
+section h1,section h2, section h3{color:#777;font-weight:100;font-family:Tahoma, Geneva, sans-serif;}
+section p{color:#444;font-family:sans-serif;font-size:16px;}
+section code{font-size:14px;padding-left:3px;padding-right:3px;background-color:#CFE7E7;}
+section mark {font-size:14px;padding-left:3px;padding-right:3px;background-color:#627284;color:#E2E2E2;}
+textarea{display:block;width:99%;height:200px;background-color:#f1f1f1;font-size:16px;border:0; outline:none;-webkit-box-shadow:0 1px 3px #999;margin:5px 1px 7px 1px;-webkit-transition:linear .3s;transition:linear .3s;overlow:auto;}
+textarea:focus, textarea:hover{display:block;width:99%;height:200px;border:0; outline:none;-webkit-box-shadow:0 1px 3px #09C;margin:5px 1px 7px 1px;overlow:auto;}
+
+.mixsec{border-top:1px solid #ccc;margin:10px auto 12px auto;}
+.mixsec:hover{background-color:#F3FCFE;}
+h3.titles{display:block;width:100%;height:auto;margin:0 auto;text-indent:12px;background-color:#0CC;color:#fff;padding:5px 0 6px;}
+
+.sectiune{margin:20px auto 18px auto;-webkit-transition:all .4s;transition:all .4s;}
+.sectiune:hover{background-color:#F3FCFE;-webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.25);box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.25);}
+/*** Baner Demo 1 ***/
+.ad-1 {width: 350px;height: 350px;margin: 0 auto;
+background-image: url('imagini/fundal_plaja.jpg');background-size:100% auto;background-position:top center;background-color:#f1f1f1;overflow:hidden;-webkit-transition:all 1.4s;transition:all 1.4s;}
+.ad-1:hover{background-position:bottom center;}
+.inner-banner {position: relative;margin:0 auto;width: 95%;height: 300px;}
+.ad-1 p {display:block;width:97%;height:auto;margin:0 auto;font-family: sans-serif;font-size: 2.13em;padding:18px 5px 1px;font-weight: 700;color: #555;}
+.ad-1 .subtitlu{display:block;width:90%;height:auto;margin-left:2px;margin-top:0;margin-bottom:14px;margin-right:auto;padding:10px;border-top:1px solid #ccc;position:relative; color:#555;}
+.buton a ,.button a:visited{display:block;position:relative;top:160px;right:-25%;width: 80%;height: auto;background-color: #909;color: #FFC4E1;font-family: sans-serif;text-decoration:none;text-transform:uppercase;font-weight: 700;font-size: 15px;letter-spacing: 5px;padding:15px 11px 15px;}
+.buton a:hover {background-color: #96C;color: #fff;-webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);}
+
+/*** End Banner Demo 1 ***/
+
+
+
+
+
+/*** Baner Demo 2 ***/
+.ad-2 {width: 350px;height: 350px;margin: 0 auto;
+background-image: url('imagini/ad2_bg.png');background-size:cover;background-position:center center;background-color:#37669b;overflow:hidden;-webkit-transition:all .4s;transition:all .4s;}
+.ad-2:hover{background-color:#3c86da;}
+.ad-2 .inner-banner {position: relative;margin:0 auto;width: 100%;height: 300px;}
+.ad-2 p {display:block;width:100%;height:auto;margin:0 auto;font-family: sans-serif;font-size: 2.13em;padding:18px 0 1px;font-weight: 700;color: #fff;border-bottom:1px solid #f1f1f1;text-indent:20px;}
+.ad-2 .subtitlu{display:block;width:100%;height:auto;margin:0 auto 15px auto;padding:10px;position:relative; color:#fff;}
+.ad-2 .buton2{display:block;position:relative;top:-120px;right:-100px;}
+.ad-2 .buton2 a ,.ad-2 .buton2 a:visited{display:block;position:relative;top:-20px;right:-3px;width: 100%;height: auto;background-color: #909;color: #FFC4E1;font-family: sans-serif;text-decoration:none;text-transform:uppercase;font-weight: 700;font-size: 15px;letter-spacing: 5px;padding:15px 11px 15px;-webkit-border-radius:38px 0 0 38px;border-radius:38px 0 0 38px;text-indent:20px;-webkit-transition:all .3s;transition:all .3s;}
+.ad-2 .buton2 a:hover {background-color: #96C;color: #fff;text-indent:25px;}
+.ad-2 .logo{display:block;width:80%;height:auto;opacity:0;position:relative;top:-20px;left:0;bottom:-30px;margin:0 auto -50px auto;text-align:center;animation: animButon 7s linear 1;}.ad-2 .logo img{display:block;width:90%;height:auto;margin:0 auto -10px auto;}
+.ad-2 .categorii{display:block;width:300px;height:200px;position:relative;top:-200px;left:-350px;margin-bottom:-120px;-webkit-animation: goforit2 2s 2s ease-in-out forwards;animation: goforit2 2s 2s ease-in-out forwards;-webkit-transform: rotate(-160deg);transform:  rotate(-160deg);}
+.ad-2 .text-1,.ad-2 .text-2,.ad-2 .text-3{display:block;width:90%;height:auto;margin:0 auto;padding:10px;text-indent:17px;color:#fff; }
+
+.zen{-webkit-animation: goforit1 4s 4s ease-in-out forwards;animation: goforit1 4s 4s ease-in-out forwards; -webkit-transform:rotate(-90deg);transform:rotate(-90deg);position:relative;left:-550px;}
+@-webkit-keyframes animButon {
+	0% {-webkit-transform:scale(0.2) translate(-40px,0);opacity:1;}
+    10% { -webkit-transform: scale(1) translate(-40px,0);opacity:1;}
+	20% { -webkit-transform: scale(1) translate(-100px,0);opacity:1;}
+	30% { -webkit-transform: scale(1) translate(-130px,0);opacity:1;}
+	40% { -webkit-transform: scale(1) translate(-130px,0);opacity:1;}
+	50% { -webkit-transform: scale(1) translate(-130px,0);opacity:1;}
+	60% { -webkit-transform: scale(1) translate(-130px,0);opacity:1;}
+	70% { -webkit-transform: scale(1) translate(-130px,0);opacity:1;}
+	80% { -webkit-transform: scale(1) translate(-130px,0);opacity:1;}
+	90% { -webkit-transform: scale(1) translate(-130px,0);opacity:1;}
+	100% {-webkit-transform:scale(0.9) translate(-360px,0);opacity:1;}}
+
+
+
+
+@-webkit-keyframes goforit2 {
+  0% {opacity:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);left:-350px;}100% {opacity:1;-webkit-transform:rotate(0deg);transform:rotate(0deg);left:130px;}
+  }
+@keyframes goforit2 {
+  0% {opacity:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);left:-350px;}100% {opacity:1;-webkit-transform:rotate(0deg);transform:rotate(0deg);left:130px;}
+  }
+ @-webkit-keyframes goforit1{
+  0% {opacity:0;-webkit-transform: rotate(-160deg);transform:  rotate(-160deg);left:-550px;}100% {opacity:1;-webkit-transform: rotate(0deg);transform: rotate(0deg);left:30px; top:-4px;}
+  }
+@keyframes goforit1 {
+  0% {opacity:0;-webkit-transform: rotate(-160deg);transform:  rotate(-160deg);left:-550px;}100% {opacity:1;-webkit-transform: rotate(0deg);transform: rotate(0deg);left:30px; top:-4px;}
+  }
+/*** End Banner Demo 2 ***/
+
+
+
+
+
+@-webkit-keyframes fadeInScale {0% {-webkit-transform:scale(0.6);}100% { -webkit-transform: scale(1);}}
+@-moz-keyframes fadeInScale {0% { -moz-transform: scale(0.6);}100% { -moz-transform: scale(1);}}
+@-o-keyframes fadeInScale {0% { -o-transform: scale(0.6);}100% { -o-transform: scale(1);}}
+@-ms-keyframes fadeInScale {0% { -ms-transform: scale(0.6);}100% { -ms-transform: scale(1);}}
+
+@media print {
+	@page {size: A4 landscape;margin: 0mm;font-size:1.33vw;}
+* {box-sizing: border-box;}
+ html, body{height:100%;margin:0;padding:0;font-size:1.33vw;}
+ body{width:90%;margin:0 auto;background-color:#fff;}
+	.noprint{display:none;}
+	.printit{display:none;}
+	#lenani_m{display:block;width:100%;height:auto;margin:0 auto;float:none;clear:left;box-sizing:border-box;background-color:#fff;padding:15px 0 15px;}
+	[class*="cgcbox-"]{width:100%;padding:0;}
+#lenani_m > h1,h2,h3,h4,h5,h6{font-size:2.33vw;font-weight:lighter;}
+.lenaniheader{background: #8e008e;}
+.lenaniheader h2{line-height:normal;color:#fff;font-size:1.33vw;text-shadow:0 1px 2px #999;}
+table,tbody,tr,td,th{font-size:1vw!important;font-weight:lighter;}.forprint{display:block;}
+ a:link,a:visited{color:#09C;}a:hover {color:#F39;}
+ a, a:link, a:visited, a:hover, a:focus{cursor:pointer;}
+	}
+	
+@media only screen and (max-width: 768px)
+{
+	body{font-size:14px;color:#666;font-family:Verdana, Geneva, sans-serif;}
+	[class*="cgcbox-"]{width:100%;}
+#lenani_m > h1,h2,h3,h4,h5,h6{font-size:20px;font-weight:lighter;}
+.lenaniheader{background: #8e008e;}
+.lenaniheader h2{line-height:normal;color:#fff;font-size:20px;text-shadow:0 1px 2px #999;}
+table,tbody,tr,td,th{font-size:17px;font-weight:lighter;}
+.noprint{display:none;visibility:hidden;}.forprint{display:none;}
+}
+
+* html .line {height:1%;}
+
+</style>
+</head>
+
+<body>
+
+<div id="lenani_m" class="cgcbox-12 no line">
+
+
+<div class="cgcbox-12 tcenter lenaniheader"><h2>Baner animat - @keyframes</h2></div>
+
+<div class="cgcbox-12 line corp">
+
+
+
+<section class="cgcbox-12 no">
+
+<h3>Creaza baner animat folosind CSS <mark>@keyframes</mark></h3>
+
+
+
+
+<div class="cgcbox-12 sectiune">
+
+<div class="line">
+
+<div class="cgcbox-5">
+
+
+<div class="ad-1">
+  <div class="inner-banner">
+    <p>LENANI ZENART</p>
+    <div class="subtitlu">din pasiune pentru zenart</div>
+    <div class="buton"><a href="https://lenani.ro">vezi magazin</a></div>
+  </div>
+</div> 
+
+
+
+<div class="cgcbox-12"><p>2 interactiuni vizibile. Cursor deasupra elementului baner schimba pozitia imaginii de fundal si cursor deasupra butonului, schimba culoarea de fundal a butonului</p></div>
+</div>
+
+<div class="cgcbox-7">
+<h2>Exemplu 1</h2>
+<p>Foloseste o imagine de fundal, buton cu text si link, titlu text si subtitlu text</p>
+<p>Cand cursorul este deasupra elementului baner, imaginea de fundal isi schimba pozitia.</p>
+<p>Cod HTML</p>
+<textarea spellcheck="false" class="scr">&lt;div class=&quot;ad-1&quot;&gt;
+&lt;div class=&quot;inner-banner&quot;&gt;
+&lt;p&gt;LENANI ZENART&lt;/p&gt;
+&lt;div class=&quot;subtitlu&quot;&gt;din pasiune pentru zenart&lt;/div&gt;
+&lt;div class=&quot;buton&quot;&gt;&lt;a href=&quot;https://lenani.ro&quot;&gt;vezi magazin&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</textarea>
+<p>Cod CSS:</p>
+<textarea spellcheck="false" class="scr">.ad-1 {width: 350px;height: 350px;margin: 0 auto;
+background-image: url('imagini/fundal_plaja.jpg');background-size:100% auto;background-position:top center;background-color:#f1f1f1;overflow:hidden;-webkit-transition:all 1.4s;transition:all 1.4s;}
+.ad-1:hover{background-position:bottom center;}
+.inner-banner {position: relative;margin:0 auto;width: 95%;height: 300px;}
+.ad-1 p {display:block;width:97%;height:auto;margin:0 auto;font-family: sans-serif;font-size: 2.13em;padding:18px 5px 1px;font-weight: 700;color: #555;}
+.ad-1 .subtitlu{display:block;width:90%;height:auto;margin-left:2px;margin-top:0;margin-bottom:14px;margin-right:auto;padding:10px;border-top:1px solid #ccc;position:relative; color:#555;}
+.buton a ,.button a:visited{display:block;position:relative;top:160px;right:-25%;width: 80%;height: auto;background-color: #909;color: #FFC4E1;font-family: sans-serif;text-decoration:none;text-transform:uppercase;font-weight: 700;font-size: 15px;letter-spacing: 5px;padding:15px 11px 15px;}
+.buton a:hover {background-color: #96C;color: #fff;-webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);}
+</textarea>
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="cgcbox-12 sectiune">
+
+<div class="line">
+
+<div class="cgcbox-5">
+
+
+<div class="ad-2">
+  <div class="inner-banner">
+    <p>LENANI ZENART</p>
+    <div class="subtitlu zen">din pasiune pentru zenart</div>
+    <div class="logo">
+      <img src="imagini/lenani_logo.png"/>
+    </div>
+    <div class="categorii">
+            <div class="text-1"><span>cani pictate manual</span></div>
+            <div class="text-2"><span>agende pictate manual</span></div>
+            <div class="text-3"><span>tatuaje temporare</span></div>
+      </div>      
+    <div class="buton2"><a href="https://lenani.ro">vezi magazin</a></div>
+  </div>
+</div> 
+
+
+
+<div class="cgcbox-12"><p class="printbtn"><a href="javascript:location.reload(true)">Reincarca pagina</a></p><p>Animatii adaugate pentru subtitlu, logo, categorii de produse</p></div>
+</div>
+
+<div class="cgcbox-7">
+<h2>Exemplu 2</h2>
+<p>Foloseste o imagine de fundal, buton cu text si link, titlu text si subtitlu text</p>
+<p>Cand cursorul este deasupra elementului baner, imaginea de fundal isi schimba pozitia.</p>
+<p>Cod HTML</p>
+<textarea spellcheck="false" class="scr">&lt;div class=&quot;ad-2&quot;&gt;
+&lt;div class=&quot;inner-banner&quot;&gt;
+&lt;p&gt;LENANI ZENART&lt;/p&gt;
+&lt;div class=&quot;subtitlu zen&quot;&gt;din pasiune pentru zenart&lt;/div&gt;
+&lt;div class=&quot;logo&quot;&gt;
+&lt;img src=&quot;imagini/lenani_logo.png&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;categorii&quot;&gt;
+&lt;div class=&quot;text-1&quot;&gt;&lt;span&gt;cani pictate manual&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;text-2&quot;&gt;&lt;span&gt;agende pictate manual&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;text-3&quot;&gt;&lt;span&gt;tatuaje temporare&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt; 
+&lt;div class=&quot;buton2&quot;&gt;&lt;a href=&quot;https://lenani.ro&quot;&gt;vezi magazin&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</textarea>
+<p>Cod CSS:</p>
+<textarea spellcheck="false" class="scr">/*** Baner Demo 2 ***/
+.ad-2 {width: 350px;height: 350px;margin: 0 auto;
+background-image: url('imagini/ad2_bg.png');background-size:cover;background-position:center center;background-color:#37669b;overflow:hidden;-webkit-transition:all .4s;transition:all .4s;}
+.ad-2:hover{background-color:#3c86da;}
+.ad-2 .inner-banner {position: relative;margin:0 auto;width: 100%;height: 300px;}
+.ad-2 p {display:block;width:100%;height:auto;margin:0 auto;font-family: sans-serif;font-size: 2.13em;padding:18px 0 1px;font-weight: 700;color: #fff;border-bottom:1px solid #f1f1f1;text-indent:20px;}
+.ad-2 .subtitlu{display:block;width:100%;height:auto;margin:0 auto 15px auto;padding:10px;position:relative; color:#fff;}
+.ad-2 .buton2{display:block;position:relative;top:-120px;right:-100px;}
+.ad-2 .buton2 a ,.ad-2 .buton2 a:visited{display:block;position:relative;top:-20px;right:-3px;width: 100%;height: auto;background-color: #909;color: #FFC4E1;font-family: sans-serif;text-decoration:none;text-transform:uppercase;font-weight: 700;font-size: 15px;letter-spacing: 5px;padding:15px 11px 15px;-webkit-border-radius:38px 0 0 38px;border-radius:38px 0 0 38px;text-indent:20px;-webkit-transition:all .3s;transition:all .3s;}
+.ad-2 .buton2 a:hover {background-color: #96C;color: #fff;text-indent:25px;}
+.ad-2 .logo{display:block;width:80%;height:auto;opacity:0;position:relative;top:-20px;left:0;bottom:-30px;margin:0 auto -50px auto;text-align:center;animation: animButon 7s linear 1;}.ad-2 .logo img{display:block;width:90%;height:auto;margin:0 auto -10px auto;}
+.ad-2 .categorii{display:block;width:300px;height:200px;position:relative;top:-200px;left:-350px;margin-bottom:-120px;-webkit-animation: goforit2 2s 2s ease-in-out forwards;animation: goforit2 2s 2s ease-in-out forwards;-webkit-transform: rotate(-160deg);transform:  rotate(-160deg);}
+.ad-2 .text-1,.ad-2 .text-2,.ad-2 .text-3{display:block;width:90%;height:auto;margin:0 auto;padding:10px;text-indent:17px;color:#fff; }
+
+.zen{-webkit-animation: goforit1 4s 4s ease-in-out forwards;animation: goforit1 4s 4s ease-in-out forwards; -webkit-transform:rotate(-90deg);transform:rotate(-90deg);position:relative;left:-550px;}
+@-webkit-keyframes animButon {
+	0% {-webkit-transform:scale(0.2) translate(-40px,0);opacity:1;}
+    10% { -webkit-transform: scale(1) translate(-40px,0);opacity:1;}
+	20% { -webkit-transform: scale(1) translate(-100px,0);opacity:1;}
+	30% { -webkit-transform: scale(1) translate(-130px,0);opacity:1;}
+	40% { -webkit-transform: scale(1) translate(-130px,0);opacity:1;}
+	50% { -webkit-transform: scale(1) translate(-130px,0);opacity:1;}
+	60% { -webkit-transform: scale(1) translate(-130px,0);opacity:1;}
+	70% { -webkit-transform: scale(1) translate(-130px,0);opacity:1;}
+	80% { -webkit-transform: scale(1) translate(-130px,0);opacity:1;}
+	90% { -webkit-transform: scale(1) translate(-130px,0);opacity:1;}
+	100% {-webkit-transform:scale(0.9) translate(-360px,0);opacity:1;}}
+
+
+
+
+@-webkit-keyframes goforit2 {
+  0% {opacity:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);left:-350px;}100% {opacity:1;-webkit-transform:rotate(0deg);transform:rotate(0deg);left:130px;}
+  }
+@keyframes goforit2 {
+  0% {opacity:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);left:-350px;}100% {opacity:1;-webkit-transform:rotate(0deg);transform:rotate(0deg);left:130px;}
+  }
+ @-webkit-keyframes goforit1{
+  0% {opacity:0;-webkit-transform: rotate(-160deg);transform:  rotate(-160deg);left:-550px;}100% {opacity:1;-webkit-transform: rotate(0deg);transform: rotate(0deg);left:30px; top:-4px;}
+  }
+@keyframes goforit1 {
+  0% {opacity:0;-webkit-transform: rotate(-160deg);transform:  rotate(-160deg);left:-550px;}100% {opacity:1;-webkit-transform: rotate(0deg);transform: rotate(0deg);left:30px; top:-4px;}
+  }
+/*** End Banner Demo 2 ***/
+</textarea></div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="cgcbox-12 footer no noprint">
+  
+  <div class="cgcbox-8 credits"><p>Material realizat de Dan N pentru <a href="https://lenani.ro/" target="_blank" title="Lenani ZenArt">www.lenani.ro</a></p></div>
+  
+</div>
+</div>
+
+</body>
+</html>

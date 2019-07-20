@@ -1,0 +1,654 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS</title>
+<style>
+
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+
+
+html{scroll-behavior: smooth;}
+a:link,a:visited{color:#09C;}a:hover {color:#F39;}
+body{width:100%;margin:0 auto;background-color:#f1f1f1;font-family:sans-serif;}
+
+.scr::-webkit-scrollbar {width:8px;}.scr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.1);-webkit-border-radius:10px;border-radius:10px;}.scr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background-color:#0CC;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);}.scr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #333;}
+html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cgcbox-"] {float: left;padding: 15px;border: 0px solid red;}.cgcbox-1 {width: 8.33%;}.cgcbox-2 {width: 16.66%;}.cgcbox-3 {width: 25%;}.cgcbox-4 {width: 33.33%;}.cgcbox-5 {width: 41.66%;}.cgcbox-6 {width: 50%;}.cgcbox-7 {width: 58.33%;}.cgcbox-8 {width: 66.66%;}.cgcbox-9 {width: 75%;}.cgcbox-10 {width: 83.33%;}.cgcbox-11 {width: 91.66%;}.cgcbox-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}.divider{opacity:0;}
+
+
+.lenaniheader{background: #8e008e;
+background: -moz-linear-gradient(-45deg,  #8e008e 0%, #f200e2 54%, #1881dd 100%);
+background: -webkit-linear-gradient(-45deg,  #8e008e 0%,#f200e2 54%,#1881dd 100%);
+background: linear-gradient(135deg,  #8e008e 0%,#f200e2 54%,#1881dd 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e008e', endColorstr='#1881dd',GradientType=1 );}
+.lenaniheader h2{line-height:150px;color:#fff;font-size:3.33rem;text-shadow:0 1px 2px #999;}
+#lenani_m{margin:0 auto;box-sizing:border-box;background-color:#fff;padding:0 0 30px;}
+table  tbody{display:block;width:100%;margin:10px auto 22px auto;}
+#lenani_m tr:nth-child(odd){background-color:#f1f1f1;padding:8px 0 8px;text-indent:4px;}
+#lenani_m tr:nth-child(even){padding:8px 0 8px;text-indent:4px;}
+th,td,tr{padding:8px 0 8px;}
+
+.notsupported{color:#F99;}
+.footer{background-color:#222;border-top:4px solid #F96;margin:0 auto;}
+.credits p{color:#777;font-size:14px;}
+.credits a,.credits a:visited{color:#F93;text-decoration:none;}
+.credits a:hover{color:#0CC;text-decoration:none;}
+.lenaninota{margin:37px auto 12px auto;position:relative;background-color:#F3FCFE;-webkit-border-radius:5px;border-radius:5px;border:1px solid #CFE7E7;color:#666;}
+.lenaninota p{padding:10px;}
+.letterheadings p{font-size:19px;color:#fff;text-indent:18px;}
+.bgcolor{background-color:#09C!important;}
+
+.printbtn a,.printbtn a:visited{padding:5px 22px;text-align:center;background-color:#09F;color:#fff;text-decoration:none;-webkit-border-radius:5px;border-radius:5px;}
+.printbtn a:hover,.printbtn a:focus{color:#fff;background-color:#09C;}
+.forprint{display:none;}
+.lenanipadd{padding-bottom:30px;}
+textarea{display:block;width:99%;height:200px;background-color:#f1f1f1;font-size:16px;border:0; outline:none;-webkit-box-shadow:0 1px 3px #999;margin:5px 1px 7px 1px;-webkit-transition:linear .3s;transition:linear .3s;overlow:auto;}
+textarea:focus, textarea:hover{display:block;width:99%;height:200px;border:0; outline:none;-webkit-box-shadow:0 1px 3px #09C;margin:5px 1px 7px 1px;overlow:auto;}
+code{font-size:15px;background-color:#f1f1f1;color:#F96;padding-left:5px;padding-right:5px;}
+.sectiuni{margin-bottom:30px;border-top:1px solid #ccc;}
+
+
+
+
+
+
+/** 1 **/
+span.cgcfloatavatar{display:block;width:270px;height:auto;padding:0;border:0;-webkit-border-radius:100%;border-radius:100%;background-color:transparent;position:relative;margin:0 auto 30px auto;}
+.cgcfloatavatar img{width:270px;height:auto;padding:0;border:0;-webkit-border-radius:100%;border-radius:100%;background-color:transparent;margin:-70px auto 2px auto;position:relative;-webkit-animation:sari 1s linear .2s infinite alternate;animation:sari 1s linear .2s infinite alternate;}
+.cgcfloatavatar:hover img{width:270px;height:auto; -webkit-animation-play-state: paused; animation-play-state: paused;}
+span.cgcfloatavatar:hover:after{-webkit-animation-play-state: paused; animation-play-state: paused;}
+
+span.cgcfloatavatar:after{content:"";display:block;width:100px;height:20px;background-color:rgba(0,0,0,.40);-webkit-border-radius:100%;border-radius:100%;margin:-31px auto 33px auto;position:relative;-webkit-filter: blur(8px);filter: blur(8px);-webkit-animation:jumpshadow 1s linear .2s infinite alternate;animation:jumpshadow 1s linear .2s infinite alternate;}
+
+#emoji-sari:target img{width:270px;height:auto;padding:0;border:0;-webkit-border-radius:100%;border-radius:100%;background-color:transparent;margin:0px auto 2px auto;position:relative;-webkit-animation:sari 1s linear .2s infinite alternate;animation:sari 1s linear .2s infinite alternate;}
+#emoji-sari img{width:270px;height:auto; -webkit-animation-play-state: paused; animation-play-state: paused;} 
+
+#emoji-stai img{width:270px;height:auto;padding:0;border:0;-webkit-border-radius:100%;border-radius:100%;background-color:transparent;margin:0px auto 2px auto;position:relative;-webkit-animation:sari 1s linear .2s infinite alternate;animation:sari 1s linear .2s infinite alternate;}
+#emoji-stai:target img{width:270px;height:auto; -webkit-animation-play-state: paused; animation-play-state: paused;}
+#emoji-stai:target span.cgcfloatavatar:after{-webkit-animation-play-state: paused; animation-play-state: paused;}
+
+@keyframes sari{
+0%{-webkit-transform:rotateX(-30deg) translate(0,0);transform:rotateX(-30deg) translate(0,0);}
+	50%{-webkit-transform:rotateX(10deg) translate(0,-50px);transform:rotateX(10deg) translate(0,-50px);}
+	100%{-webkit-transform:rotateX(-30deg) translate(0,0);transform:rotateX(-30deg) translate(0,0);}
+	}
+	
+	@keyframes sari{
+	0%{-webkit-transform:rotateX(-30deg) translate(0,0);transform:rotateX(-30deg) translate(0,0);}
+	50%{-webkit-transform:rotateX(10deg) translate(0,-50px);transform:rotateX(10deg) translate(0,-50px);}
+	100%{-webkit-transform:rotateX(-30deg) translate(0,0);transform:rotateX(-30deg) translate(0,0);}
+	}
+	
+	
+	@-webkit-keyframes jumpshadow{
+	0%{background-color:rgba(0,0,0,.40);-webkit-filter: blur(8px);filter: blur(8px);width:100px;}
+	50%{background-color:rgba(0,0,0,.40);-webkit-filter: blur(18px);filter: blur(18px);width:150px;}
+	100%{background-color:rgba(0,0,0,.40);-webkit-filter: blur(8px);filter: blur(8px);width:100px;}
+	}
+	@keyframes jumpshadow{
+	0%{background-color:rgba(0,0,0,.40);-webkit-filter: blur(8px);filter: blur(8px);width:100px;}
+	50%{background-color:rgba(0,0,0,.40);-webkit-filter: blur(18px);filter: blur(18px);width:150px;}
+	100%{background-color:rgba(0,0,0,.40);-webkit-filter: blur(8px);filter: blur(8px);width:100px;}
+	}
+
+
+/** End 1 **/
+
+
+
+
+
+/** 2 **/
+
+#lencontainer{perspective: 1000px;padding-top:40px;padding-bottom:100px;overflow:hidden;}
+.cover{display:block;width:33.33%;height:auto;float:left;padding:20px 0 95px;}
+.cover img {display:block;width:100%;height:auto;margin:0 auto;transition-duration: 0.7s;transform-style: preserve-3d;-webkit-transform: rotateY(45deg) ;transform: rotateY(45deg);-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(255,255,255,0.7)));-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 2px 5px #000;box-shadow:0 2px 5px #000}
+.cover img:hover {transform-style: preserve-3d;transform: none;-webkit-box-shadow:0 2px 15px #999;box-shadow:0 2px 15px #999}
+.cover p{display:block;width:90%;height:auto;margin:0 auto;padding:10px;position:relative;bottom:-130px;color:#fff;text-align:center;background-color:rgba(0,0,0,.90);opacity:0;transition:all .3s;}
+.cover:hover p{position:relative;bottom:13px;font-family:sans-serif;color:#fff;text-align:center;opacity:1;}
+/** End 2 **/
+
+
+
+/** 3 **/
+	[class*="effect-"]{overflow:hidden;}
+	[class*="effect-"] p{display:block;width:95%;height:auto;margin:0 auto;padding:5px 5px;position:relative;bottom:-230px;color:#fff;text-align:left;background-color:rgba(0,0,0,.90);opacity:0;transition:all .7s;}
+	[class*="effect-"] mark{display:block;margin:3px auto 2px auto;font-size:13px;padding-left:4px;padding-right:6px;text-align:left;}
+	[class*="effect-"]:hover p{position:relative;bottom:93px;font-family:sans-serif;color:#fff;opacity:1;color:#fff;text-align:left;}
+.effect-1 img{-webkit-filter:blur(10px);filter:blur(10px);transition:all .3s;}
+.effect-1:hover img{-webkit-filter: none;filter:none;}
+
+.effect-2 img{-webkit-filter:grayscale(100%);filter:grayscale(100%);transition:all .3s;}
+.effect-2:hover img{-webkit-filter: none;filter:none;}
+
+.effect-3 img{-webkit-filter:brightness(70%);filter:brightness(70%);transition:all .3s;}
+.effect-3:hover img{-webkit-filter: none;filter:none;}
+
+
+.effect-4 img{-webkit-filter:contrast(50%);filter:contrast(50%);transition:all .3s;}
+.effect-4:hover img{-webkit-filter: none;filter:none;}
+
+.effect-5 img{-webkit-filter:saturate(50%);filter:saturate(50%);transition:all .3s;}
+.effect-5:hover img{-webkit-filter: none;filter:none;}
+
+.effect-6 img{-webkit-filter:contrast(140%) saturate(110%) brightness(200%) drop-shadow(0px 0px 10px #999999);filter:contrast(140%) saturate(110%) brightness(200%) drop-shadow(0px 0px 10px #999999);transition:all .3s;}
+.effect-6:hover img{-webkit-filter: none;filter:none;}
+/** End 3 **/
+
+
+
+	
+@media only screen and (max-width: 768px)
+{
+	body{font-size:14px;color:#666;font-family:Verdana, Geneva, sans-serif;}
+	[class*="cgcbox-"]{width:100%;}
+#lenani_m > h1,h2,h3,h4,h5,h6{font-size:20px;font-weight:lighter;}
+.lenaniheader{background: #8e008e;}
+.lenaniheader h2{line-height:normal;color:#fff;font-size:20px;text-shadow:0 1px 2px #999;}
+table,tbody,tr,td,th{font-size:17px;font-weight:lighter;}
+.noprint{display:none;visibility:hidden;}.forprint{display:none;}
+}
+
+* html .line {height:1%;}
+
+</style>
+</head>
+
+<body>
+
+<div id="lenani_m" class="cgcbox-12 no">
+
+
+<div class="cgcbox-12 tcenter lenaniheader"><h2>Animații și Efecte - CSS</h2></div>
+
+<div id="prop" class="cgcbox-12 tcenter">
+<p>Creeaza si seteaza cu ajutorul CSS3 animatii pentru elemente HTML</p>
+</div>
+<div class="cgcbox-12 tcenter printbtn">
+<a href="#efecte-animatie">Efecte Animatie</a>
+<a href="#efecte-perspective">Efecte 3d</a>
+<a href="#efecte-imagini">Efecte Imagini</a>  
+</div>
+<!-- Segmente Tutoriale -->
+<div id="efecte-animatie" class="cgcbox-12 no">&nbsp;</div>
+<div id="emoji-stai" class="cgcbox-12 line sectiuni">
+
+<div id="emoji-sari" class="cgcbox-4 tcenter imgresp">
+   <span class="cgcfloatavatar"><img src="imagini/fluffy_emoji02.png"/></span>
+   <p class="printbtn"><a href="#emoji-sari">Start</a> <a href="#emoji-stai">Stop</a></p>
+   <div class="cgcbox-12 tleft"><p>La clic pe <mark>Stop</mark> imaginea emoji se opreste din "sarit". <br/>In acest exemplu folosesc <code>keyframes</code> si selectorul <code>:target</code></p>
+</div>
+</div>
+
+<div class="cgcbox-8">
+<h2>Emoji sare. Efect "jump" si umbra</h2>
+<p><strong>Codul HTML:</strong></p>
+<textarea spellcheck="false" class="smaller scr">&lt;div id=&quot;emoji-sari&quot; class=&quot;cgcbox-4 tcenter imgresp&quot;&gt;
+&lt;span class=&quot;cgcfloatavatar&quot;&gt;&lt;img src=&quot;imagini/fluffy_emoji02.png&quot;/&gt;&lt;/span&gt;
+&lt;/div&gt;</textarea>
+
+<p><strong>Codul CSS</strong></p>
+<textarea spellcheck="false" class="smaller scr">span.cgcfloatavatar{display:block;width:270px;height:auto;padding:0;border:0;-webkit-border-radius:100%;border-radius:100%;background-color:transparent;position:relative;margin:0 auto 30px auto;}
+.cgcfloatavatar img{width:270px;height:auto;padding:0;border:0;-webkit-border-radius:100%;border-radius:100%;background-color:transparent;margin:-70px auto 2px auto;position:relative;-webkit-animation:sari 1s linear .2s infinite alternate;animation:sari 1s linear .2s infinite alternate;}
+.cgcfloatavatar:hover img{width:270px;height:auto; -webkit-animation-play-state: paused; animation-play-state: paused;}
+span.cgcfloatavatar:hover:after{-webkit-animation-play-state: paused; animation-play-state: paused;}
+
+span.cgcfloatavatar:after{content:"";display:block;width:100px;height:20px;background-color:rgba(0,0,0,.40);-webkit-border-radius:100%;border-radius:100%;margin:-31px auto 33px auto;position:relative;-webkit-filter: blur(8px);filter: blur(8px);-webkit-animation:jumpshadow 1s linear .2s infinite alternate;animation:jumpshadow 1s linear .2s infinite alternate;}
+
+#emoji-sari:target img{width:270px;height:auto;padding:0;border:0;-webkit-border-radius:100%;border-radius:100%;background-color:transparent;margin:0px auto 2px auto;position:relative;-webkit-animation:sari 1s linear .2s infinite alternate;animation:sari 1s linear .2s infinite alternate;}
+#emoji-sari img{width:270px;height:auto; -webkit-animation-play-state: paused; animation-play-state: paused;} 
+
+#emoji-stai img{width:270px;height:auto;padding:0;border:0;-webkit-border-radius:100%;border-radius:100%;background-color:transparent;margin:0px auto 2px auto;position:relative;-webkit-animation:sari 1s linear .2s infinite alternate;animation:sari 1s linear .2s infinite alternate;}
+#emoji-stai:target img{width:270px;height:auto; -webkit-animation-play-state: paused; animation-play-state: paused;}
+#emoji-stai:target span.cgcfloatavatar:after{-webkit-animation-play-state: paused; animation-play-state: paused;}
+
+@keyframes sari{
+0%{-webkit-transform:rotateX(-30deg) translate(0,0);transform:rotateX(-30deg) translate(0,0);}
+	50%{-webkit-transform:rotateX(10deg) translate(0,-50px);transform:rotateX(10deg) translate(0,-50px);}
+	100%{-webkit-transform:rotateX(-30deg) translate(0,0);transform:rotateX(-30deg) translate(0,0);}
+	}
+	
+	@keyframes sari{
+	0%{-webkit-transform:rotateX(-30deg) translate(0,0);transform:rotateX(-30deg) translate(0,0);}
+	50%{-webkit-transform:rotateX(10deg) translate(0,-50px);transform:rotateX(10deg) translate(0,-50px);}
+	100%{-webkit-transform:rotateX(-30deg) translate(0,0);transform:rotateX(-30deg) translate(0,0);}
+	}
+	
+	
+	@-webkit-keyframes jumpshadow{
+	0%{background-color:rgba(0,0,0,.40);-webkit-filter: blur(8px);filter: blur(8px);width:100px;}
+	50%{background-color:rgba(0,0,0,.40);-webkit-filter: blur(18px);filter: blur(18px);width:150px;}
+	100%{background-color:rgba(0,0,0,.40);-webkit-filter: blur(8px);filter: blur(8px);width:100px;}
+	}
+	@keyframes jumpshadow{
+	0%{background-color:rgba(0,0,0,.40);-webkit-filter: blur(8px);filter: blur(8px);width:100px;}
+	50%{background-color:rgba(0,0,0,.40);-webkit-filter: blur(18px);filter: blur(18px);width:150px;}
+	100%{background-color:rgba(0,0,0,.40);-webkit-filter: blur(8px);filter: blur(8px);width:100px;}
+	}</textarea>
+
+<p><code>-webkit-animation:sari 1s linear .2s infinite alternate;animation:sari 1s linear .2s infinite alternate;</code><br/>
+CSS markup pentru efectul "jump"</p>
+<p><code>-webkit-animation-play-state: paused; animation-play-state: paused;</code><br/>
+CSS markup pentru a opri animatia</p>
+<p><code>-webkit-animation:jumpshadow 1s linear .2s infinite alternate;animation:jumpshadow 1s linear .2s infinite alternate;</code><br/>
+CSS markup pentru umbra</p>
+
+</div>
+
+
+</div>
+<!-- End Segmente Tutoriale -->
+
+<!-- Segmente Tutoriale -->
+<div  id="efecte-perspective" class="cgcbox-12 sectiuni">
+  
+  <div class="line">
+  
+  <div id="lencointainer" class="cgcbox-7 imgresp tcenter">
+   
+
+    <div class="cover">
+    <img src="imagini/team001.jpg" alt="Image">
+      <p>Imagine - 3d perspective</p>
+    </div>
+    
+    <div class="cover">
+    <img src="imagini/team002.jpg" alt="Image">
+    <p>Imagine - 3d perspective</p>
+    </div>
+    
+    <div class="cover">
+    <img src="imagini/team003.jpg" alt="Image">
+    <p>Imagine - 3d perspective</p>
+    </div>
+
+   
+   <div class="cgcbox-12 tleft">
+   <p>Muta cursorul deasupra imaginilor.</p>
+   <p>CSS3 folosit pentru efect 3d > 2d<br><code>transform-style: preserve-3d;-webkit-transform: rotateY(45deg); transform: rotateY(45deg);</code></p>
+    <p>CSS3 folosit pentru a adauga efectul reflectie sub imagini<br/><code>-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(255,255,255,0.7)));</code></p>
+   </div>
+   
+  </div>
+  
+  
+  <div class="cgcbox-5">
+  <h2>Putting things in perspective...</h2>
+  <p><strong>Codul HTML:</strong></p>
+<textarea spellcheck="false" class="smaller scr">&lt;div id=&quot;lencontainer&quot;&gt;
+&lt;div class=&quot;cover&quot;&gt;
+  &lt;img src=&quot;imagini/team001.jpg&quot; alt=&quot;Image&quot;&gt;
+  &lt;p&gt;Imagine - 3d perspective&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;cover&quot;&gt;
+  &lt;img src=&quot;imagini/team002.jpg&quot; alt=&quot;Image&quot;&gt;
+  &lt;p&gt;Imagine - 3d perspective&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;cover&quot;&gt;
+  &lt;img src=&quot;imagini/team003.jpg&quot; alt=&quot;Image&quot;&gt;
+  &lt;p&gt;Imagine - 3d perspective&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;</textarea>
+
+<p><strong>Codul CSS</strong></p>
+<textarea spellcheck="false" class="smaller scr">#lencontainer{perspective: 1000px;padding-top:40px;padding-bottom:100px;overflow:hidden;}
+.cover{display:block;width:33.33%;height:auto;float:left;padding:20px 0 95px;}
+.cover img {display:block;width:100%;height:auto;margin:0 auto;transition-duration: 0.7s;transform-style: preserve-3d;-webkit-transform: rotateY(45deg) ;transform: rotateY(45deg);-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(255,255,255,0.7)));-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 2px 5px #000;box-shadow:0 2px 5px #000}
+.cover img:hover {transform-style: preserve-3d;transform: none;-webkit-box-shadow:0 2px 15px #999;box-shadow:0 2px 15px #999}
+.cover p{display:block;width:90%;height:auto;margin:0 auto;padding:10px;position:relative;bottom:-130px;color:#fff;text-align:center;background-color:rgba(0,0,0,.90);opacity:0;transition:all .3s;}
+.cover:hover p{position:relative;bottom:13px;font-family:sans-serif;color:#fff;text-align:center;opacity:1;}
+</textarea>
+  </div>
+</div>
+</div>
+<!-- End Segmente Tutoriale -->
+
+
+
+
+<!-- Segmente Tutoriale -->
+<div id="efecte-imagini" class="cgcbox-12 sectiuni">
+
+<div class="line">
+
+<h2 class="tcenter">Efecte CSS pentru imagini</h2>
+<div class="cgcbox-4 imgresp tcenter">
+   <div class="effect-1">
+   <img src="imagini/stock_02.jpg" alt="Blur"/>
+     <p>Blur <mark>-webkit-filter:blur(10px);filter:blur(10px);transition:all .3s;</mark></p>
+   </div>
+</div>
+
+<div class="cgcbox-4 imgresp tcenter">
+   <div class="effect-2">
+   <img src="imagini/stock_02.jpg" alt="Grayscale"/>
+   <p>Grayscale <mark>-webkit-filter:grayscale(100%);filter:grayscale(100%);transition:all .3s;</mark></p>
+   </div>
+</div>
+
+<div class="cgcbox-4 imgresp tcenter">
+    <div class="effect-3">
+    <img src="imagini/stock_02.jpg" alt="brightness"/>
+    <p>Brightness <mark>-webkit-filter:brightness(70%);filter:brightness(70%);transition:all .3s;</mark></p>
+    </div>
+</div>
+
+
+<div class="cgcbox-4 imgresp tcenter">
+    <div class="effect-4">
+    <img src="imagini/stock_02.jpg" alt="contrast"/>
+    <p>Contrast <mark>-webkit-filter:contrast(50%);filter:contrast(50%);transition:all .3s;</mark></p>
+    </div>
+</div>
+
+<div class="cgcbox-4 imgresp tcenter">
+    <div class="effect-5">
+    <img src="imagini/stock_02.jpg" alt="Saturate"/>
+    <p>Saturate <mark>-webkit-filter:saturate(50%);filter:saturate(50%);transition:all .3s;</mark></p>
+    </div>
+</div>
+
+<div class="cgcbox-4 imgresp tcenter">
+    <div class="effect-6">
+    <img src="imagini/stock_02.jpg" alt="Multi filters"/>
+    <p>Mai multe filtre <mark>-webkit-filter:contrast(140%) saturate(110%) brightness(200%) drop-shadow(0px 0px 10px #999999);filter:contrast(140%) saturate(110%) brightness(200%) drop-shadow(0px 0px 10px #999999);transition:all .3s;</mark></p>
+    </div>
+</div>
+
+</div>
+</div>
+<!-- End Segmente Tutoriale -->
+
+
+
+
+
+
+<!-- Segmente Tutoriale -->
+<div id="even-more" class="cgcbox-12 sectiuni">
+<div class="line">
+
+<h2 class="tcenter">Exercitii si Materiale Demo</h2>
+
+  <div class="box" style="display:block;width:70%;margin:0 auto;">
+   <table width="100%" border="0" cellspacing="0" cellpadding="0" style="display:block;width:100%;margin:10px auto 12px auto;">
+
+  <tbody>
+    <tr>
+      <th width="24%">Proprietati</th>
+      <th width="64%">Descriere</th>
+      <th width="10%">Demo</th>
+    </tr>
+    
+    <tr>
+      <td>link / butoane</td>
+      <td>Set butoane folosind CSS</td>
+      <td class="tcenter printbtn"><a href="curs_editor_butoane.html" target="_blank">Demo</a></td>
+    </tr>
+    
+    <tr>
+      <td>:target</td>
+      <td>navigare in pagina cu efect smooth și pop-up realizat cu ajutorul CSS</td>
+      <td class="tcenter printbtn"><a href="curs_css_meniu.html" target="_blank">Demo</a></td>
+    </tr>
+    
+    <tr>
+      <td>@keyframes</td>
+      <td>creeaza baner animat cu ajutorul CSS</td>
+      <td class="tcenter printbtn"><a href="curs_baner_animat.html" target="_blank">Demo</a></td>
+    </tr>
+    
+    <tr>
+      <td>web page</td>
+      <td>pagina web de prezentare</td>
+      <td class="tcenter printbtn"><a href="lenani_bs/index.html" target="_blank">Bootstrap</a></td>
+    </tr>
+    
+      </tbody>
+</table></div>
+
+
+</div>
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="cgcbox-12 footer no noprint">
+      <div class="cgcbox-12 credits">
+          <p>Material realizat de Dan N pentru <a href="https://lenani.ro/" target="_blank" title="Lenani ZenArt">www.lenani.ro</a></p>
+      </div>
+</div>
+
+
+
+
+
+</body>
+</html>
