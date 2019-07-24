@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lenani - Form</title>
+
+<meta name="description" content="Test your CSS3 HTML markup codes and render live online">
+<meta name="keywords" content="HTML,CSS3,editor,lenani art">
+<meta name="author" content="Lenani Art">
+<style>
+body{width:90%;margin:0 auto;background-color: #f1f1f1; }
+* {box-sizing: border-box;}
+html{}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-5-half {width: 47.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 0px solid #ccc;
+	color:#444;
+}
+[class*="no"] {
+    float: left;
+    padding: 0;}
+[class*="padd20"]{display:block;padding:20px;}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.hr{border:none; clear:both; height:1px; line-height:0; width:100%; font-size:0; padding:0 ;margin-bottom :20px;background:#F39;box-shadow:0 0px 3px #fff;}
+.left {text-align:left;}
+.right {text-align:right;}
+.center {text-align:center;}
+.fleft {float:left;}
+.fright {float:right;}
+.clear {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
+.dotted {border-bottom:1px dashed #F3C;border-left:0;border-right:0;margin-bottom:10px;}
+
+/*** Wrapper ***/
+.wrapper{background-color:#fff;box-shadow:0 0 7px #999;-webkit-box-shadow:0 0 7px #999;border-top:5px solid #F63;margin:10px auto 20px auto;}
+h2{font-family:Arial, Helvetica, sans-serif;color:#333;border-bottom:1px solid #f1f1f1;}
+.fcode{border:solid 1px #b9b8b6;padding:5px;width:90%;height:200px;scroll:auto;background:#212121;color:#ccc; font-family:Courier, serif;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.fcode:hover{box-shadow:0 0 3px #006699;-moz-box-shadow:0 0 3px #006699;-webkit-box-shadow:0 0 3px #006699;}
+.frender{height:400px;width:98%;border:solid 1px #b9b8b6;background:#ffffff;}
+
+.run a{padding:5px 12px; text-align:center;text-decoration:none;color:#fff;font-size:15px;font-family:Tahoma, Geneva, sans-serif;background-color:#F63;cursor:pointer;border-radius:5px;-webkit-border-radius:5px;transition:all .3s;-webkit-transition:all .3s;}
+.run a:hover{background-color:#222;}
+.reset a{padding:5px 12px; text-align:center;text-decoration:none;color:#fff;font-size:15px;font-family:Tahoma, Geneva, sans-serif;background-color:#09C;cursor:pointer;border-radius:5px;-webkit-border-radius:5px;transition:all .3s;-webkit-transition:all .3s;}
+.reset a:hover{background-color:#222;}
+.default a{padding:5px 12px; text-align:center;text-decoration:none;color:#fff;font-size:15px;font-family:Tahoma, Geneva, sans-serif;background-color:#396;cursor:pointer;border-radius:5px;-webkit-border-radius:5px;transition:all .3s;-webkit-transition:all .3s;}
+ .default a:hover{background-color:#222;}
+code{display:block;width:97%;margin:0px auto 5px auto;border-left:3px solid #096;border-right:1px solid #ccc;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:13px;font-family:"Lucida Console", Monaco, monospace;color:#F63;padding:2px 5px;}
+mark{padding:2px 5px;background-color:#F63;color:#fff;font-size:14px;font-family:"Lucida Console", Monaco, monospace;}.jscolor{border:none;background-color:transparent; outline-style:none;}
+.ttle a:link, .ttle a:visited{color:#F39;text-decoration:none;}
+.ttle a:hover{color:#666;}
+.ttle h1{text-align:center;font-family:Arial, Helvetica, sans-serif;}.wrapper{font-family:Arial, Helvetica, sans-serif;}
+.tab #pops{display:none;width:100%;height:auto;padding:10px 10px;background-color:rgba(0,0,0,0.6);position:fixed;top:0;left:0;}.tab #pops:target{display:block;}
+
+
+
+textarea.demo{display:block;width:90%;max-height:300px;height:300px; outline:none;margin-top:5px;margin-left:1px;margin-right:auto;margin-bottom:10px;}
+textarea.demo:focus{box-shadow:0 0 13px rgba(0,0,0,.20);}
+@media only screen and (max-width: 500px) {
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-5-half,.col-6,.col-7 ,.col-8,.col-9,.col-10,.col-11,.col-12 {width: 100%;}
+[class*="col-"] {float: left;padding: 15px;border: 0px solid #ccc;color:#444;}
+[class*="no"] {float: left;padding: 0;}
+
+.clearfix:after {clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0;}
+* html .clearfix {height:1%;}
+</style>
+</head>
+
+<body>
+
+<div class="col-12 wrapper">
+<div class="row ttle">
+<h1>&lt;form&gt; <a href="//lenani.ro" target="_blank" title="Lenani Art">Lenani.ro</a></h1>
+</div>
+</div>
+
+<div class="col-12 wrapper">
+
+<div class="row">
+<h2>&lt;form&gt; element HTML &lt;/form&gt;</h2>
+</div>
+
+<div class="row">
+
+ <div class="col-5">
+ <div class="col-12 no">
+  <div class="col-4 run"><a onclick="preview.document.write (document.getElementsByTagName ('TEXTAREA')[0].value); preview.document.close(); preview.focus()">Arata</a></div>
+  
+ <div class="col-4 reset"><a onclick="window.document.form1.code.value='';preview.document.write (document.getElementsByTagName ('TEXTAREA')[0].value); preview.document.close(); preview.focus()">Reseteaza</a></div>
+ <div class="col-4 default"><a onclick="window.location.href=window.location.href">Initial</a></div>
+ </div>
+ <form name="form1" method="post" action="">
+  <textarea id="textareaid" class="frame fcode" name="code" wrap="soft" onclick="focus(this.code)" spellcheck="false">&lt;form action=&quot;/pagina_contact.php&quot;&gt;
+Nume:&lt;br&gt;
+&lt;input type=&quot;text&quot; name=&quot;nume&quot; value=&quot;Lenani&quot;&gt;
+&lt;br&gt;
+Prenume:&lt;br&gt;
+&lt;input type=&quot;text&quot; name=&quot;prenume&quot; value=&quot;Art&quot;&gt;
+&lt;br&gt;&lt;br&gt;
+Mesaj:&lt;br&gt;
+&lt;textarea name=&quot;mesaj&quot; type=&quot;text&quot;&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Trimite&quot;&gt;
+&lt;/form&gt;</textarea>
+  </form>
+  <div class="col-12 no">
+  <p><strong>&lt;form&gt;</strong> este elementul eticheta HTML care defineste un formular HTML pentru intrarea (type/input) utilizatorilor</p>
+  <code>&lt;form action=&quot;/pagina_contact.php&quot;&gt;<br>
+Nume:<br>
+&lt;input type=&quot;text&quot; name=&quot;nume&quot; value=&quot;Lenani&quot;&gt;
+<br>
+Prenume:<br>
+&lt;input type=&quot;text&quot; name=&quot;prenume&quot; value=&quot;Art&quot;&gt;
+<br><br>
+Mesaj:<br>
+&lt;textarea name=&quot;mesaj&quot; type=&quot;text&quot;&gt;&lt;/textarea&gt;<br><br>
+&lt;input type=&quot;submit&quot; value=&quot;Trimite&quot;&gt;
+&lt;/form&gt;</code>
+  </div>
+ </div>
+  
+ <div class="col-7">
+ <iframe class="frame frender" src="about:blank" name="preview" frameborder="0">
+      </iframe>
+      
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="col-12 wrapper">
+
+<div><h3>Action / Atributul acțiune</h3>
+<p>Atributul de acțiune definește acțiunea care trebuie efectuată la trimiterea formularului.<br/>
+
+În mod normal, datele formularului sunt trimise către o pagină web de pe server când utilizatorul face clic pe butonul Submit/Trimiteți.<br/>
+
+În exemplul de mai sus, datele formularului sunt trimise către o pagină de pe server numită "/pagina_contact.php". Această pagină conține un script de pe server care gestionează datele formularului:</p>
+<code>&lt;form action=&quot;/pagina_contact.php&quot;&gt;</code>
+</div>
+</div>
+
+
+<div class="col-12 wrapper">
+
+  <h2>Elementul &lt;input&gt;</h2>
+    <p>Cel mai important element a unui formular</p>
+  <p><mark>&lt;input type="text"&gt;</mark> definește un câmp de introducere dintr-o singură linie pentru introducerea textului</p>
+    <p><mark>&lt;input type="radio"&gt;</mark> definește butoanele radio (select) <input type="radio"><br/></p>
+  <p>Butoanele radio (select) permite selectarea unei singure optiuni dintr-o lista predefinita<br/>
+  <form>
+  <input type="radio" name="culoare" value="rosu" checked> Rosu<br>
+  <input type="radio" name="culoare" value="albastru"> Albastru<br>
+  <input type="radio" name="culoare" value="galben"> Galben
+</form><br/>
+<p><code>&lt;form&gt;<br>
+&lt;input type=&quot;radio&quot; name=&quot;culoare&quot; value=&quot;rosu&quot; checked&gt; Rosu&lt;br&gt;<br>
+&lt;input type=&quot;radio&quot; name=&quot;culoare&quot; value=&quot;albastru&quot;&gt; Albastru&lt;br&gt;<br>
+&lt;input type=&quot;radio&quot; name=&quot;culoare&quot; value=&quot;galben&quot;&gt; Galben<br>
+&lt;/form&gt;</code>
+</p>
+
+  </div>
+  
+  
+  
+  
+  <div class="col-12 wrapper">
+
+  <h2>Atributul <strong>method</strong></h2>
+    <p>Acest formular va fi trimis folosind metoda GET:</p>
+  <p><mark>&lt;form action="/pagina_contact.php" <strong>method="get"</strong>&gt;</mark> sau <mark>&lt;form action="/pagina_contact.php" <strong>method="post"</strong>&gt;</mark></p>
+  <p>Atributul <mark>metode</mark> specifică metoda HTTP (GET sau POST) care trebuie utilizată la trimiterea datelor de formular:<br/></p>
+    <div class="col-6"><textarea spellcheck="false" class="demo">&lt;form action=&quot;/pagina_contact.php&quot; target=&quot;_blank&quot; method=&quot;GET&quot;&gt;<br>
+Nume:&lt;br&gt;<br>
+&lt;input type=&quot;text&quot; name=&quot;nume&quot; value=&quot;Lenani&quot;&gt;<br>
+&lt;br&gt;<br>
+Prenume:&lt;br&gt;<br>
+&lt;input type=&quot;text&quot; name=&quot;prenume&quot; value=&quot;Art&quot;&gt;<br>
+&lt;br&gt;&lt;br&gt;<br>
+Mesaj:&lt;br&gt;<br>
+&lt;textarea name=&quot;mesaj&quot; type=&quot;text&quot;&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;<br>
+&lt;input type=&quot;submit&quot; value=&quot;Trimite&quot;&gt;<br>
+&lt;/form&gt;</textarea>
+</div>
+
+<div class="col-6">
+<p>Metoda implicită la trimiterea datelor din formular este GET.<br/>
+Cu toate acestea, când se utilizează GET, datele formularului trimis vor fi vizibile în câmpul adresei paginii:</p>
+<frameset>
+<form action="http://cgcmagnum.epizy.com/demo/pagina_contact.php" target="_blank" method="GET">
+Nume:<br>
+<input type="text" name="nume" value="Lenani"><br>
+Prenume:<br>
+<input type="text" name="prenume" value="Art"><br>
+Mesaj:<br>
+<textarea name="mesaj" type="text"></textarea><br>
+<input type="submit" value="Trimite"><br>
+</form></frameset>
+</div>
+
+  </div>
+</div>
+  
+  
+  <div class="col-12 wrapper">
+  <h3>Atributul <strong>name</strong> / <strong>nume</strong></h3>
+  <p>Fiecare câmp de intrare trebuie să aibă un atribut nume care trebuie trimis.<br/>
+
+Dacă atributul name este omis, datele acelui câmp de intrare nu vor fi trimise deloc.<br/>
+
+Acest exemplu va trimite numai câmpul de introducere "Nume":</p>
+
+<div class="col-6">
+<textarea spellcheck="false" class="demo">&lt;form action="/pagina_contact.php"&gt;<br>
+  Nume:&lt;br&gt;<br>
+  &lt;input type="text" value="Lenani"&gt;&lt;br&gt;<br>
+  Prenume:&lt;br&gt;<br>
+  &lt;input type="text" name="prenume" value="Art"&gt;&lt;br&gt;&lt;br&gt;<br>
+  &lt;input type="submit" value="Trimite"&gt;<br>
+&lt;/form&gt;</textarea>
+</div>
+
+<div class="col-6">
+<frameset><form action="http://cgcmagnum.epizy.com/demo/pagina_contact.php">
+  Nume:<br>
+  <input type="text" value="Lenani"><br>
+  Prenume:<br>
+  <input type="text" name="prenume" value="Art"><br><br>
+  <input type="submit" value="Trimite">
+</form></frameset>
+</div>
+
+
+  </div>
+  
+ 
+ 
+ <div class="col-12 wrapper">
+   <h3>Lista &lt;input&gt;</h3>
+   <p>
+Iată diferitele tipuri de intrări pe care le puteți utiliza în HTML:</p>
+<div class="col-6">
+
+  <p>&lt;input type="button"&gt;</p>
+  <p>&lt;input type="checkbox"&gt;</p>
+  <p>&lt;input type="color"&gt;</p>
+  <p>&lt;input type="date"&gt;</p>
+  <p>&lt;input type="datetime-local"&gt;</p>
+  <p>&lt;input type="email"&gt;</p>
+  <p>&lt;input type="file"&gt;</p>
+  <p>&lt;input type="hidden"&gt;</p>
+  <p>&lt;input type="image"&gt;</p>
+  <p>&lt;input type="month"&gt;</p>
+  <p>&lt;input type="number"&gt;</p>
+  <p>&lt;input type="password"&gt;</p>
+  <p>&lt;input type="radio"&gt;</p>
+  <p>&lt;input type="range"&gt;</p>
+  <p>&lt;input type="reset"&gt;</p>
+  <p>&lt;input type="search"&gt;</p>
+  <p>&lt;input type="submit"&gt;</p>
+  <p>&lt;input type="tel"&gt;</p>
+  <p>&lt;input type="text"&gt;</p>
+  <p>&lt;input type="time"&gt;</p>
+  <p>&lt;input type="url"&gt;</p>
+  <p>&lt;input type="week"&gt;</p>
+
+ </div>
+ 
+ <div class="col-6">
+ <frameset>
+ <p><input type="button"> - button</p>
+<p><input type="checkbox"> - checkbox</p>
+<p><input type="color"> - color</p>
+<p><input type="date"> - date</p>
+<p><input type="datetime-local"> - datetime-local</p>
+<p><input type="email"> - email </p>
+<p><input type="file"> - file</p>
+<p><input type="hidden"> - hidden</p>
+<p><input type="image" id="image" alt="Flag" src="imagini/flag.png"> - image</p>
+<p><input type="month"> - month</p>
+<p><input type="number"> - number</p>
+<p><input type="password"> - password</p>
+<p><input type="radio"> - radio</p>
+<p><input type="range"> - range</p>
+<p><input type="reset"> - reset</p>
+<p><input type="search"> - search</p>
+<dp><input type="submit"> - submit</p>
+<p><input type="tel"> - tel</p>
+<p><input type="text"> - text</p>
+<p><input type="time"> - time</p>
+<p><input type="url"> - url</p>
+<p><input type="week"> - week</p>
+</frameset>
+ </div>
+ 
+ 
+ 
+ </div>
+ 
+ 
+
+
+  
+<div class="col-12 wrapper">
+
+  <div class="col-6 left back run">
+  <a href="//lenani.ro">Inapoi Lenani.Ro</a>
+  </div>
+  
+  <div class="col-6 right next run">
+  <a href="curs_forme_personalizat.html">Personalizeaza folosind CSS</a>
+  </div>
+
+</div>
+
+
+<script>
+function strip(php)
+{
+   var tmp = document.createElement("form");
+   tmp.innerHTML = php;
+   return tmp.textContent||tmp.innerText;
+}
+jQuery('#textareaid').text(function(index, text){
+ return strip(text);
+});
+</script>
+
+</body>
+</html>

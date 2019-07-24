@@ -1,0 +1,388 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lenani - Form</title>
+<link rel="stylesheet" href="https://lenani-zenart.github.io/web/cursuri/css/lenani_bs/css/bootstrap.min.css"/>
+<meta name="description" content="Test your CSS3 HTML markup codes and render live online">
+<meta name="keywords" content="HTML,CSS3,editor,lenani art">
+<meta name="author" content="Lenani Art">
+<style>
+body{width:90%;margin:0 auto;background-color: #f1f1f1; }
+* {box-sizing: border-box;}
+html{}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-5-half {width: 47.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 0px solid #ccc;
+	color:#444;
+}
+[class*="no"] {
+    float: left;
+    padding: 0;}
+[class*="padd20"]{display:block;padding:20px;}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.hr{border:none; clear:both; height:1px; line-height:0; width:100%; font-size:0; padding:0 ;margin-bottom :20px;background:#F39;box-shadow:0 0px 3px #fff;}
+.left {text-align:left;}
+.right {text-align:right;}
+.center {text-align:center;}
+.fleft {float:left;}
+.fright {float:right;}
+.clear {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
+.dotted {border-bottom:1px dashed #F3C;border-left:0;border-right:0;margin-bottom:10px;}
+
+/*** Wrapper ***/
+.wrapper{background-color:#fff;box-shadow:0 0 7px #999;-webkit-box-shadow:0 0 7px #999;border-top:5px solid #F63;margin:10px auto 20px auto;}
+
+h2{font-family:Arial, Helvetica, sans-serif;color:#333;border-bottom:1px solid #f1f1f1;}
+.fcode{border:solid 1px #b9b8b6;padding:5px;width:90%;height:200px;scroll:auto;background:#212121;color:#ccc; font-family:Courier, serif;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.fcode:hover{box-shadow:0 0 3px #006699;-moz-box-shadow:0 0 3px #006699;-webkit-box-shadow:0 0 3px #006699;}
+.frender{height:400px;width:98%;border:solid 1px #b9b8b6;background:#ffffff;}
+
+.run a{padding:5px 12px; text-align:center;text-decoration:none;color:#fff;font-size:15px;font-family:Tahoma, Geneva, sans-serif;background-color:#F63;cursor:pointer;border-radius:5px;-webkit-border-radius:5px;transition:all .3s;-webkit-transition:all .3s;}
+.run a:hover{background-color:#222;}
+.reset a{padding:5px 12px; text-align:center;text-decoration:none;color:#fff;font-size:15px;font-family:Tahoma, Geneva, sans-serif;background-color:#09C;cursor:pointer;border-radius:5px;-webkit-border-radius:5px;transition:all .3s;-webkit-transition:all .3s;}
+.reset a:hover{background-color:#222;}
+.default a{padding:5px 12px; text-align:center;text-decoration:none;color:#fff;font-size:15px;font-family:Tahoma, Geneva, sans-serif;background-color:#396;cursor:pointer;border-radius:5px;-webkit-border-radius:5px;transition:all .3s;-webkit-transition:all .3s;}
+ .default a:hover{background-color:#222;}
+code{display:block;width:97%;margin:0px auto 5px auto;border-left:3px solid #096;border-right:1px solid #ccc;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:13px;font-family:"Lucida Console", Monaco, monospace;color:#F63;padding:2px 5px;}
+mark{padding:2px 5px;background-color:#F63;color:#fff;font-size:14px;font-family:"Lucida Console", Monaco, monospace;}.jscolor{border:none;background-color:transparent; outline-style:none;}
+.ttle a:link, .ttle a:visited{color:#F39;text-decoration:none;}
+.ttle a:hover{color:#666;}
+.ttle h1{text-align:center;font-family:Arial, Helvetica, sans-serif;}.wrapper{font-family:Arial, Helvetica, sans-serif;}
+.tab #pops{display:none;width:100%;height:auto;padding:10px 10px;background-color:rgba(0,0,0,0.6);position:fixed;top:0;left:0;}.tab #pops:target{display:block;}
+
+
+
+textarea.demo{display:block;width:90%;max-height:300px;height:300px; outline:none;margin-top:5px;margin-left:1px;margin-right:auto;margin-bottom:10px;}
+textarea.demo:focus{box-shadow:0 0 13px rgba(0,0,0,.20);}
+
+
+
+
+
+/** Demo 1 **/
+form.demo-1{display:block;width:80%;height:auto;padding:10px;background-color:#f1f1f1;border-radius:7px;}
+form.demo-1 input[type="text"]{display:block;width:80%;height:auto;padding:7px 8px; outline:none;border:none;box-shadow:inset 0 1px 3px #999;border-radius:4px;font-size:16px;color:#777;}
+form.demo-1 textarea[type="text"]{display:block;width:80%;height:150px;max-height:200px;max-width:80%;padding:7px 8px; outline:none;border:none;box-shadow:inset 0 1px 3px #999;border-radius:4px;font-size:16px;color:#777;font-family:sans-serif;}
+form.demo-1 input[type="submit"]{display:block;width:140px;height:auto;padding:7px 8px; outline:none;border:none;box-shadow:inset 0 1px 3px #999;border-radius:4px;font-size:16px;color:#f1f1f1;text-align:center;background-color:#09F;cursor:pointer;}
+form.demo-1 input[type="submit"]:hover{background-color:#09C;color:#fff;}
+/** End Demo 1**/
+
+
+
+/** Demo 2 **/
+form.demo-2{display:block;width:80%;height:auto;padding:20px;background-color:#09F;border-radius:7px;box-shadow:0 4px 22px #999;font-family:sans-serif;color:#fff;}
+form.demo-2 input[type="text"]{display:block;width:80%;height:auto;padding:7px 8px; outline:none;border:none;box-shadow: 0 1px 0px #fff;border-radius:4px;font-size:16px;color:#f1f1f1;background-color:rgba(0,0,0,.1);}
+form.demo-2 textarea[type="text"]{display:block;width:80%;height:150px;max-height:200px;max-width:80%;padding:7px 8px; outline:none;border:none;box-shadow: 0 1px 0px #fff;font-size:16px;color:#f1f1f1;font-size:16px;color:#f1f1f1;font-family:sans-serif;background-color:rgba(0,0,0,.1);}
+form.demo-2 input[type="submit"]{display:block;width:140px;height:auto;padding:7px 8px; outline:none;border:none;border-radius:4px;font-size:16px;color:#f1f1f1;text-align:center;background-color: transparent;cursor:pointer;border:2px double #fff;}
+form.demo-2 input[type="submit"]:hover{background-color:rgba(0,0,0,.20);color:#fff;}
+form.demo-2 span{font-size:14px;font-style:italic;}
+.termeni a{color:#fff;text-decoration:underline;}
+.termeni a:hover{color:#000;}
+/** End Demo 2**/
+
+
+
+h1.ttle{display:block;text-indent:20px;}
+@media only screen and (max-width: 500px) {
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-5-half,.col-6,.col-7 ,.col-8,.col-9,.col-10,.col-11,.col-12 {width: 100%;}
+[class*="col-"] {float: left;padding: 15px;border: 0px solid #ccc;color:#444;}
+[class*="no"] {float: left;padding: 0;}
+
+.clearfix:after {clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0;}
+* html .clearfix {height:1%;}
+</style>
+</head>
+
+<body>
+
+<div class="col-12 wrapper">
+<div class="row">
+<h1 class="text-center ttle display-4">Exemple &lt;form&gt; <a href="//lenani.ro" target="_blank" title="Lenani Art">Lenani.ro</a></h1>
+</div>
+</div>
+
+<div class="col-12 wrapper">
+<div class="row">
+
+
+
+<div class="col-6">
+<h3>Exemple de personalizari a formularelor si elementelor de formular</h3>
+<p>Folosim CSS pentru a personaliza elementul din <mark>&lt;form&gt;</mark></p>
+<p>Initial, fara CSS adaugat, fara personalizare</p>
+<textarea spellcheck="false" class="demo">&lt;form action=&quot;/pagina_contact.php&quot;&gt;
+Nume:&lt;br&gt;
+&lt;input type=&quot;text&quot; name=&quot;nume&quot; value=&quot;Lenani&quot;&gt;
+&lt;br&gt;
+Prenume:&lt;br&gt;
+&lt;input type=&quot;text&quot; name=&quot;prenume&quot; value=&quot;Art&quot;&gt;
+&lt;br&gt;&lt;br&gt;
+Mesaj:&lt;br&gt;
+&lt;textarea name=&quot;mesaj&quot; type=&quot;text&quot;&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Trimite&quot;&gt;
+&lt;/form&gt;
+</textarea>
+</div>
+
+<div class="col-6">
+<frameset>
+<form action="http://cgcmagnum.epizy.com/demo/pagina_contact.php">
+Nume:<br>
+<input type="text" name="nume" value="Lenani"><br> 
+Prenume:<br>
+<input type="text" name="prenume" value="Art"> <br>
+<br>
+Mesaj:<br>
+<textarea name="mesaj" type="text"></textarea><br>
+<br>
+<input type="submit" value="Trimite">
+</form></frameset>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div id="exemplu1" class="col-12 wrapper">
+<h1>Exemplu 1</h1>
+<div class="row">
+
+  <div class="col-6 exemplul1">
+  <p>Codul HTML si CSS</p>
+  <textarea spellcheck="false" class="demo">&lt;form class="demo-1" action=&quot;/pagina_contact.php&quot;&gt;
+Nume:&lt;br&gt;
+&lt;input type=&quot;text&quot; name=&quot;nume&quot; value=&quot;Lenani&quot;&gt;
+&lt;br&gt;
+Prenume:&lt;br&gt;
+&lt;input type=&quot;text&quot; name=&quot;prenume&quot; value=&quot;Art&quot;&gt;
+&lt;br&gt;&lt;br&gt;
+Mesaj:&lt;br&gt;
+&lt;textarea name=&quot;mesaj&quot; type=&quot;text&quot;&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Trimite&quot;&gt;
+&lt;/form&gt;
+<style>
+/** Demo 1 **/
+form.demo-1{display:block;width:80%;height:auto;padding:10px;background-color:#f1f1f1;border-radius:7px;}
+form.demo-1 input[type="text"]{display:block;width:80%;height:auto;padding:7px 8px; outline:none;border:none;box-shadow:inset 0 1px 3px #999;border-radius:4px;font-size:16px;color:#777;}
+form.demo-1 textarea[type="text"]{display:block;width:80%;height:150px;max-height:200px;max-width:80%;padding:7px 8px; outline:none;border:none;box-shadow:inset 0 1px 3px #999;border-radius:4px;font-size:16px;color:#777;font-family:sans-serif;}
+form.demo-1 input[type="submit"]{display:block;width:140px;height:auto;padding:7px 8px; outline:none;border:none;box-shadow:inset 0 1px 3px #999;border-radius:4px;font-size:16px;color:#f1f1f1;text-align:center;background-color:#09F;cursor:pointer;}
+form.demo-1 input[type="submit"]:hover{background-color:#09C;color:#fff;}
+/** End Demo 1**/
+</style></textarea>
+  </div>
+  
+  <div class="col-6">
+    <frameset>
+    <form action="/pagina_contact.php" class="demo-1">
+    Nume:<br>
+    <input type="text" name="nume" value="Lenani"> <br>
+    Prenume:<br>
+    <input type="text" name="prenume" value="Art"> <br><br>
+    Mesaj:<br> <textarea name="mesaj" type="text"></textarea><br><br>
+    <input type="submit" value="Trimite"> </form>
+    </frameset>
+  </div>
+  
+  <script async src="https://jsfiddle.net/cle_dan/jpfb6w18/2/embed/html,css,result/"></script>
+</div>
+</div>
+
+
+
+
+<div id="exemplu2" class="col-12 wrapper">
+<h1>Exemplu 2</h1>
+<div class="row">
+
+  <div class="col-6 exemplul1">
+  <p>Codul HTML si CSS</p>
+  <textarea spellcheck="false" class="demo">&lt;form class="demo-2" action=&quot;/pagina_contact.php&quot;&gt;
+Nume:&lt;br&gt;
+&lt;input type=&quot;text&quot; name=&quot;nume&quot; value=&quot;Lenani&quot;&gt;
+&lt;br&gt;
+Prenume:&lt;br&gt;
+&lt;input type=&quot;text&quot; name=&quot;prenume&quot; value=&quot;Art&quot;&gt;
+&lt;br&gt;&lt;br&gt;
+Mesaj:&lt;br&gt;
+&lt;textarea name=&quot;mesaj&quot; type=&quot;text&quot;&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="radio"&gt; &lt;span class="termeni"&gt;* Am citit si sunt de acord cu &lt;a href="//lenani.ro/politica-de-confidentialitate/"&gt;Politica de Confidentialitate&lt;/a&gt;&lt;/span&gt; &lt;br&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Trimite&quot;&gt;
+&lt;/form&gt;
+<style>
+/** Demo 2 **/
+form.demo-2{display:block;width:80%;height:auto;padding:20px;background-color:#09F;border-radius:7px;box-shadow:0 4px 22px #999;font-family:sans-serif;color:#fff;}
+form.demo-2 input[type="text"]{display:block;width:80%;height:auto;padding:7px 8px; outline:none;border:none;box-shadow: 0 1px 0px #fff;border-radius:4px;font-size:16px;color:#f1f1f1;background-color:rgba(0,0,0,.1);}
+form.demo-2 textarea[type="text"]{display:block;width:80%;height:150px;max-height:200px;max-width:80%;padding:7px 8px; outline:none;border:none;box-shadow: 0 1px 0px #fff;font-size:16px;color:#f1f1f1;font-size:16px;color:#f1f1f1;font-family:sans-serif;background-color:rgba(0,0,0,.1);}
+form.demo-2 input[type="submit"]{display:block;width:140px;height:auto;padding:7px 8px; outline:none;border:none;border-radius:4px;font-size:16px;color:#f1f1f1;text-align:center;background-color: transparent;cursor:pointer;border:2px double #fff;}
+form.demo-2 input[type="submit"]:hover{background-color:rgba(0,0,0,.20);color:#fff;}
+form.demo-2 span{font-size:14px;font-style:italic;}
+.termeni a{color:#fff;text-decoration:underline;}
+.termeni a:hover{color:#000;}
+/** End Demo 2**/
+</style></textarea>
+  </div>
+  
+  <div class="col-6">
+    <frameset>
+    <form action="/pagina_contact.php" class="demo-2">
+    Nume:<br>
+    <input type="text" name="nume" value="Lenani"> <br>
+    Prenume:<br>
+    <input type="text" name="prenume" value="Art"> <br><br>
+    Mesaj:<br> <textarea name="mesaj" type="text"></textarea><br>
+    <input type="radio"> <span class="termeni">* Am citit si sunt de acord cu <a href="//lenani.ro/politica-de-confidentialitate/">Politica de Confidentialitate</a> <br><br>
+    <input type="submit" value="Trimite"> </form>
+    </frameset>
+  </div>
+  
+</div>
+</div>
+
+
+
+
+<div class="col-12 wrapper">
+<h2>Exemplu Bootstrap</h2>
+<div class="row">
+
+<div class="col-md-6">
+<p class="lead">Exemplu de formular cu adresa de email, camp parola si checkbox</p>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+
+
+<div class="col-md-6 gen">
+<p class="lead">Exemplu de formular inregistrare cu validare email</p>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Parola</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Adresa</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Adresa 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">Oras</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">Sector</label>
+      <select id="inputState" class="form-control">
+        <option selected>-- Selecteaza --</option>
+        <option>Sector 1</option>
+        <option>Sector 2</option>
+        <option>Sector 3</option>
+        <option>Sector 4</option>
+        <option>Sector 5</option>
+        <option>Sector 6</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+         * Am citit si sunt de acord cu <a href="#">Politica de Confidentialitate</a> 
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Inregistreaza</button>
+</form>
+
+</div>
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="col-12 wrapper">
+
+  <div class="col-6 left back run">
+  <a href="curs_forms.html">Forme</a>
+  </div>
+  
+  <div class="col-6 right next run">
+  
+  </div>
+
+</div>
+<script src="https://lenani-zenart.github.io/web/cursuri/css/lenani_bs/js/bootstrap.js"></script>
+
+<script>
+function strip(php)
+{
+   var tmp = document.createElement("form");
+   tmp.innerHTML = php;
+   return tmp.textContent||tmp.innerText;
+}
+jQuery('#textareaid').text(function(index, text){
+ return strip(text);
+});
+</script>
+
+</body>
+</html>

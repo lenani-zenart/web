@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://lenani-zenart.github.io/web/cursuri/css/lenani_bs/css/bootstrap.min.css"/>
+<title>Lenani - CSS3 Gradient - Pattern</title>
+	<link rel="icon" href="https://raw.githubusercontent.com/lenani-zenart/web/master/lenani_logo.png?v=1.1">
+<style>
+body{width:97%;margin:0 auto;background-color:#f1f1f1;}
+
+.xcr::-webkit-scrollbar {width:8px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:1px;border-radius:1px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:1px;border-radius:1px;background:#09C;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #ccc;}* {box-sizing:border-box;}
+html{}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-5-half {width: 47.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 0px solid #ccc;
+	color:#444;
+}
+[class*="no"] {
+    float: left;
+    padding: 0;}
+[class*="padd20"]{display:block;padding:20px;}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.hr{border:none; clear:both; height:1px; line-height:0; width:100%; font-size:0; padding:0 ;margin-bottom :20px;background:#F39;box-shadow:0 0px 3px #fff;}
+.left {text-align:left;}
+.right {text-align:right;}
+.center {text-align:center;}
+.fleft {float:left;}
+.fright {float:right;}
+.clear {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
+.dotted {border-bottom:1px dashed #F3C;border-left:0;border-right:0;margin-bottom:10px;}
+
+/*** Wrapper ***/
+
+		
+.wrapper{background-color:#fff;box-shadow:0 0 7px #999;-webkit-box-shadow:0 0 7px #999;border-top:5px solid #F63;margin:10px auto 20px auto;}
+.grad{height:auto;}
+.grad p.lite,.pat p.lite{background-color:rgba(0,0,0,.40);font-size:14px;color:#fff;padding:10px 0 10px;text-align:center;margin:30px auto 35px auto;}
+.grad p.dark,.pat p.dark{background-color:rgba(255,255,255,.40);font-size:14px;color:#555;padding:10px 0 10px;text-align:center;text-align:center;margin:30px auto 35px auto;}
+
+
+
+
+/** Gradient **/
+.g1{background: rgb(249,49,219);
+background: -moz-linear-gradient(-45deg,  rgba(249,49,219,1) 0%, rgba(41,137,216,1) 100%);
+background: -webkit-linear-gradient(-45deg,  rgba(249,49,219,1) 0%,rgba(41,137,216,1) 100%);
+background: linear-gradient(135deg,  rgba(249,49,219,1) 0%,rgba(41,137,216,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f931db', endColorstr='#2989d8',GradientType=1 );
+}
+
+.g2{background: rgb(109,191,155);
+background: -moz-linear-gradient(top,  rgba(109,191,155,1) 1%, rgba(86,116,117,1) 44%, rgba(0,83,124,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(109,191,155,1) 1%,rgba(86,116,117,1) 44%,rgba(0,83,124,1) 100%);
+background: linear-gradient(to bottom,  rgba(109,191,155,1) 1%,rgba(86,116,117,1) 44%,rgba(0,83,124,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6dbf9b', endColorstr='#00537c',GradientType=0 );}
+
+.g3{background: rgb(59,103,158);
+background: -moz-linear-gradient(top,  rgba(59,103,158,1) 0%, rgba(43,136,217,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+background: linear-gradient(to bottom,  rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=0 );
+}
+
+
+.g4{background: rgb(247,0,210);
+background: -moz-linear-gradient(top,  rgba(247,0,210,1) 0%, rgba(255,0,132,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(247,0,210,1) 0%,rgba(255,0,132,1) 100%);
+background: linear-gradient(to bottom,  rgba(247,0,210,1) 0%,rgba(255,0,132,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f700d2', endColorstr='#ff0084',GradientType=0 );}
+
+
+.p1{background:url(
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAO0lEQVQoU2NcuebF//AQCcbzF679NzTQYmTAAXBKoKuHm0TIZOJNhFkBcyMuk0k3kZDJ5JuIy2SiTQQAIks0C0fIKCsAAAAASUVORK5CYII=
+    ) repeat;}
+
+.p2{background:
+linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+linear-gradient(63deg, transparent 74%, #999 78%),
+linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+#444;
+background-size: 16px 48px;}
+
+.p3{background:
+radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+background-color: #300;
+background-size: 100px 100px;}
+
+.p4{background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnPgogIDxyZWN0IHdpZHRoPSc4JyBoZWlnaHQ9JzgnIGZpbGw9JyNmZmYnLz4KICA8cGF0aCBkPSdNMCAwTDggOFpNOCAwTDAgOFonIHN0cm9rZS13aWR0aD0nMC41JyBzdHJva2U9JyNhYWEnLz4KPC9zdmc+Cg=="); background-repeat: repeat;}
+
+
+.p5{background: 
+linear-gradient(30deg, #bdbdbd 12%, transparent 12.5%, transparent 87%, #bdbdbd 87.5%, #bdbdbd 0), 
+linear-gradient(150deg, #bdbdbd 12%, transparent 12.5%, transparent 87%, #bdbdbd 87.5%, #bdbdbd 0), 
+linear-gradient(30deg, #bdbdbd 12%, transparent 12.5%, transparent 87%, #bdbdbd 87.5%, #bdbdbd 0), 
+linear-gradient(150deg, #bdbdbd 12%, transparent 12.5%, transparent 87%, #bdbdbd 87.5%, #bdbdbd 0), 
+linear-gradient(60deg, #dbdbdb 25%, transparent 25.5%, transparent 75%, #dbdbdb 75%, #dbdbdb 0), 
+linear-gradient(60deg, #dbdbdb 25%, transparent 25.5%, transparent 75%, #dbdbdb 75%, #dbdbdb 0), #ccc;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+background-size: 80px 140px;}
+
+
+.p6{background-color: #fff;
+background-image:
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;}
+
+
+#g1,
+#g2,
+#g3,
+#g4,
+#p1,
+#p2,
+#p3,
+#p4,
+#p5,
+#p6,
+#Gradient1:target,
+#Gradient2:target,
+#Gradient3:target,
+#Gradient4:target{display:none;}
+
+
+#g1:target,
+#g2:target,
+#g3:target,
+#g4:target,
+#p1:target,
+#p2:target,
+#p3:target,
+#p4:target,
+#p5:target,
+#p6:target{display:block;}
+
+h1.gradienth1 {
+  font-size: 5.44em;
+  background: -webkit-linear-gradient(#09C, #F93);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.umbra{
+  text-shadow:0 2px 13px #999;
+}
+
+.lord{background-color:#324756;padding:20px 0 44px;text-align:center;}
+h1.leonard {
+  display: inline-block;
+  color: white;
+  font-family: "Segoe UI", serif;
+  font-size: 7em;
+text-shadow: -8px 5px 0px #fff;
+
+background: rgb(255,93,177);
+background: -moz-linear-gradient(top,  rgba(255,93,177,1) 0%, rgba(239,1,124,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(255,93,177,1) 0%,rgba(239,1,124,1) 100%);
+background: linear-gradient(to bottom,  rgba(255,93,177,1) 0%,rgba(239,1,124,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#ef017c',GradientType=0 );
+
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 200px;
+  background-size: .07em .07em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-animation: shad-anim 15s linear infinite;
+  animation: shad-anim 15s linear infinite;
+  
+}
+
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 100% -100%;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {[class*="col-"] {float: left;padding: 15px;border: 0px solid #ccc;color:#444;}[class*="no"] {float: left;padding: 0;}}
+
+.clearfix:after {clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0;}* html .clearfix {height:1%;}
+
+
+
+.default::before{content: ' \00BB';-webkit-locale:"ro";float:right;font-size:22px;}
+
+html{scroll-behavior: smooth;}
+</style>
+
+
+</head>
+<body>
+	
+<div class="col-lg-12 wrapper">
+<h1 class="display-5">CSS3 - Gradient / Pattern</h1>
+</div>
+
+
+<div class="col-lg-12 wrapper">
+<p class="lead">Personal, pot afirma ca CSS este limitat doar de creativitate web designer-ului.</p>
+</div>
+
+<div class="col-lg-12 wrapper">
+<h2 class="display-5">CSS3 - Gradient</h2>
+<p class="lead">Gradienții CSS vă permit să afișați tranziții ușoare între două sau mai multe culori specificate.</p>
+<p>Pentru a crea un gradient liniar, trebuie să definiți cel puțin două opriri de culoare. Opririle de culori sunt culorile pe care doriți să le faceți între tranziții ușoare. De asemenea, puteți seta un punct de pornire și o direcție (sau un unghi) împreună cu efectul de gradient.</p>
+<p><code>background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</code></p>
+<div class="row">
+
+<div class="col-3 grad g1">
+   <p class="lite">Gradient 1</p>
+   <a href="#g1" class="btn btn-primary">Arata CSS</a>
+</div>
+
+<div class="col-3 grad g2">
+   <p class="lite">Gradient 2</p>
+   <a href="#g2" class="btn btn-primary">Arata CSS</a>
+</div>
+
+<div class="col-3 grad g3">
+   <p class="lite">Gradient 3</p>
+   <a href="#g3" class="btn btn-primary">Arata CSS</a>
+</div>
+
+<div class="col-3 grad g4">
+   <p class="lite">Gradient 4</p>
+   <a href="#g4" class="btn btn-primary">Arata CSS</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+<div id="Gradient1" class="col-lg-12">
+<div id="g1">
+<div class="form-group">
+
+          <a class="fright" href="#!Gradient1">&times;</a>
+
+    <label for="Gradient1">Cod CSS Gradient 1</label>
+    <textarea class="form-control" id="Gradient1" rows="4" spellcheck="false">background: rgb(249,49,219);
+background: -moz-linear-gradient(-45deg,  rgba(249,49,219,1) 0%, rgba(41,137,216,1) 100%);
+background: -webkit-linear-gradient(-45deg,  rgba(249,49,219,1) 0%,rgba(41,137,216,1) 100%);
+background: linear-gradient(135deg,  rgba(249,49,219,1) 0%,rgba(41,137,216,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f931db', endColorstr='#2989d8',GradientType=1 );</textarea>
+  </div>
+
+</div>
+</div>
+
+
+
+
+<div id="Gradient2" class="col-lg-12">
+<div id="g2">
+<div class="form-group">
+
+          <a class="fright" href="#!Gradient2">&times;</a>
+
+    <label for="Gradient2">Cod CSS Gradient 2</label>
+    <textarea class="form-control" id="Gradient2" rows="4" spellcheck="false">background: rgb(109,191,155);
+background: -moz-linear-gradient(top,  rgba(109,191,155,1) 1%, rgba(86,116,117,1) 44%, rgba(0,83,124,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(109,191,155,1) 1%,rgba(86,116,117,1) 44%,rgba(0,83,124,1) 100%);
+background: linear-gradient(to bottom,  rgba(109,191,155,1) 1%,rgba(86,116,117,1) 44%,rgba(0,83,124,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6dbf9b', endColorstr='#00537c',GradientType=0 );
+</textarea>
+  </div>
+
+</div>
+</div>
+
+
+<div id="Gradient3" class="col-lg-12">
+<div id="g3">
+<div class="form-group">
+
+          <a class="fright" href="#!Gradient3">&times;</a>
+
+    <label for="Gradient3">Cod CSS Gradient 3</label>
+    <textarea class="form-control" id="Gradient3" rows="4" spellcheck="false">background: rgb(59,103,158);
+background: -moz-linear-gradient(top,  rgba(59,103,158,1) 0%, rgba(43,136,217,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+background: linear-gradient(to bottom,  rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=0 );
+
+</textarea>
+  </div>
+
+</div>
+</div>
+
+
+
+<div id="Gradient4" class="col-lg-12">
+<div id="g4">
+<div class="form-group">
+
+          <a class="fright" href="#!Gradient4">&times;</a>
+
+    <label for="Gradient4">Cod CSS Gradient 4</label>
+    <textarea class="form-control" id="Gradient4" rows="4" spellcheck="false">background: rgb(247,0,210);
+background: -moz-linear-gradient(top,  rgba(247,0,210,1) 0%, rgba(255,0,132,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(247,0,210,1) 0%,rgba(255,0,132,1) 100%);
+background: linear-gradient(to bottom,  rgba(247,0,210,1) 0%,rgba(255,0,132,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f700d2', endColorstr='#ff0084',GradientType=0 );
+
+</textarea>
+  </div>
+
+</div>
+</div>
+
+
+
+<div class="col-lg-12 wrapper">
+<h2 class="display-5">CSS3 - Pattern</h2>
+<p class="lead">
+Consultați următoarele modele de fundal CSS pe care le puteți adăuga pe site-ul dvs. web. CSS3 vă permite să creați câteva modele de fundal complexe. Acestea sunt doar câteva.</p>
+<p>Modelele CSS (css patterns) folosesc un concept similar cu Gradienturile CSS, diferența fiind vizibilă in codul css iar culorile se opresc brusc si nu in trepte la fel ca Gradientul.<br/>
+Modelele CSS pot folosi si imagini.</p>
+<div class="row">
+
+
+
+
+<div class="col-md-6 pat p1">
+<p class="lite">Model 1</p>
+   <a href="#p1" class="btn btn-primary">Arata CSS</a>
+</div>
+
+<div class="col-md-6 pat p2">
+<p class="lite">Model 2</p>
+   <a href="#p2" class="btn btn-primary">Arata CSS</a>
+</div>
+
+
+<div class="col-md-6 pat p3">
+<p class="lite">Model 3</p>
+   <a href="#p3" class="btn btn-primary">Arata CSS</a>
+</div>
+
+
+<div class="col-md-6 pat p4">
+<p class="lite">Model 4</p>
+   <a href="#p4" class="btn btn-primary">Arata CSS</a>
+</div>
+
+
+<div class="col-md-6 pat p5">
+<p class="lite">Model 5</p>
+   <a href="#p5" class="btn btn-primary">Arata CSS</a>
+</div>
+
+
+
+
+
+<div class="col-md-6 pat p6">
+<p class="lite">Model 6</p>
+   <a href="#p6" class="btn btn-primary">Arata CSS</a>
+</div>
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="col-lg-12">
+
+
+
+<div id="Patern1" class="col-lg-12">
+<div id="p1">
+<div class="form-group">
+
+          <a class="fright" href="#!Patern1">&times;</a>
+
+    <label for="Patern1">Cod CSS Pattern 1</label>
+    <textarea class="form-control" id="Patern1" rows="4" spellcheck="false">background:url(
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAO0lEQVQoU2NcuebF//AQCcbzF679NzTQYmTAAXBKoKuHm0TIZOJNhFkBcyMuk0k3kZDJ5JuIy2SiTQQAIks0C0fIKCsAAAAASUVORK5CYII=) repeat;</textarea>
+  </div>
+</div>
+</div>
+
+
+
+<div id="Patern2" class="col-lg-12">
+<div id="p2">
+<div class="form-group">
+
+          <a class="fright" href="#!Patern2">&times;</a>
+
+    <label for="Patern2">Cod CSS Pattern 2</label>
+    <textarea class="form-control" id="Patern2" rows="4" spellcheck="false">background:
+linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+linear-gradient(63deg, transparent 74%, #999 78%),
+linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+#444;
+background-size: 16px 48px;</textarea>
+  </div>
+</div>
+</div>
+
+
+
+<div id="Patern3" class="col-lg-12">
+<div id="p3">
+<div class="form-group">
+
+          <a class="fright" href="#!Patern3">&times;</a>
+
+    <label for="Patern3">Cod CSS Pattern 3</label>
+    <textarea class="form-control" id="Patern3" rows="4" spellcheck="false">background:
+radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+background-color: #300;
+background-size: 100px 100px;</textarea>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<div id="Patern4" class="col-lg-12">
+<div id="p4">
+<div class="form-group">
+
+          <a class="fright" href="#!Patern4">&times;</a>
+
+    <label for="Patern4">Cod CSS Pattern 4</label>
+    <textarea class="form-control" id="Patern4" rows="4" spellcheck="false">background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnPgogIDxyZWN0IHdpZHRoPSc4JyBoZWlnaHQ9JzgnIGZpbGw9JyNmZmYnLz4KICA8cGF0aCBkPSdNMCAwTDggOFpNOCAwTDAgOFonIHN0cm9rZS13aWR0aD0nMC41JyBzdHJva2U9JyNhYWEnLz4KPC9zdmc+Cg=="); background-repeat: repeat;</textarea>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<div id="Patern5" class="col-lg-12">
+<div id="p5">
+<div class="form-group">
+
+          <a class="fright" href="#!Patern5">&times;</a>
+
+    <label for="Patern5">Cod CSS Pattern 5</label>
+    <textarea class="form-control" id="Patern5" rows="4" spellcheck="false">background: 
+linear-gradient(30deg, #bdbdbd 12%, transparent 12.5%, transparent 87%, #bdbdbd 87.5%, #bdbdbd 0), 
+linear-gradient(150deg, #bdbdbd 12%, transparent 12.5%, transparent 87%, #bdbdbd 87.5%, #bdbdbd 0), 
+linear-gradient(30deg, #bdbdbd 12%, transparent 12.5%, transparent 87%, #bdbdbd 87.5%, #bdbdbd 0), 
+linear-gradient(150deg, #bdbdbd 12%, transparent 12.5%, transparent 87%, #bdbdbd 87.5%, #bdbdbd 0), 
+linear-gradient(60deg, #dbdbdb 25%, transparent 25.5%, transparent 75%, #dbdbdb 75%, #dbdbdb 0), 
+linear-gradient(60deg, #dbdbdb 25%, transparent 25.5%, transparent 75%, #dbdbdb 75%, #dbdbdb 0), #ccc;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+background-size: 80px 140px;</textarea>
+  </div>
+</div>
+</div>
+
+
+
+
+<div id="Patern6" class="col-lg-12">
+<div id="p6">
+<div class="form-group">
+
+          <a class="fright" href="#!Patern6">&times;</a>
+
+    <label for="Patern6">Cod CSS Pattern 6</label>
+    <textarea class="form-control" id="Patern6" rows="4" spellcheck="false">background-color: #fff;
+background-image:linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;</textarea>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+<div class="col-lg-12 wrapper">
+
+<h1 class="gradienth1 umbra">Text cu Gradient si Umbra</h1>
+
+<code>h1 {
+  font-size: 5.44em;
+  background: -webkit-linear-gradient(#09C, #F93);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}</code>
+<p class="lead">Gradient-urile se pot folosi si pentru elementele text</p>
+<p>Efect umbra</p>
+<code>.umbra{
+  text-shadow:0 2px 8px #000;
+}</code>
+
+<div class="col-lg-12 lord">
+<h1 class="leonard" data-shadow="Efect Animat!">Efect Animat!</h1>
+
+<div class="col-md-8 m-auto"><textarea class="form-control" id="Leonard" rows="4" spellcheck="false">h1.leonard {
+  display: inline-block;
+  color: white;
+  font-family: "Segoe UI", serif;
+  font-size: 7em;
+text-shadow: -8px 5px 0px #fff;
+
+background: rgb(255,93,177);
+background: -moz-linear-gradient(top,  rgba(255,93,177,1) 0%, rgba(239,1,124,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(255,93,177,1) 0%,rgba(239,1,124,1) 100%);
+background: linear-gradient(to bottom,  rgba(255,93,177,1) 0%,rgba(239,1,124,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#ef017c',GradientType=0 );
+
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 200px;
+  background-size: .07em .07em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-animation: shad-anim 15s linear infinite;
+  animation: shad-anim 15s linear infinite;
+  
+}
+
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 100% -100%;
+  }
+}</textarea></div>
+<style>
+body:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  height: 100%;
+}
+</style>
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="col-12 wrapper center footer">
+<p>material realizat de Dan N pentru Lenani.ro</p>
+</div>
+
+
+
+
+<script src="https://lenani-zenart.github.io/web/cursuri/css/lenani_bs/js/bootstrap.js"></script>
+</body></html>

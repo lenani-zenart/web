@@ -1,0 +1,3 @@
+https://www.getvladimir.com/notepad-for-mac.html
+
+Please note that this version is NOT compatible with macOS High Sierra, Mojave or newer versions of macOS that require 64bit apps.

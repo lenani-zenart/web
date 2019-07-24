@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://lenani-zenart.github.io/web/cursuri/css/lenani_bs/css/bootstrap.min.css"/>
+<title>Lenani - Butoane</title>
+	<link rel="icon" href="https://raw.githubusercontent.com/lenani-zenart/web/master/lenani_logo.png?v=1.1">
+<style>
+body{width:97%;margin:0 auto;background-color:#f1f1f1;}
+
+::-webkit-scrollbar {width:9px;}
+::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);}
+::-webkit-scrollbar-thumb {background:#09C;}
+::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);}
+* {box-sizing:border-box;}
+html{}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-5-half {width: 47.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 0px solid #ccc;
+	color:#444;
+}
+[class*="no"] {
+    float: left;
+    padding: 0;}
+[class*="padd20"]{display:block;padding:20px;}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.hr{border:none; clear:both; height:1px; line-height:0; width:100%; font-size:0; padding:0 ;margin-bottom :20px;background:#F39;box-shadow:0 0px 3px #fff;}
+.left {text-align:left;}
+.right {text-align:right;}
+.center {text-align:center;}
+.fleft {float:left;}
+.fright {float:right;}
+.clear {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;}
+.dotted {border-bottom:1px dashed #F3C;border-left:0;border-right:0;margin-bottom:10px;}
+
+/*** Wrapper ***/
+
+		
+.wrapper{background-color:#fff;box-shadow:0 0 7px #999;-webkit-box-shadow:0 0 7px #999;border-top:5px solid #F63;margin:10px auto 20px auto;}
+
+.btnlenani_1 {
+	-moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
+	-webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+	background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
+	background-color:#7892c2;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.btnlenani_1:hover {
+	color:#fff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #476e9e), color-stop(1, #7892c2));
+	background:-moz-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-webkit-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-o-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-ms-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#476e9e', endColorstr='#7892c2',GradientType=0);
+	background-color:#476e9e;
+	text-decoration:none;
+}
+.btnlenani_1:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
+
+
+.btnlenani_2 {
+	-moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+	background:-moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
+	background-color:#d0451b;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.btnlenani_2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+	background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
+	background-color:#bc3315;
+	text-decoration:none;
+	color:#fff;
+}
+.btnlenani_2:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+.btnlenani_3 {
+	background: linear-gradient(to right, #906, #09F);
+	color: white;
+	text-align: center;
+	line-height:70px;
+	font-size:17px;
+	padding:10px 14px 10px;
+	font-family: sans-serif;
+	letter-spacing: 0.2em;
+	border: 1px solid #939;
+	border-radius: 2em;
+	transform: perspective(500px) rotateY(-15deg);
+	text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+	position: relative;
+	text-decoration:none;
+}
+
+.btnlenani_3:hover {
+	color:#fff;
+	transform: perspective(500px) rotateY(15deg);
+	text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
+	text-decoration:none;
+}
+
+
+.btnlenani_3:hover::before {
+	left: 100%;
+}
+
+
+
+
+
+.buton {
+  background: #c77feb;
+  background-image: -webkit-linear-gradient(top, #c77feb, #9153b0);
+  background-image: -moz-linear-gradient(top, #c77feb, #9153b0);
+  background-image: -ms-linear-gradient(top, #c77feb, #9153b0);
+  background-image: -o-linear-gradient(top, #c77feb, #9153b0);
+  background-image: linear-gradient(to bottom, #c77feb, #9153b0);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #f1f1f1;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.buton:hover {
+  background: #ef87ff;
+  background-image: -webkit-linear-gradient(top, #ef87ff, #c77feb);
+  background-image: -moz-linear-gradient(top, #ef87ff, #c77feb);
+  background-image: -ms-linear-gradient(top, #ef87ff, #c77feb);
+  background-image: -o-linear-gradient(top, #ef87ff, #c77feb);
+  background-image: linear-gradient(to bottom, #ef87ff, #c77feb);
+  text-decoration: none;
+  color:#ffffff;
+}
+
+
+
+.magnum{background-color:#f1f1f1;border-top:2px solid #777;}
+.magnum p{text-indent:12px;padding-top:6px;padding-bottom:10px;}
+/** Set butoane 2 **/
+.btnlenani_4{padding:8px 12px;text-align:center;-webkit-border-radius:5px;border-radius:5px;background-color:#F69;border:1px solid #F66;color:#f1f1f1;text-shadow:0 -1px 1px #999;text-decoration:none;}
+.btnlenani_4:hover{background-color:#F39;border:1px solid #F66;color:#ffffff;text-shadow:0 -1px 1px #999;text-decoration:none;}
+
+
+
+.btnlenani_5{padding:8px 12px;text-align:center;-webkit-border-radius:5px;border-radius:5px;background-color:#099;border:1px solid #063;color:#f1f1f1;text-shadow:0 -1px 1px #999;text-decoration:none;-webkit-box-shadow:0 4px 6px #999;box-shadow:0 4px 6px #999;transition: all .3s;}
+.btnlenani_5:hover{background-color:#0C9;border:1px solid #099;color:#ffffff;text-shadow:0 -1px 1px #999;text-decoration:none;-webkit-box-shadow:0 1px 2px #999;box-shadow:0 1px 2px #999;}
+
+
+
+.btnlenani_6{padding:8px 12px;text-align:center;-webkit-border-radius:5px;border-radius:5px;background-color:#909;border:1px solid #909;color:#f1f1f1;text-shadow:0 -1px 1px #999;text-decoration:none;-webkit-box-shadow:0 7px 9px -5px #999, inset 0 4px 9px #96C;box-shadow:0 7px 9px -5px #999, inset 0 4px 9px #96C;transition: all .3s;}
+.btnlenani_6:hover{background-color:#93C;border:1px solid #909;color:#ffffff;text-shadow:0 -1px 1px #999;text-decoration:none;-webkit-box-shadow:0 1px 2px #999;box-shadow:0 1px 2px #999;}
+
+
+.btnlenani_7{padding:8px 12px;text-align:center;-webkit-border-radius:5px;border-radius:5px;color:#f1f1f1;text-shadow:0 -1px 1px #999;text-decoration:none;background: linear-gradient(0deg, #000, #272727);transition: all .3s;}
+.btnlenani_7:hover{background: linear-gradient(0deg, #333, #272727);color:#ffffff;text-shadow:0 -1px 1px #999;text-decoration:none;-webkit-box-shadow:0 1px 2px #999;box-shadow:0 1px 2px #999;}
+
+
+
+
+
+.btnlenani_8 ,.btnlenani_8:active{
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding-right: 30px;
+  padding-left: 70px;
+  position: relative;
+  background-color:rgb(41,127,184);
+  color:rgba(255,255,255,.80);
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow:0px 2px 2px rgba(0,0,0,0.2);
+  box-shadow:0px 2px 2px rgba(0,0,0,0.2);
+  transition: all .3s;
+  overflow:hidden;
+}
+
+.btnlenani_8 span {
+  position: absolute;
+  left:0;
+  width: 50px;
+  font-size:16px;
+  margin:0 auto;
+  text-align:center;
+  color:#fff;text-decoration:none;
+  background-color:#09C;
+  -webkit-border-radius: 5px 0 0 5px;
+border-radius: 5px 0 0 5px;
+border-right: 1px solid  rgba(0,0,0,0.15);
+-webkit-box-shadow:-2px 0px 14px -1px rgba(0,0,0,0.2);
+  box-shadow:-2px 0px 14px -1px rgba(0,0,0,0.2);
+transition: all .3s;
+}
+
+.btnlenani_8:hover span, .btnlenani_8.active span {
+  background-color:#069;
+  width: 50px;
+  border-right: 1px solid  rgba(0,0,0,0.3);
+  color:#fff;
+  text-decoration:none;
+  text-align:center;
+  text-indent:12px;
+}
+
+.btnlenani_8:hover {
+	text-decoration:none;
+	color:#fff;
+  margin-top: 2px;
+  margin-bottom: 13px;
+-webkit-box-shadow:0px 1px 0px rgba(255,255,255,0.5);
+box-shadow:0px 1px 0px rgba(255,255,255,0.5);}
+
+
+
+
+
+
+.btnlenani_9{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: auto;
+  margin: .5em auto;
+  padding: .6em .6em .5em .6em;
+  text-decoration: none !important;
+  outline: none;
+  background: #ff8900 !important;
+  background: -moz-linear-gradient(top, #ff8900 0%, #ff3d00 100%) !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff8900), color-stop(100%,#ff3d00)) !important;
+  background: -webkit-linear-gradient(top, #ff8900 0%,#ff3d00 100%) !important;
+  background: -o-linear-gradient(top, #ff8900 0%,#ff3d00 100%) !important;
+  background: -ms-linear-gradient(top, #ff8900 0%,#ff3d00 100%) !important;
+  background: linear-gradient(to bottom, #ff8900 0%,#ff3d00 100%) !important;
+  font-family: 'Fira Sans', 'Source Sans Pro', 'Myriad Pro', 'Open Sans', Roboto, Myriad, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-kerning: auto;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14pt;
+  line-height: 1.2 !important;
+  vertical-align: -webkit-baseline-middle;
+  color: white !important;
+  text-shadow: #e20 1px 1px 0;
+  border-radius: 3px;
+  border: 1px solid #f60;
+  border-bottom-color: #e20;
+  box-shadow: inset #f20 0 -5px 15px, inset #fc6 0 1px 1px, rgba(0,0,0,.15) 0px 1px 1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.btnlenani_9:hover{color: white !important;
+  background: #fa3 !important;
+  background: -moz-linear-gradient(top, #fa3 0%, #f30 100%) !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fa3), color-stop(100%,#f30)) !important;
+  background: -webkit-linear-gradient(top, #fa3 0%,#f30 100%) !important;
+  background: -o-linear-gradient(top, #fa3 0%,#f30 100%) !important;
+  background: -ms-linear-gradient(top, #fa3 0%,#f30 100%) !important;
+  background: linear-gradient(to bottom, #fa3 0%,#f30 100%) !important;
+  box-shadow: inset #f40 0 -5px 15px, inset #ffd28a 0 1px 1px, rgba(0,0,0,.15) 0px 1px 1px, rgba(255,200,0,.5) 0 0 10px;}
+  
+  
+  
+  
+  /* Default  buttons */
+.btnlenani_10{
+position: relative;
+padding: 10px 20px;
+margin: 10px 20px;
+font-size: 19px;
+text-align: center;
+text-decoration: none;
+background-color: #9c9c9c;
+color: rgba(255,255,255,.70);
+border-radius: 7px;
+box-shadow: 0px 7px 1px #6e6e6e;
+}
+
+.albastru {
+background-color: #26ADE4;
+box-shadow: 0px 9px 1px #0082b5;
+}
+
+.animat {
+-webkit-transition: 0.2s all;
+-moz-transition: 0.2s all;
+-o-transition: 0.2s all;
+-transition: 0.2s all;
+}
+
+
+.btnlenani_10:hover{
+transform: translateY(4px);
+-webkit-transform: translateY(4px);
+box-shadow: 0px 5px 1px #6e6e6e;
+text-decoration:none;
+color: rgba(255,255,255,1);
+}
+
+.btnlenani_10:active{
+transform: translateY(8px);
+-webkit-transform: translateY(8px);
+box-shadow: 0px 1px 1px #6e6e6e;
+text-decoration:none;
+}
+
+.albastru:hover {
+transform: translateY(4px);
+-webkit-transform: translateY(4px);
+box-shadow: 0px 5px 1px #0082b5;
+}
+
+.albastru:active {
+transform: translateY(8px);
+-webkit-transform: translateY(8px);
+box-shadow: 0px 1px 1px #0082b5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btnlenani_11{
+position: relative;
+padding: 10px 20px;
+margin: 10px 20px;
+font-size: 19px;
+text-align: center;
+text-decoration: none;
+background-color: #9c9c9c;
+color: rgba(255,255,255,.70);
+border-radius: 7px;
+box-shadow: 0px 7px 1px #bb2424;
+}
+
+.rosu {
+background-color: #e32730;
+box-shadow: 0px 9px 1px #b50000;
+}
+.animat {
+-webkit-transition: 0.2s all;
+-moz-transition: 0.2s all;
+-o-transition: 0.2s all;
+-transition: 0.2s all;
+}
+.btnlenani_11:hover{
+transform: translateY(4px);
+-webkit-transform: translateY(4px);
+box-shadow: 0px 5px 1px #bb2424;
+text-decoration:none;
+color: rgba(255,255,255,1);
+}
+.btnlenani_11:active{
+transform: translateY(8px);
+-webkit-transform: translateY(8px);
+box-shadow: 0px 1px 1px #bb2424;
+text-decoration:none;
+}
+.rous:hover {
+transform: translateY(4px);
+-webkit-transform: translateY(4px);
+box-shadow: 0px 5px 1px #b50000;
+}
+.rosu:active {
+transform: translateY(8px);
+-webkit-transform: translateY(8px);
+box-shadow: 0px 1px 1px #b50000;
+}
+
+
+
+
+
+.btnlenani_12{
+position: relative;
+padding: 10px 20px;
+margin: 10px 20px;
+font-size: 19px;
+text-align: center;
+text-decoration: none;
+background-color: #9c9c9c;
+color: rgba(255,255,255,.70);
+border-radius: 7px;
+box-shadow: 0px 7px 1px #6e6e6e;
+}
+.verde {
+background-color: #36b300;
+box-shadow: 0px 9px 1px #0d8500;
+}
+
+.animat {
+-webkit-transition: 0.2s all;
+-moz-transition: 0.2s all;
+-o-transition: 0.2s all;
+-transition: 0.2s all;
+}
+.btnlenani_12:hover{
+transform: translateY(4px);
+-webkit-transform: translateY(4px);
+box-shadow: 0px 5px 1px #6e6e6e;
+text-decoration:none;
+color: rgba(255,255,255,1);
+}
+.btnlenani_12:active {
+transform: translateY(8px);
+-webkit-transform: translateY(8px);
+box-shadow: 0px 1px 1px #6e6e6e;
+text-decoration:none;
+}
+.verde:hover {
+transform: translateY(4px);
+-webkit-transform: translateY(4px);
+box-shadow: 0px 5px 1px #0d8500;
+}
+.verde:active {
+transform: translateY(8px);
+-webkit-transform: translateY(8px);
+box-shadow: 0px 1px 1px #0d8500;
+}
+
+
+  
+  
+  
+ .margine{margin:5px auto 4px auto;} 
+  
+a.btnlenani_13{display:block;width:200px;text-align:center;font-size:13px;text-decoration:none;padding:8px 0 8px;border:1px solid #0CF;color:#666;text-transform:uppercase;transition: all .3s;}
+a.btnlenani_13:hover{font-size:13px;text-decoration:none;padding:8px 0 8px;border:1px solid #6FF;color:#fff;background-color:#0CF;}
+a.btnlenani_13:active{font-size:13px;text-decoration:none;padding:8px 0 8px;border:1px solid #0CF;color:#666;text-transform:uppercase;}
+
+a.btnlenani_14{display:block;width:200px;text-align:center;font-size:13px;text-decoration:none;padding:8px 0 8px;border:7px double #C0C;color:#888;text-transform:uppercase;transition: all .3s;}
+a.btnlenani_14:hover{font-size:13px;text-decoration:none;padding:8px 0 8px;border:7px double #99F;color:#fff;background-color:#93C;text-shadow:0 1px 3px #000;}
+a.btnlenani_14:active{font-size:13px;text-decoration:none;padding:8px 0 8px;border:7px double #C0C;color:#888;text-transform:uppercase;}
+
+
+a.btnlenani_15{display:block;width:200px;text-align:center;font-size:13px;text-decoration:none;padding:8px 0 8px;border-left:2px solid #333;border-right:2px solid #333;color:#CCC;border-radius:3px;text-transform:uppercase;-webkit-box-shadow:-6px 0 4px -2px #999,6px 0 4px -2px #999;box-shadow:-6px 0 4px -2px #999,6px 0 4px -2px #999;transition: all .3s;}
+a.btnlenani_15:hover{font-size:13px;text-decoration:none;padding:8px 0 8px;border-left:2px solid #C90;border-right:2px solid #C90;color:#DDC284;background-color:#222;-webkit-box-shadow:-16px 2px 8px -2px #f1f1f1,16px 2px 8px -2px #f1f1f1, 0 4px 7px -3px #999;box-shadow:-16px 2px 8px -2px #f1f1f1,16px 2px 8px -2px #f1f1f1, 0 4px 7px -3px #999;transform: translateY(-4px);-webkit-transform: translateY(-4px);}
+a.btnlenani_15:active{font-size:13px;text-decoration:none;padding:8px 0 8px;border-left:2px solid #333;border-right:2px solid #333;color:#CCC;webkit-box-shadow:-16px 2px 8px -2px #f1f1f1,16px 2px 8px -2px #f1f1f1, 0 4px 7px -3px #999;box-shadow:-16px 2px 8px -2px #f1f1f1,16px 2px 8px -2px #f1f1f1, 0 4px 7px -3px #999;transform: translateY(-4px);-webkit-transform: translateY(-4px);}
+  
+
+
+#bd1,
+#bd2,
+#bd3,
+#bd4,
+#bd5,
+#bd6,
+#bd7,
+#bd8,
+#bd9,
+#bd10,
+#bd11,
+#bd12{display:none;position:relative;top:10px;left:0;}
+
+#bd1:target,
+#bd2:target,
+#bd3:target,
+#bd4:target,
+#bd5:target,
+#bd6:target,
+#bd7:target,
+#bd8:target,
+#bd9:target,
+#bd10:target,
+#bd11:target,
+#bd12:target{display:block;}
+
+@media only screen and (max-width: 500px) {[class*="col-"] {float: left;padding: 15px;border: 0px solid #ccc;color:#444;}[class*="no"] {float: left;padding: 0;}}
+
+.clearfix:after {clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0;}* html .clearfix {height:1%;}
+
+
+
+.default::before{content: ' \00BB';-webkit-locale:"ro";float:right;font-size:22px;}
+
+html{scroll-behavior: smooth;}
+</style>
+
+
+</head>
+<body>
+	
+<div class="col-lg-12 wrapper">
+<h1 class="display-5">CSS3 - Butoane</h1>
+</div>
+
+
+<div class="col-lg-12 wrapper">
+<p class="lead">Cateva exemple de link-uri transformate in butoane cu ajutorul CSS</p>
+</div>
+
+
+
+
+<div class="col-md-12 wrapper">
+<div class="row">
+
+<div class="col-md-4">
+<a href="#" class="btnlenani_1">Buton 1</a>
+</div>
+<div class="col-md-8">
+<textarea class="form-control" rows="4" spellcheck="false">
+.btnlenani_1 {
+	-moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
+	-webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+	background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
+	background-color:#7892c2;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.btnlenani_1:hover {
+	color:#fff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #476e9e), color-stop(1, #7892c2));
+	background:-moz-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-webkit-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-o-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-ms-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#476e9e', endColorstr='#7892c2',GradientType=0);
+	background-color:#476e9e;
+	text-decoration:none;
+}
+.btnlenani_1:active {
+	position:relative;
+	top:1px;
+}
+</textarea>
+</div>
+
+
+
+<div class="col-md-4">
+<a href="#" class="btnlenani_2">Buton 2</a>
+</div>
+<div class="col-md-8">
+<textarea class="form-control" rows="4" spellcheck="false">
+.btnlenani_2 {
+	-moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+	background:-moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
+	background-color:#d0451b;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.btnlenani_2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+	background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
+	background-color:#bc3315;
+	text-decoration:none;
+    color:#fff;
+}
+.btnlenani_2:active {
+	position:relative;
+	top:1px;
+}
+</textarea>
+</div>
+
+
+
+
+<div class="col-md-4">
+<a href="#" class="btnlenani_3">Buton 3</a>
+</div>
+<div class="col-md-8">
+<textarea class="form-control" rows="4" spellcheck="false">.btnlenani_3 {
+	background: linear-gradient(to right, #906, #09F);
+	color: white;
+	text-align: center;
+	line-height:70px;
+	font-size:17px;
+	padding:10px 14px 10px;
+	font-family: sans-serif;
+	letter-spacing: 0.2em;
+	border: 1px solid #939;
+	border-radius: 2em;
+	transform: perspective(500px) rotateY(-15deg);
+	text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+	position: relative;
+	text-decoration:none;
+}
+
+.btnlenani_3:hover {
+	color:#fff;
+	transform: perspective(500px) rotateY(15deg);
+	text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
+	text-decoration:none;
+}
+
+
+.btnlenani_3:hover::before {
+	left: 100%;
+}</textarea>
+</div>
+
+
+
+
+
+<div class="col-md-4">
+<a href="#" class="buton" target="_blank">Buton</a>
+</div>
+<div class="col-md-8">
+<textarea class="form-control" rows="4" spellcheck="false">.buton {
+  background: #c77feb;
+  background-image: -webkit-linear-gradient(top, #c77feb, #9153b0);
+  background-image: -moz-linear-gradient(top, #c77feb, #9153b0);
+  background-image: -ms-linear-gradient(top, #c77feb, #9153b0);
+  background-image: -o-linear-gradient(top, #c77feb, #9153b0);
+  background-image: linear-gradient(to bottom, #c77feb, #9153b0);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #f1f1f1;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.buton:hover {
+  background: #ef87ff;
+  background-image: -webkit-linear-gradient(top, #ef87ff, #c77feb);
+  background-image: -moz-linear-gradient(top, #ef87ff, #c77feb);
+  background-image: -ms-linear-gradient(top, #ef87ff, #c77feb);
+  background-image: -o-linear-gradient(top, #ef87ff, #c77feb);
+  background-image: linear-gradient(to bottom, #ef87ff, #c77feb);
+  text-decoration: none;
+  color:#ffffff;
+}</textarea>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+<div class="col-md-12 wrapper">
+<div class="row">
+
+
+
+<div class="col-md-4">
+<a href="#bd1" class="btnlenani_4">Demo Buton 1 - Vezi Cod</a>
+</div>
+
+<div class="col-md-4">
+<a href="#bd2" class="btnlenani_5">Demo Buton 2 - Vezi Cod</a>
+</div>
+
+<div class="col-md-4">
+<a href="#bd3" class="btnlenani_6">Demo Buton 3 - Vezi Cod</a>
+</div>
+
+<div class="col-md-4">
+<a href="#bd4" class="btnlenani_7">Demo Buton 4 - Vezi Cod</a>
+</div>
+
+<div class="col-md-4">
+<a href="#bd5" class="btnlenani_8"><span>&raquo;</span>Demo Buton 5 - Vezi Cod</a>
+</div>
+
+<div class="col-md-4">
+<a href="#bd6" class="btnlenani_9">Demo Buton 6 - Vezi Cod (BS)</a>
+</div>
+
+<div class="col-md-4">
+<a href="#bd7" class="btnlenani_10 albastru animat">Demo Buton 7 - Vezi Cod</a>
+</div>
+
+<div class="col-md-4">
+<a href="#bd8" class="btnlenani_11 rosu animat">Demo Buton 8 - Vezi Cod</a>
+</div>
+
+<div class="col-md-4">
+<a href="#bd9" class="btnlenani_12 verde animat">Demo Buton 9 - Vezi Cod</a>
+</div>
+
+<div class="col-md-4">
+<a href="#bd10" class="btnlenani_13 margine">Demo Buton 10 - Vezi Cod</a>
+</div>
+
+<div class="col-md-4">
+<a href="#bd11" class="btnlenani_14 margine">Demo Buton 11 - Vezi Cod</a>
+</div>
+
+<div class="col-md-4">
+<a href="#bd12" class="btnlenani_15 margine">Demo Buton 12 - Vezi Cod</a>
+</div>
+
+
+
+
+<div id="bd1" class="col-md-12 magnum">
+<p>Buton demo 1</p>
+<code>&lt;a href=&quot;#&quot; class=&quot;btnlenani_4&quot;&gt;Demo Buton 1 - Vezi Cod&lt;/a&gt;</code>
+<textarea class="form-control" rows="4" spellcheck="false">.btnlenani_4{padding:8px 12px;text-align:center;-webkit-border-radius:5px;border-radius:5px;background-color:#F69;border:1px solid #F66;color:#f1f1f1;text-shadow:0 -1px 1px #999;text-decoration:none;}
+.btnlenani_4:hover{background-color:#F39;border:1px solid #F66;color:#ffffff;text-shadow:0 -1px 1px #999;text-decoration:none;}</textarea>
+</div>
+
+<div id="bd2" class="col-md-12 magnum">
+<p>Buton demo 2</p>
+<code>&lt;a href=&quot;#&quot; class=&quot;btnlenani_5&quot;&gt;Demo Buton 2 - Vezi Cod&lt;/a&gt;</code>
+<textarea class="form-control" rows="4" spellcheck="false">.btnlenani_5{padding:8px 12px;text-align:center;-webkit-border-radius:5px;border-radius:5px;background-color:#099;border:1px solid #063;color:#f1f1f1;text-shadow:0 -1px 1px #999;text-decoration:none;-webkit-box-shadow:0 4px 6px #999;box-shadow:0 4px 6px #999;transition: all .3s;}
+.btnlenani_5:hover{background-color:#0C9;border:1px solid #099;color:#ffffff;text-shadow:0 -1px 1px #999;text-decoration:none;-webkit-box-shadow:0 1px 2px #999;box-shadow:0 1px 2px #999;}</textarea>
+</div>
+
+<div id="bd3" class="col-md-12 magnum">
+<p>Buton demo 3</p>
+<code>&lt;a href=&quot;#&quot; class=&quot;btnlenani_6&quot;&gt;Demo Buton 3 - Vezi Cod&lt;/a&gt;</code>
+<textarea class="form-control" rows="4" spellcheck="false">.btnlenani_6{padding:8px 12px;text-align:center;-webkit-border-radius:5px;border-radius:5px;background-color:#909;border:1px solid #909;color:#f1f1f1;text-shadow:0 -1px 1px #999;text-decoration:none;-webkit-box-shadow:0 7px 9px -5px #999, inset 0 4px 9px #96C;box-shadow:0 7px 9px -5px #999, inset 0 4px 9px #96C;transition: all .3s;}
+.btnlenani_6:hover{background-color:#93C;border:1px solid #909;color:#ffffff;text-shadow:0 -1px 1px #999;text-decoration:none;-webkit-box-shadow:0 1px 2px #999;box-shadow:0 1px 2px #999;}</textarea>
+</div>
+
+<div id="bd4" class="col-md-12 magnum">
+<p>Buton demo 4</p>
+<code>&lt;a href=&quot;#&quot; class=&quot;btnlenani_7&quot;&gt;Demo Buton 4 - Vezi Cod&lt;/a&gt;</code>
+<textarea class="form-control" rows="4" spellcheck="false">.btnlenani_7{padding:8px 12px;text-align:center;-webkit-border-radius:5px;border-radius:5px;color:#f1f1f1;text-shadow:0 -1px 1px #999;text-decoration:none;background: linear-gradient(0deg, #000, #272727);transition: all .3s;}
+.btnlenani_7:hover{background: linear-gradient(0deg, #333, #272727);color:#ffffff;text-shadow:0 -1px 1px #999;text-decoration:none;-webkit-box-shadow:0 1px 2px #999;box-shadow:0 1px 2px #999;}</textarea>
+</div>
+
+<div id="bd5" class="col-md-12 magnum">
+<p>Buton demo 5</p>
+<code>&lt;a href=&quot;#&quot; class=&quot;btnlenani_8&quot;&gt;Demo Buton 5 - Vezi Cod&lt;/a&gt;</code>
+<textarea class="form-control" rows="4" spellcheck="false">.btnlenani_8 ,.btnlenani_8:active{
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding-right: 30px;
+  padding-left: 70px;
+  position: relative;
+  background-color:rgb(41,127,184);
+  color:rgba(255,255,255,.80);
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow:0px 2px 2px rgba(0,0,0,0.2);
+  box-shadow:0px 2px 2px rgba(0,0,0,0.2);
+  transition: all .3s;
+  overflow:hidden;
+}
+
+.btnlenani_8 span {
+  position: absolute;
+  left:0;
+  width: 50px;
+  font-size:16px;
+  margin:0 auto;
+  text-align:center;
+  color:#fff;text-decoration:none;
+  background-color:#09C;
+  -webkit-border-radius: 5px 0 0 5px;
+border-radius: 5px 0 0 5px;
+border-right: 1px solid  rgba(0,0,0,0.15);
+-webkit-box-shadow:-2px 0px 14px -1px rgba(0,0,0,0.2);
+  box-shadow:-2px 0px 14px -1px rgba(0,0,0,0.2);
+transition: all .3s;
+}
+
+.btnlenani_8:hover span, .btnlenani_8.active span {
+  background-color:#069;
+  width: 50px;
+  border-right: 1px solid  rgba(0,0,0,0.3);
+  color:#fff;
+  text-decoration:none;
+  text-align:center;
+  text-indent:12px;
+}
+
+.btnlenani_8:hover {
+	text-decoration:none;
+	color:#fff;
+  margin-top: 2px;
+  margin-bottom: 13px;
+-webkit-box-shadow:0px 1px 0px rgba(255,255,255,0.5);
+box-shadow:0px 1px 0px rgba(255,255,255,0.5);}</textarea>
+</div>
+
+<div id="bd6" class="col-md-12 magnum">
+<p>Buton demo 6 - compatibil cu Bootstrap</p>
+<code>&lt;a href=&quot;#&quot; class=&quot;btnlenani_9&quot;&gt;Demo Buton 6 - Vezi Cod&lt;/a&gt;</code>
+<textarea class="form-control" rows="4" spellcheck="false">.btnlenani_9{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: auto;
+  margin: .5em auto;
+  padding: .6em .6em .5em .6em;
+  text-decoration: none !important;
+  outline: none;
+  background: #ff8900 !important;
+  background: -moz-linear-gradient(top, #ff8900 0%, #ff3d00 100%) !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff8900), color-stop(100%,#ff3d00)) !important;
+  background: -webkit-linear-gradient(top, #ff8900 0%,#ff3d00 100%) !important;
+  background: -o-linear-gradient(top, #ff8900 0%,#ff3d00 100%) !important;
+  background: -ms-linear-gradient(top, #ff8900 0%,#ff3d00 100%) !important;
+  background: linear-gradient(to bottom, #ff8900 0%,#ff3d00 100%) !important;
+  font-family: 'Fira Sans', 'Source Sans Pro', 'Myriad Pro', 'Open Sans', Roboto, Myriad, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-kerning: auto;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14pt;
+  line-height: 1.2 !important;
+  vertical-align: -webkit-baseline-middle;
+  color: white !important;
+  text-shadow: #e20 1px 1px 0;
+  border-radius: 3px;
+  border: 1px solid #f60;
+  border-bottom-color: #e20;
+  box-shadow: inset #f20 0 -5px 15px, inset #fc6 0 1px 1px, rgba(0,0,0,.15) 0px 1px 1px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.btnlenani_9:hover{color: white !important;
+  background: #fa3 !important;
+  background: -moz-linear-gradient(top, #fa3 0%, #f30 100%) !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fa3), color-stop(100%,#f30)) !important;
+  background: -webkit-linear-gradient(top, #fa3 0%,#f30 100%) !important;
+  background: -o-linear-gradient(top, #fa3 0%,#f30 100%) !important;
+  background: -ms-linear-gradient(top, #fa3 0%,#f30 100%) !important;
+  background: linear-gradient(to bottom, #fa3 0%,#f30 100%) !important;
+  box-shadow: inset #f40 0 -5px 15px, inset #ffd28a 0 1px 1px, rgba(0,0,0,.15) 0px 1px 1px, rgba(255,200,0,.5) 0 0 10px;}</textarea>
+</div>
+
+<div id="bd7" class="col-md-12 magnum">
+<p>Buton demo 7</p>
+<code>&lt;a href=&quot;#&quot; class=&quot;btnlenani_10 albastru animat&quot;&gt;Demo Buton 7 - Vezi Cod&lt;/a&gt;</code>
+<textarea class="form-control" rows="4" spellcheck="false">.btnlenani_10{
+position: relative;
+padding: 10px 20px;
+margin: 10px 20px;
+font-size: 19px;
+text-align: center;
+text-decoration: none;
+background-color: #9c9c9c;
+color: rgba(255,255,255,.70);
+border-radius: 7px;
+box-shadow: 0px 7px 1px #6e6e6e;
+}
+
+.albastru {
+background-color: #26ADE4;
+box-shadow: 0px 9px 1px #0082b5;
+}
+.albastru:hover {
+transform: translateY(4px);
+-webkit-transform: translateY(4px);
+box-shadow: 0px 5px 1px #0082b5;
+}
+.animat {
+-webkit-transition: 0.2s all;
+-moz-transition: 0.2s all;
+-o-transition: 0.2s all;
+-transition: 0.2s all;
+}
+
+
+.btnlenani_10:hover{
+transform: translateY(4px);
+-webkit-transform: translateY(4px);
+box-shadow: 0px 5px 1px #6e6e6e;
+text-decoration:none;
+color: rgba(255,255,255,1);
+}
+
+.btnlenani_10:active{
+transform: translateY(8px);
+-webkit-transform: translateY(8px);
+box-shadow: 0px 1px 1px #6e6e6e;
+text-decoration:none;
+}
+
+.albastru:hover {
+transform: translateY(4px);
+-webkit-transform: translateY(4px);
+box-shadow: 0px 5px 1px #0082b5;
+}
+
+.albastru:active {
+transform: translateY(8px);
+-webkit-transform: translateY(8px);
+box-shadow: 0px 1px 1px #0082b5;
+}</textarea>
+</div>
+
+<div id="bd8" class="col-md-12 magnum">
+<p>Buton demo 8</p>
+<code>&lt;a href=&quot;#&quot; class=&quot;btnlenani_11 rosu animat&quot;&gt;Demo Buton 8 - Vezi Cod&lt;/a&gt;</code>
+<textarea class="form-control" rows="4" spellcheck="false">.btnlenani_11{
+position: relative;
+padding: 10px 20px;
+margin: 10px 20px;
+font-size: 19px;
+text-align: center;
+text-decoration: none;
+background-color: #9c9c9c;
+color: rgba(255,255,255,.70);
+border-radius: 7px;
+box-shadow: 0px 7px 1px #bb2424;
+}
+
+.rosu {
+background-color: #e32730;
+box-shadow: 0px 9px 1px #b50000;
+}
+.animat {
+-webkit-transition: 0.2s all;
+-moz-transition: 0.2s all;
+-o-transition: 0.2s all;
+-transition: 0.2s all;
+}
+.btnlenani_11:hover{
+transform: translateY(4px);
+-webkit-transform: translateY(4px);
+box-shadow: 0px 5px 1px #bb2424;
+text-decoration:none;
+color: rgba(255,255,255,1);
+}
+.btnlenani_11:active{
+transform: translateY(8px);
+-webkit-transform: translateY(8px);
+box-shadow: 0px 1px 1px #bb2424;
+text-decoration:none;
+}
+.rous:hover {
+transform: translateY(4px);
+-webkit-transform: translateY(4px);
+box-shadow: 0px 5px 1px #b50000;
+}
+.rosu:active {
+transform: translateY(8px);
+-webkit-transform: translateY(8px);
+box-shadow: 0px 1px 1px #b50000;
+}</textarea>
+</div>
+
+<div id="bd9" class="col-md-12 magnum">
+<p>Buton demo 9</p>
+<code>&lt;a href=&quot;#&quot; class=&quot;btnlenani_12 verde animat&quot;&gt;Demo Buton 9 - Vezi Cod&lt;/a&gt;</code>
+<textarea class="form-control" rows="4" spellcheck="false">.btnlenani_12{
+position: relative;
+padding: 10px 20px;
+margin: 10px 20px;
+font-size: 19px;
+text-align: center;
+text-decoration: none;
+background-color: #9c9c9c;
+color: rgba(255,255,255,.70);
+border-radius: 7px;
+box-shadow: 0px 7px 1px #6e6e6e;
+}
+.verde {
+background-color: #36b300;
+box-shadow: 0px 9px 1px #0d8500;
+}
+
+.animat {
+-webkit-transition: 0.2s all;
+-moz-transition: 0.2s all;
+-o-transition: 0.2s all;
+-transition: 0.2s all;
+}
+.btnlenani_12:hover{
+transform: translateY(4px);
+-webkit-transform: translateY(4px);
+box-shadow: 0px 5px 1px #6e6e6e;
+text-decoration:none;
+color: rgba(255,255,255,1);
+}
+.btnlenani_12:active {
+transform: translateY(8px);
+-webkit-transform: translateY(8px);
+box-shadow: 0px 1px 1px #6e6e6e;
+text-decoration:none;
+}
+.verde:hover {
+transform: translateY(4px);
+-webkit-transform: translateY(4px);
+box-shadow: 0px 5px 1px #0d8500;
+}
+.verde:active {
+transform: translateY(8px);
+-webkit-transform: translateY(8px);
+box-shadow: 0px 1px 1px #0d8500;
+}</textarea>
+</div>
+
+<div id="bd10" class="col-md-12 magnum">
+<p>Buton demo 10</p>
+<code>&lt;a href=&quot;#&quot; class=&quot;btnlenani_13&quot;&gt;Demo Buton 10 - Vezi Cod&lt;/a&gt;</code>
+<textarea class="form-control" rows="4" spellcheck="false">a.btnlenani_13{display:block;width:200px;text-align:center;font-size:13px;text-decoration:none;padding:8px 0 8px;border:1px solid #0CF;color:#666;text-transform:uppercase;transition: all .3s;}
+a.btnlenani_13:hover{font-size:13px;text-decoration:none;padding:8px 0 8px;border:1px solid #6FF;color:#fff;background-color:#0CF;}
+a.btnlenani_13:active{font-size:13px;text-decoration:none;padding:8px 0 8px;border:1px solid #0CF;color:#666;text-transform:uppercase;}</textarea>
+</div>
+
+<div id="bd11" class="col-md-12 magnum">
+<p>Buton demo 11</p>
+<code>&lt;a href=&quot;#&quot; class=&quot;btnlenani_14&quot;&gt;Demo Buton 11 - Vezi Cod&lt;/a&gt;</code>
+<textarea class="form-control" rows="4" spellcheck="false">a.btnlenani_14{display:block;width:200px;text-align:center;font-size:13px;text-decoration:none;padding:8px 0 8px;border:7px double #C0C;color:#888;text-transform:uppercase;transition: all .3s;}
+a.btnlenani_14:hover{font-size:13px;text-decoration:none;padding:8px 0 8px;border:7px double #99F;color:#fff;background-color:#93C;text-shadow:0 1px 3px #000;}
+a.btnlenani_14:active{font-size:13px;text-decoration:none;padding:8px 0 8px;border:7px double #C0C;color:#888;text-transform:uppercase;}</textarea>
+</div>
+
+<div id="bd12" class="col-md-12 magnum">
+<p>Buton demo 12</p>
+<code>&lt;a href=&quot;#&quot; class=&quot;btnlenani_15&quot;&gt;Demo Buton 12 - Vezi Cod&lt;/a&gt;</code>
+<textarea class="form-control" rows="4" spellcheck="false">a.btnlenani_15{display:block;width:200px;text-align:center;font-size:13px;text-decoration:none;padding:8px 0 8px;border-left:2px solid #333;border-right:2px solid #333;color:#CCC;border-radius:3px;text-transform:uppercase;-webkit-box-shadow:-6px 0 4px -2px #999,6px 0 4px -2px #999;box-shadow:-6px 0 4px -2px #999,6px 0 4px -2px #999;transition: all .3s;}
+a.btnlenani_15:hover{font-size:13px;text-decoration:none;padding:8px 0 8px;border-left:2px solid #C90;border-right:2px solid #C90;color:#DDC284;background-color:#222;-webkit-box-shadow:-16px 2px 8px -2px #f1f1f1,16px 2px 8px -2px #f1f1f1, 0 4px 7px -3px #999;box-shadow:-16px 2px 8px -2px #f1f1f1,16px 2px 8px -2px #f1f1f1, 0 4px 7px -3px #999;transform: translateY(-4px);-webkit-transform: translateY(-4px);}
+a.btnlenani_15:active{font-size:13px;text-decoration:none;padding:8px 0 8px;border-left:2px solid #333;border-right:2px solid #333;color:#CCC;webkit-box-shadow:-16px 2px 8px -2px #f1f1f1,16px 2px 8px -2px #f1f1f1, 0 4px 7px -3px #999;box-shadow:-16px 2px 8px -2px #f1f1f1,16px 2px 8px -2px #f1f1f1, 0 4px 7px -3px #999;transform: translateY(-4px);-webkit-transform: translateY(-4px);}</textarea>
+</div>
+
+
+
+</div>
+</div>
+
+<div class="col-md-12 m-auto pt-4 pb-4 text-center">
+<p class="lead">Incearca genaratorul de butoane CSS <a href="../wepapps/css3_butoane.html" class="btn btn-md btn-primary">Genarator Butoane CSS</a></p>
+</div>
+
+
+
+
+<div class="col-12 wrapper center footer">
+<p>material realizat de Dan N pentru Lenani.ro</p>
+</div>
+
+
+
+
+<script src="https://lenani-zenart.github.io/web/cursuri/css/lenani_bs/js/bootstrap.js"></script>
+</body></html>
