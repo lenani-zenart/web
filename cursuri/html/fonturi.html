@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Web Fonts</title>
+<style>
+*{box-sizing:border-box;}
+html,body{}
+html{scroll-behavior: smooth;}
+body{width:100%;margin:0 auto;font-family:sans-serif;}
+.xcr::-webkit-scrollbar {width:8px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background:#936;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #333;}* {box-sizing: border-box;}html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="gr-"] {float: left;padding: 15px;border: 0px solid red;}.gr-1 {width: 8.33%;}.gr-2 {width: 16.66%;}.gr-3 {width: 25%;}.gr-4 {width: 33.33%;}.gr-5 {width: 41.66%;}.gr-6 {width: 50%;}.gr-7 {width: 58.33%;}.gr-8 {width: 66.66%;}.gr-9 {width: 75%;}.gr-10 {width: 83.33%;}.gr-11 {width: 91.66%;}.gr-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}.divider{opacity:0;}
+
+
+
+
+
+#lenani-header{background-color:#96C;}
+#bara-laterala{background-color:rgba(255,204,102,.5);}
+#continut{background-color:#fff;}
+#footer{background-color:#222;color:#ccc;}
+
+#footer h5{font-size:20px;color:#ccc;} #footer p{font-size:14px;color:#f1f1f1;}
+
+#lenani-header,
+#bara-laterala,
+#continut,
+#footer{-webkit-transition: all .5s;transition: all .5s;}
+
+
+#lenani-header:hover,
+#bara-laterala:hover,
+#continut:hover,
+#footer:hover{}
+
+
+
+#lenani-header:hover{}
+#bara-laterala:hover{}
+#continut:hover{}
+#footer:hover{}
+
+
+
+.grey{background-color:#f1f1f1;}
+
+
+a,a:visited{color:#09F;text-decoration:none;}
+a:hover{color:#F69;text-decoration:none;}
+
+
+
+/** Meniu - Bara Navigare **/
+.mdemo ul {list-style-type: none;margin:0 auto;padding: 0;overflow: hidden;background-color:#222;}
+.mdemo li {float: left;}
+.mdemo li a {display: block;background-color:#222;color:#f1f1f1;text-align: center;padding: 14px 16px;text-decoration: none;font-family:sans-serif;}
+.mdemo li a:hover:not(.active) {color:#fff;background-color:#09F;}
+.mdemo .active {background-color:#09C;color:#fff;}
+.mdemo .active:hover{background-color:#069;color:#fff;}
+.mdemo .flright{float:right;color:#fff;}
+
+
+
+#zenart{padding-top:15%;padding-bottom:16%;}
+.bgimage{background-color:#000;background-image: url("https://lenani-zenart.github.io/web/cursuri/html/imagini/3slider.jpg");background-repeat:no-repeat;background-size:cover;background-position:center center;background-attachment:fixed;}
+h3.titlu_lenani{display:block;width:80%;height:auto;margin:0 auto;padding:20px 0 3px;font-size:3.33rem;color:#f1f1f1;font-weight:lighter;text-align:right;}
+p.subtitlu_lenani{display:block;width:80%;height:auto;margin:0 auto;padding:4px 0 3px;font-size:1.33rem;color:#f1f1f1;font-weight:lighter;text-align:right;}
+
+
+mark{background-color:#f1f2f1;padding-left:3px;padding-right:3px;margin-left:3px;margin-right:3px;color:#C03;font-family:"Lucida Console", Monaco, monospace;}
+code{display:block;width:95%;height:auto;background-color:#f1f2f1;padding:7px 10px;margin:5px 1px 8px 2px;color:#C03;font-family:"Lucida Console", Monaco, monospace;border-left:3px solid #096;}
+.info{padding:20px;background-color:#ECF9FD;color:#777;margin:20px auto 12px auto;border:4px double #69F;}
+
+
+h2.lobster{font-family: 'Lobster', cursive;font-size:3rem;color:#999;text-align:center;}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+@media only screen and (max-width: 768px)
+{body{font-size:14px;color:#666;font-family:Verdana, Geneva, sans-serif;}[class*="gr-"]{width:100%;}h1,h2,h3,h4,h5,h6{font-size:20px;font-weight:lighter;}.mdemo ul {list-style-type: none;margin:0 auto;padding: 0;overflow: hidden;background-color:#222;}
+.mdemo li {float: left;}
+.mdemo li a {display: block;background-color:#222;color:#f1f1f1;text-align: center;padding: 6px 9px;text-decoration: none;font-family:sans-serif;}
+.mdemo li a:hover:not(.active) {color:#fff;background-color:#09F;}
+.mdemo .active {background-color:#09C;color:#fff;}
+.mdemo .active:hover{background-color:#069;color:#fff;}
+.mdemo .flright{float:right;color:#fff;}
+img.imgart{display:block;width:100%;height:auto;margin:10px auto 6px auto;}}
+* html .line {height:1%;}
+</style>
+</head>
+
+<body>
+
+
+
+<div id="sus" class="gr-12 no">
+
+
+<div id="lenani-header">
+
+<div id="zenart" class="cgcbox-12 imgresp tcenter bgimage"><h3 class="titlu_lenani"><i class="fa fa-star"></i> Fonturi</h3>
+<p class="subtitlu_lenani">fonturile aduc un plus de personalizare</p></div>
+
+<div id="meniufix" class="meniu">
+<div class="mdemo">
+<ul>
+<li><a href="#despre-fonturi">Despre fonturi</a></li>
+<li><a href="#fonturi-sistem">Fonturi sistem</a></li>
+<li><a href="#fonturi-web">Fonturi Web</a></li>
+<li><a href="#fonturi-icon">Fonturi Icon</a></li>
+<li class="flright"><a href="#resurse" class="active">Resurse</a></li>
+</ul>
+</div>
+</div>
+
+
+
+</div>
+
+
+<div id="despre-fonturi" class="gr-12">
+  <div class="line">
+    <div class="gr-12">
+      <div id="continut" class="gr-12">
+        <div class="gr-12">
+         <h2>Fonturile sistem - Fonturile personalizate - Fonturile Web</h2>
+         <p>Fonturile joaca un rol important in pagina web, atat din punct de vedere vizual pentru ca ne permite sa diferentiem anumite elemente sau sectiuni dar, atentie, si din punct de vedere "tehnic".</p>
+         <p>Diferenta dintre <strong>fonturile sistem</strong> si fonturile web este aceea ca fonturile sistem sunt cele instalate in pc-ul / laptopul tau si se regasesc in toate aceste dispozitive.</p>
+         <p><strong>Fonturile personalizate</strong>, sunt fonturile pe care le descarci de pe net si le instalezi in pc/laptop.</p>
+         <p>Web Fonts sau <strong>fonturile web</strong> sunt fonturile care NU trebuie sa le descarci (sau sa le instalezi) in pc/laptop dar care sunt totusi redate de browser deoarece sunt gazduite online</p>
+         </div>
+         
+         <div id="fonturi-sistem" class="gr-12">
+         <h2>Exemple de fonturi sistem</h2>
+         <p>Fonturi sistem pe care le ai instalate in dispozitivul tau (default font system).
+         In sistemul de operare Windows poti gasi aceste fonturi in partitia <mark>C:\Windows</mark> \Fonts</p>
+         <p>In cele mai multe cazuri vei observa ca in aceasi sintaxa css ai sa vezi mai multe denumiri de fonturi despartite prin virgula. Primul font este cel care trebuie redat, in cazul in care vizitatorul paginii web NU are acel font instalat, dispozitivul va afisa al doilea font, sau al treilea font (font fallback).<br/>
+         Pentru a "forta" redarea primului font, se folosesc gilimelele <mark>"Verdana", Geneva, sans-serif</mark> sau <mark>'Verdana', Geneva, sans-serif</mark><br/>
+         Daca mut ghilimelele pentru fontul Geneva, dar fara sa ii schimb pozitia in ordine, fortez ca acest font sa aiba prioritate<br/>
+         <mark>Verdana, 'Geneva', sans-serif</mark> - chiar daca seria de fonturi incepe cu Verdana, fortez ca textul afisat sa foloseasca fontul <strong>Geneva</strong> cu inlocuitor sans-serif.
+         </p>
+         
+         <p class="info">Fiecare dispozitiv vine cu propria selectie de fonturi preinstalata. Selectia se bazeaza in mare parte pe sistemul sau de operare.<br>
+Problema este ca fiecare sistem difera putin.<br>
+Dispozitivele bazate pe Windows pot avea un singur grup. Cele MacOS folosesc alta. Sistemul Android utilizeaza si el propriul sistem de fonturi compatibile cu Android.<br>
+Exemplu: Sa presupunem ca designerul a ales o familie de fonturi obscure si platite pentru designul acestei pagini. Daca nu aveti fontul deja instalat si nu se ofera versiunea host - fontul pe care îl vedeti ar reveni la unele variante de bază (fallback), cum ar fi Verdana  sau sans-serif (in acest caz).</p>
+         
+         <div class="gr-12 no row grey">
+           <div class="gr-4"><span style="font-family:Verdana, Geneva, sans-serif">font sistem</span></div>
+           <div class="gr-8">font-family: Verdana, Geneva, sans-serif</div>
+         </div>
+         
+         
+          <div class="gr-12 no row">
+           <div class="gr-4"><span style="font-family: Georgia, 'Times New Roman', Times, serif">font sistem</span></div>
+           <div class="gr-8">font-family: Georgia, 'Times New Roman', Times, serif</div>
+         </div>
+         
+         
+          <div class="gr-12 no row grey">
+           <div class="gr-4"><span style="font-family: 'Lucida Console', Monaco, monospace">font sistem</span></div>
+           <div class="gr-8">font-family: 'Lucida Console', Monaco, monospace</div>
+         </div>
+         
+       </div>
+       
+ <div class="gr-12"><p>Aceste fonturi nu au nevoie de host, <em>safe for web</em></p></div>     
+       
+       
+ <div id="fonturi-web" class="gr-12">
+ <h2>Exemple de fonturi web</h2>
+ <p>Fonturile se pot clasifica in mai multe categorii deoarece, fiecare font are anumite proprietati de care ne putem folosi</p>
+ <p>Ca sa nu sar direct in exemple, mai intai doresc sa va arat 3 metode de a folosi fonturile gazduite in pagina web</p>
+ <p>Vom folosi serviciul gratuit <a href="https://fonts.google.com/">Google Fonts</a></p>
+ <p class="info">Pentru a putea folosi fonturi web in pagina, aceste fonturi trebuie sa fie gazduite online (incarcate online). Fonturile web NU folosesc acceasi extensia ca cele sistem</p>
+ <p>Prima metoda de a adauga un anumit font pentru a fi folosit in pagina web este prin adaugarea link-ului intre etichetele <mark>&lt;head&gt;</mark> 
+ si <mark>&lt;/head&gt;</mark><br/>
+ <code>&lt;!DOCTYPE html&gt;<br>
+ &lt;html lang=&quot;ro-RO&quot;&gt;<br>
+ &lt;head&gt;<br>
+&lt;meta charset=&quot;UTF-8&quot;&gt;<br>
+&lt;title&gt;Web Fonts&lt;/title&gt;<br>
+<strong style="color:#93C;">&lt;link href=&quot;https://fonts.googleapis.com/css?family=Lobster&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;</strong><br><br>
+...
+<br>
+&lt;/head&gt;</code></p>
+<p>Metoda a doua este prin import. In acest caz, fontul va fi adaugat in foaia de stil (css)</p>
+<br>
+<code>&lt;style&gt;<br>
+@import url('https://fonts.googleapis.com/css?family=Lobster&amp;display=swap');<br>
+&lt;/style&gt;
+</code>
+
+<p>Metoda a treia este prin declararea <mark>@font</mark>. Si in acest caz, fontul va fi adaugat in foaia de stil (css)</p>
+<br>
+<code><br>/* cyrillic-ext */<br>  @font-face {    font-family: 'Lobster';    font-style: normal;    font-weight: 400;    font-display: swap;    src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9zo-mM5Ez.woff2) format('woff2');    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;  }<br>  /* cyrillic */ <br> @font-face {    font-family: 'Lobster';    font-style: normal;    font-weight: 400;    font-display: swap;    src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9zoamM5Ez.woff2) format('woff2');    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;  }  <br>/* vietnamese */  <br>@font-face {    font-family: 'Lobster';    font-style: normal;    font-weight: 400;    font-display: swap;    src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9zo2mM5Ez.woff2) format('woff2');    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;  } <br> /* latin-ext */ <br> @font-face {    font-family: 'Lobster';    font-style: normal;    font-weight: 400;    font-display: swap;    src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9zoymM5Ez.woff2) format('woff2');    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;  } <br> /* latin */ <br> @font-face {    font-family: 'Lobster';    font-style: normal;    font-weight: 400;    font-display: swap;    src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9zoKmMw.woff2) format('woff2');    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;  }<br></code>
+
+<p>In pasi precedenti am adaugat un font ca resursa pentru pagina web, acum urmeaza sa folosim acest font in elementele text.<br/>
+Pentru ca un paragraf de exemplu sa poata utiliza acest font, sa redea din punct de vedere vizual atributele acestui font, va trebui sa specificam in CSS acest lucru.<br>
+Sintaxa de baza</p>
+<code>font-family: 'Lobster', cursive;</code>
+<p>Cod CSS</p>
+<code>h2{font-family: 'Lobster', cursive;}</code>
+<p>Va afisa:</p>
+<h2 class="lobster">Acest element foloseste fontul Lobster</h2>
+
+<div class="info">Putem folosi mai multe fonturi in pagina, librarii de fonturi dar nu este recomandat sa folosim mai mult de 3 fonturi deoarece va avea un impact negativ asupra incarcarii paginii. Unele fonturi consuma resurse host mai mult de cat altele</div>
+ </div>
+ 
+ 
+ 
+  <div id="fonturi-icon" class="gr-12">
+  <h2>Fonturile Iconograme - Icons</h2>
+  <p>Aceste fonturi sunt folosite atat ca elemente de design vizual dar si ca identificare element</p>
+  <p>Cel mai popular fiind <a href="https://fontawesome.com/" target="_blank"><i class="fa fa-heart"></i> Font Awesome</a> ... si cred ca numele spune totul<br>
+  Un alt font popular, folosit si in dezvolatrea aplicatiilor pentru diferite dispozitive este <i class="material-icons">font_download</i> <a href="https://material.io/resources/icons/?style=baseline" target="_blank"> Material Icons</a></p>
+  
+  
+ </div>     
+       
+       
+       
+     <div id="resurse" class="gr-12">
+     <h3>Resurse</h3>
+     <ul>
+     <li><a href="https://fontawesome.com/icons?d=gallery" target="_blank">Font Awesome - Librarie Iconite</a></li>
+     <li><a href="https://google.github.io/material-design-icons/" target="_blank">Materia Design - Icons</a></li>
+     <li><a href="https://iconify.design/" target="_blank">Iconify - Librarie Iconite</a></li>
+     <li><a href="https://icomoon.io/app/#/select" target="_blank">Icomoon - Librarie Iconite</a></li>
+     <li><a href="https://www.fontsquirrel.com/" target="_blank">Font Squirrel - Librarie de fonturi pentru descarcat</a> . <a href="https://www.fontsquirrel.com/tools/webfont-generator" target="_blank">Generator fonturi</a> - din font sistem sau font personalizat descarcat in font pentru web</li>
+     </ul>
+  </div>  
+       
+       
+       
+     </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div id="footer" class="gr-12 footer">
+
+<div class="line">
+
+
+<div class="gr-9">
+  <p>material realizat de Dan N pentru <a href="https://lenani.ro">Lenani.Ro</a></p>
+</div>
+<div class="gr-2 tright">
+  <p><a href="#sus"><i class="fa fa-2x fa-arrow-circle-o-up"></i></a></p>
+</div>
+</div>
+
+</div>
+
+
+
+</body>
+</html>
