@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pagina Web - Structura</title>
+<style>
+body{width:100%;margin:0 auto;font-family:sans-serif;overflow-x:hidden;}
+.xcr::-webkit-scrollbar {width:8px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background:#936;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #333;}* {box-sizing: border-box;}html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="gr-"] {float: left;padding: 15px;border: 0px solid red;}.gr-1 {width: 8.33%;}.gr-2 {width: 16.66%;}.gr-3 {width: 25%;}.gr-4 {width: 33.33%;}.gr-5 {width: 41.66%;}.gr-6 {width: 50%;}.gr-7 {width: 58.33%;}.gr-8 {width: 66.66%;}.gr-9 {width: 75%;}.gr-10 {width: 83.33%;}.gr-11 {width: 91.66%;}.gr-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}.divider{opacity:0;}
+
+
+
+
+
+#lenani-header{background-color:#96C;}
+#bara-laterala{background-color:rgba(255,204,102,.5);;}
+#continut{background-color:rgba(153,255,255,.1);}
+#footer{background-color:#222;color:#ccc;}
+
+#footer h5{font-size:20px;color:#ccc;} #footer p{font-size:14px;color:#f1f1f1;}
+
+#lenani-header,
+#bara-laterala,
+#continut,
+#footer{-webkit-transition: all .5s;transition: all .5s;}
+
+
+#lenani-header:hover,
+#bara-laterala:hover,
+#continut:hover,
+#footer:hover{-webkit-box-shadow:0 0 10px #999;box-shadow:0 0 10px #999;}
+
+
+
+#lenani-header:hover{}
+#bara-laterala:hover{}
+#continut:hover{}
+#footer:hover{}
+
+
+
+.meniu{}
+.meniu:hover{background-color:#ECF9FD;}
+
+
+
+
+
+/** Meniu - Bara Navigare **/
+.mdemo ul {list-style-type: none;margin:0 auto;padding: 0;overflow: hidden;background-color:#222;}
+.mdemo li {float: left;}
+.mdemo li a {display: block;background-color:#222;color:#f1f1f1;text-align: center;padding: 14px 16px;text-decoration: none;font-family:sans-serif;}
+.mdemo li a:hover:not(.active) {color:#fff;background-color:#09F;}
+.mdemo .active {background-color:#09C;color:#fff;}
+.mdemo .active:hover{background-color:#069;color:#fff;}
+.mdemo .flright{float:right;color:#fff;}
+
+
+
+#zenart{padding-top:15%;padding-bottom:16%;}
+.bgimage{background-color:#000;background-image: url("https://lenani-zenart.github.io/web/cursuri/html/imagini/3slider.jpg");background-repeat:no-repeat;background-size:cover;background-position:center center;background-attachment:fixed;}
+h3.titlu_lenani{display:block;width:80%;height:auto;margin:0 auto;padding:20px 0 3px;font-size:3.33rem;color:#f1f1f1;font-weight:lighter;text-align:right;}
+p.subtitlu_lenani{display:block;width:80%;height:auto;margin:0 auto;padding:4px 0 3px;font-size:1.33rem;color:#f1f1f1;font-weight:lighter;text-align:right;}
+
+
+#meniufix:target{display:block;width:100%;height:auto;margin:0 auto;position:fixed;top:0;left:0;z-index:1000;}
+
+img.imgart{display:block;width:200px;height:auto;float:left;margin:4px 2px 6px 8px;position:relative;padding:7px;}
+@media only screen and (max-width: 768px)
+{body{font-size:14px;color:#666;font-family:Verdana, Geneva, sans-serif;}[class*="gr-"]{width:100%;}h1,h2,h3,h4,h5,h6{font-size:20px;font-weight:lighter;}.mdemo ul {list-style-type: none;margin:0 auto;padding: 0;overflow: hidden;background-color:#222;}
+.mdemo li {float: left;}
+.mdemo li a {display: block;background-color:#222;color:#f1f1f1;text-align: center;padding: 6px 9px;text-decoration: none;font-family:sans-serif;}
+.mdemo li a:hover:not(.active) {color:#fff;background-color:#09F;}
+.mdemo .active {background-color:#09C;color:#fff;}
+.mdemo .active:hover{background-color:#069;color:#fff;}
+.mdemo .flright{float:right;color:#fff;}
+img.imgart{display:block;width:100%;height:auto;margin:10px auto 6px auto;}}
+* html .line {height:1%;}
+</style>
+</head>
+
+<body>
+
+
+
+<div class="gr-12 no">
+
+
+<div id="lenani-header">
+
+<div id="zenart" class="cgcbox-12 imgresp tcenter bgimage"><h3 class="titlu_lenani">Antet - Header</h3>
+<p class="subtitlu_lenani">Meniul poate fi pozitionat deasupra sau sub aceasta zona</p></div>
+
+<div id="meniufix" class="meniu">
+<div class="mdemo">
+<ul>
+<li><a href="#meniufix">Meniu Fix</a></li>
+<li><a href="#!">Link Meniu 2</a></li>
+<li><a href="#!">Link Meniu 3</a></li>
+<li><a href="#!">Link Meniu 4</a></li>
+<li class="flright"><a href="#!" class="active">Link Meniu</a></li>
+</ul>
+</div>
+</div>
+
+
+
+</div>
+
+
+<div class="gr-12">
+  <div class="line">
+    <div class="gr-12">
+    
+       <div id="bara-laterala" class="gr-4">
+       <h4>Bara laterala</h4>
+          <ul>
+          <li>Continut bara laterala</li>
+          <li>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
+          </ul>
+       </div>
+       
+       <div id="continut" class="gr-8">
+       <div class="gr-12">
+         <h2>Continut - Titlu 1</h2>
+         <p><img src="https://raw.githubusercontent.com/lenani-zenart/web/master/cursuri/html/imagini/avatar.jpg" class="tfleft imgart" width="200" alt="imagine">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+         </div>
+         
+         <div class="gr-12">
+         <h2>Continut - Titlu 2</h2>
+         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+       </div>
+       
+       </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<div id="footer" class="gr-12 footer">
+
+<div class="line">
+
+
+<div class="gr-4">
+  <h5>Continut Subsol 1</h5>
+  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+</div>
+
+<div class="gr-4">
+  <h5>Continut Subsol 2</h5>
+  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+</div>
+
+<div class="gr-4">
+  <h5>Continut Subsol 3</h5>
+  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+</body>
+</html>
