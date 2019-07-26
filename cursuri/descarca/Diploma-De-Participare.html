@@ -194,7 +194,14 @@ p{font-size:20px!important;}.upper{margin:-220px auto 22px auto!important;}#drop
 <div class="line">
 
 <div class="cgcbox-6 data tleft">
-    <p id="due-date" class="slim-line"><span contenteditable="true" spellcheck="false" class="editable placeholder">17</span>/<span contenteditable="true" spellcheck="false" class="editable placeholder">09</span>/ <span>2019</span></p>
+    <p id="due-date" class="slim-line">
+    <!--
+    <span contenteditable="true" spellcheck="false" class="editable placeholder">17</span>/<span contenteditable="true" spellcheck="false" class="editable placeholder">09</span>/ <span>2019</span>
+    --> 
+	<script>
+var dt = new Date();
+document.getElementById("due-date").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+</script>
 </div>
 
 
@@ -316,7 +323,6 @@ p{font-size:20px!important;}.upper{margin:-220px auto 22px auto!important;}#drop
        <div class="line top no">
        <div class="cgcbox-2 no info"><span>Info</span>
          <div class="inibox">
-        &raquo; Elementele pe care le poti edita sunt data (ZZ/LL), numele tau.<br/>
         &raquo; Sectiunile editabile au un fundal albastru deschis iar cand cursorul este deasupra elementului, albastru inchis.<br/>
         &raquo; Poti schimba fontul din bara fixa.<br/>
         &raquo; Optional, incarca o imagine (PNG/JPG 250x250)<br/>
