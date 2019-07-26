@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lenani.Ro - Diploma de Participare</title>
+<meta name="viewport" content="width=device-width,maximum-scale=1.0">
+
+<style>
+html {scroll-behavior: smooth;}
+/* Fonturi */
+@font-face {
+  font-family: 'News Cycle';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('News Cycle'), local('NewsCycle'), url(https://fonts.gstatic.com/s/newscycle/v16/CSR64z1Qlv-GDxkbKVQ_fO4KTet_.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'News Cycle';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('News Cycle'), local('NewsCycle'), url(https://fonts.gstatic.com/s/newscycle/v16/CSR64z1Qlv-GDxkbKVQ_fOAKTQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Rokkitt';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Rokkitt Regular'), local('Rokkitt-Regular'), url(https://fonts.gstatic.com/s/rokkitt/v14/qFdE35qfgYFjGy5hkEiCdubL.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Rokkitt';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Rokkitt Regular'), local('Rokkitt-Regular'), url(https://fonts.gstatic.com/s/rokkitt/v14/qFdE35qfgYFjGy5hkEaCdg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Maven Pro Regular'), local('MavenPro-Regular'), url(https://fonts.gstatic.com/s/mavenpro/v13/7Au9p_AqnyWWAxW2Wk3GwmQIAFg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Maven Pro Regular'), local('MavenPro-Regular'), url(https://fonts.gstatic.com/s/mavenpro/v13/7Au9p_AqnyWWAxW2Wk3Gw2QIAFg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Maven Pro Regular'), local('MavenPro-Regular'), url(https://fonts.gstatic.com/s/mavenpro/v13/7Au9p_AqnyWWAxW2Wk3GzWQI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@page {size: A4 landscape;margin: 0mm;}
+* {box-sizing: border-box;}
+ html, body{height:100%;margin:0;padding:0;}
+html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cgcbox-"] {float: left;padding: 15px;border: 0px solid red;}.cgcbox-1 {width: 8.33%;}.cgcbox-2 {width: 16.66%;}.cgcbox-3 {width: 25%;}.cgcbox-4 {width: 33.33%;}.cgcbox-5 {width: 41.66%;}.cgcbox-6 {width: 50%;}.cgcbox-7 {width: 58.33%;}.cgcbox-8 {width: 66.66%;}.cgcbox-9 {width: 75%;}.cgcbox-10 {width: 83.33%;}.cgcbox-11 {width: 91.66%;}.cgcbox-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}.divider{opacity:0;}
+
+#certificat{font-family:sans-serif;}
+
+.diploma-titlu{margin:0 auto;text-align:center;}
+.diploma-titlu img{display:block;width:100%;height:auto;margin:0 auto;}
+
+
+.editable{padding-left:15px;padding-right:15px}
+.editable:focus{ outline:none;}
+.editable{-webkit-user-modify:read-write-plaintext-only;} /* read-only | read-write | */
+.placeholder{background-color:rgba(0,153,204,0.10);cursor: text}.placeholder:hover{background-color: rgba(0,153,204,1);cursor: pointer;color:#fff;}
+
+#data{display:block;text-align:left;padding:4px 11px;margin:10px auto 12px auto;border-bottom:1px solid #ccc;}
+.slim-line{padding-left:12px;padding-top:19px;}
+.textul p{display:block;width:90%;height:auto;font-size:20px;font-weight:normal;}
+
+.continut{padding:30px 0 33px;text-align:center;background-color:#f1f1f1;margin:30px auto 44px auto!important;}
+#fodefault:empty:not(:focus):before{content:attr(data-text);}
+[contenteditable=true]:empty:not(:focus):before{content:attr(data-text);}
+
+.continut p{margin:5px auto;line-height:35px;}
+
+
+
+	 #fodefault p{font-family:sans-serif;font-size:24px;}
+#fonewscircle p{font-family:sans-serif;font-size:24px;}
+#foeokkitt p{font-family:sans-serif;font-size:24px;}
+
+#fodefault{display:block;margin:0 auto;}
+#fonewscircle{display:block;margin:0 auto;padding:0;}
+#forokkitt{display:block;margin:0 auto;padding:0;}
+
+#fodefault:target *{font-family:'Maven Pro'!important;}
+#fonewscircle:target *{font-family: 'News Cycle'!important;}
+#forokkitt:target *{font-family: 'Rokkitt'!important;}
+
+
+a.fodefault{font-family:'Maven Pro',sans-serif;font-size:16px;font-weight:100;line-height:normal;}
+a.fonewscircle{font-family: 'News Cycle'!important;font-size:16px;font-weight:100;line-height:normal;}
+a.forokkitt {font-family: 'Rokkitt'!important;font-size:20px!important;font-weight:100;line-height:normal;}
+
+/** ------- Print Button -------- **/
+.printbtn a,.printbtn a:visited{display:block;width:90%;height:auto;font-size:15px;margin:5px auto 6px auto;padding:8px 0;text-align:center;background-color:#09F;color:#fff;text-decoration:none;-webkit-border-radius:5px;border-radius:5px;}
+.printbtn a:hover{color:#fff;background-color:#09C;}
+
+
+#optiuni{display:block;width:100%;height:auto;padding:0;background-color:#09C;z-index:99999;position:fixed;bottom:0px;left:0px;}
+
+.top ,.line{padding:0!important;line-height:normal;}
+.top a, .top a:hover{display:block;height:auto;margin:0 auto;color:#f1f1f1;font-size:15px;text-decoration:none;padding:8px 0px 8px;text-align:center;float:left;}
+.top a:hover{background-color:#069;color:#fff;text-decoration:none;}
+
+
+.info{color:#f1f1f1;font-size:15px;text-decoration:none;padding:8px 0px 8px;text-align:center;font-family:sans-serif;background-color:#222;}
+.inibox{display:block;width:350px;height:auto;padding:20px;text-align:left;position:fixed;bottom:33px;left:-430px;background-color:#222;color:#f1f1f1;transition: all .4s;font-family:sans-serif;font-size:14px;opacity:.3;}
+.info:hover .inibox{display:block;width:350px;height:auto;padding:20px;text-align:left;position:fixed;bottom:33px;left:0;background-color:#222;color:#f1f1f1;opacity:1;}
+
+
+.desbox{display:block;width:330px;height:auto;padding:20px;text-align:left;position:fixed;bottom:33px;right:-430px;background-color:#222;color:#f1f1f1;transition: all .4s;font-family:sans-serif;font-size:14px;opacity:.3;}
+.info:hover .desbox{display:block;width:330px;height:auto;padding:20px;text-align:left;position:fixed;bottom:33px;right:0;background-color:#222;color:#f1f1f1;opacity:1;}
+.desbox a, .desbox a:visited{display:block;width:80%;height:auto;padding:8px 12px;text-align:center;margin:11px auto 13px auto;background-color:#09C;color:#F1F1F1;text-decoration:none;float:none;clear:left;-webkit-border-radius:6px;border-radius:6px;}
+.desbox a:hover{display:block;width:80%;height:auto;padding:8px 12px;text-align:center;margin:11px auto 13px auto;background-color:#939;color:#FFF;text-decoration:none;float:none;clear:left;}
+.info span{cursor:pointer;}
+
+img.diploma_cover{z-index:-2;margin:-10px auto -22px auto;}
+.avatar{display:block;width:200px;height:200px;overflow:hidden;border-radius:100%;text-align:center;background-color:#f1f1f1;z-index:999!important;float:none;clear:left;}
+.upper{margin:-220px auto 22px auto!important;}
+.placeholder{background-color:rgba(0,153,204,0.10);}
+
+
+#dropzone{border:2px dashed #ccc;visibility:visible;color:#999;text-transform:uppercase;font-size:14px;opacity:1;display:block;width:180px;height:180px;overflow:hidden;border-radius:100%;text-align:center;background-color:#f1f1f1;z-index:999!important;float:none;clear:left;margin:0 auto;}
+#dropzone img,.output img{display:block;width:100%;height:auto;margin:0 auto;visibility:visible;}#dropimg:hover{cursor:pointer;}
+#dropzone:hover{opacity:0.7;}
+#dropzone:empty:not(:focus):before{content:attr(data-text);color:#666;}
+#dropzone [contenteditable=true]:empty:not(:focus):before{content:attr(data-text);color:#666;}
+
+
+a.close,a.close:visited{display:block;width:100%;height:auto;text-align:center;background-color: transparent;font-size:13px;color:#999;text-decoration:underline;}
+a.close:hover{display:block;width:100%;height:auto;text-align:center;background-color: transparent;font-size:13px;color:#ccc;text-decoration:underline;}
+#optiuni:target{position:fixed;bottom:-200px;left:0;}
+
+.bgbox{}
+@media only screen and (max-width: 728px){@page { size: A4 landscape; }body{font-size:2.33vw;color:#293434;}[class*="cgcbox-"]{width:100%;}.upper{margin:-220px auto 22px auto!important;}#dropzone{border:0px dashed #ccc;background-color:transparent;}}
+@media print {
+	@page { size: A4 landscape;}
+	body{height:100%;/* margin-top: 2cm;margin-bottom: 2cm;margin-left: 2cm;margin-right: 2cm; */overflow:hidden;}
+	.editable{padding-left:5px;padding-right:5px}
+	.noprint, .box, .inibox{display:none!important;}
+	.placeholder{background-color: transparent;}
+	#font-default{border:none;}#font-default img{display:block;width:100%;height:auto;margin:0 auto;visibility:visible;}
+     a[href*='//']:after {content:" (" attr(href) ") ";color: $primary;}
+     a:after {content:" (" attr(href) ") ";color: $primary;}
+	 .droppingstyle:empty:not(:focus):after,#dropzone{background-image: none;}
+	 #fodefault p{font-family:sans-serif;font-size:20px;}
+#fonewscircle p{font-family:sans-serif;font-size:20px;}
+#foeokkitt p{font-family:sans-serif;font-size:20px;}
+
+#fodefault{display:block;margin:0 auto;}
+#fonewscircle{display:block;margin:0 auto;padding:0;}
+#forokkitt{display:block;margin:0 auto;padding:0;}
+
+#fodefault:target p{font-family:'Maven Pro'!important;}
+#fonewscircle:target p{font-family: 'News Cycle'!important;}
+#forokkitt:target p{font-family: 'Rokkitt'!important;}
+p{font-size:20px!important;}.upper{margin:-220px auto 22px auto!important;}#dropzone{border:0px dashed #ccc;background-color:transparent;}}
+
+</style>
+</head>
+
+<body>
+
+
+
+
+
+<div id="certificat" class="cgcbox-12 no">
+
+<div class="line">
+
+<div class="cgcbox-6 data tleft">
+    <p id="due-date" class="slim-line"><span contenteditable="true" spellcheck="false" class="editable placeholder">17</span>/<span contenteditable="true" spellcheck="false" class="editable placeholder">09</span>/ <span>2019</span></p>
+</div>
+
+
+<div class="cgcbox-6 brand tright">
+  <p id="due-date" class="slim-line">Lenani Art</p>
+</div>
+
+</div>
+
+
+<div class="cgcbox-12 tcenter imgresp tcenter diploma-titlu no">
+<img class="diploma_cover" src="imagini/diploma_participare.jpg" alt="Diploma de participare"/>     
+</div>
+
+      <div class="cgcbox-12 tcenter no upper">
+      <div id="dropzone" class="droppingstyle output dropit" data-text="Incarca Imagine"></div>
+      <script type="text/javascript">
+  (function(window) {
+    function triggerCallback(e, callback) {
+      if(!callback || typeof callback !== 'function') {
+        return;
+      }
+      var files;
+      if(e.dataTransfer) {
+        files = e.dataTransfer.files;
+      } else if(e.target) {
+        files = e.target.files;
+      }
+      callback.call(null, files);
+    }
+    function makeDroppable(ele, callback) {
+      var input = document.createElement('input');
+      input.setAttribute('type', 'file');
+      input.setAttribute('multiple', true);
+      input.style.display = 'none';
+      input.addEventListener('change', function(e) {
+        triggerCallback(e, callback);
+      });
+      ele.appendChild(input);
+      
+      ele.addEventListener('dragover', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        ele.classList.add('dragover');
+      });
+
+      ele.addEventListener('dragleave', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        ele.classList.remove('dragover');
+      });
+
+      ele.addEventListener('drop', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        ele.classList.remove('dragover');
+        triggerCallback(e, callback);
+      });
+      
+      ele.addEventListener('click', function() {
+        input.value = null;
+        input.click();
+      });
+    }
+    window.makeDroppable = makeDroppable;
+  })(this);
+  (function(window) {
+    makeDroppable(window.document.querySelector('.droppingstyle'), function(files) {
+      console.log(files);
+      var output = document.querySelector('.output');
+      output.innerHTML = '';
+      for(var i=0; i<files.length; i++) {
+        if(files[i].type.indexOf('image/') === 0) {
+          output.innerHTML += '<img class="imgresp" src="' + URL.createObjectURL(files[i]) + '" />';
+        }
+	  }
+        
+    });
+  })(this);
+</script>
+      </div>
+
+<div class="line">
+<div class="cgcbox-1">&nbsp;</div>
+   <div class="cgcbox-10 continut">
+   
+   
+
+          <div id="fonewscircle" class="cgcbox-12 textul">
+          <div id="forokkitt" class="cgcbox-12 no">
+         <div id="fodefault" class="cgcbox-12 no">
+<p>Lenani Art acordă <span contenteditable="true" spellcheck="false" class="editable placeholder" data-text="Dn."></span> <span contenteditable="true" spellcheck="false" class="editable placeholder" data-text="Numele Tau"></span> in mod simbolic, diploma de participare la cursurile online HTML pentru Incepatori</p>
+<p>Cursul online a fost parcurs cu succes.</p>
+</div></div>
+   </div>
+ 
+   
+   
+   
+
+   </div>
+<div class="cgcbox-1">&nbsp;</div>   
+</div>
+
+
+
+<div class="cgcbox-12 tcenter imgresp tcenter diploma-titlu no">
+<img src="imagini/diploma_participare_subsol.jpg" alt="Diploma de participare"/>
+</div>
+
+</div>
+
+
+
+
+
+<div id="optiuni" class="cgcbox-12 noprint no">
+
+       <div class="line top no">
+       <div class="cgcbox-2 no info"><span>Info</span>
+         <div class="inibox">
+        &raquo; Elementele pe care le poti edita sunt data (ZZ/LL), numele tau.<br/>
+        &raquo; Sectiunile editabile au un fundal albastru deschis iar cand cursorul este deasupra elementului, albastru inchis.<br/>
+        &raquo; Poti schimba fontul din bara fixa.<br/>
+        &raquo; Optional, incarca o imagine (PNG/JPG 250x250)<br/>
+        &raquo; Salveaza ca PDF<br/>
+         </div>
+       </div>
+       <a class="cgcbox-2 no fodefault" href="#fodefault">Font - Maven Pro</a>
+       <a class="cgcbox-2 no fodefault" href="#fonewscircle">Font - News Circle</a>
+       <a class="cgcbox-2 no fodefault" href="#forokkitt">Font - Rokkitt</a>
+       <a class="cgcbox-2 no fodefault" href="javascript:print()">Salveaza PDF</a>
+       <div class="cgcbox-2 no info">Despre
+         <div class="desbox">
+        &raquo; WepApp realizata de Dan N pentru <a href="https://lenani.ro/contact/" target="_blank">Lenani.ro</a><br/>
+        <a class="close" href="#optiuni" style="display:none;">x ascunde bara</a>
+         </div>
+       </div>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
